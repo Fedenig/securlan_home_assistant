@@ -1,6 +1,6 @@
 {
-  "domain": "tuo_component",
-  "name": "Tuo Component",
+  "domain": "mypackager",
+  "name": "My Packager",
   "version": "1.0.0",
   "documentation": "https://github.com/tuo-utente/tuo_component",
   "requirements": [],
