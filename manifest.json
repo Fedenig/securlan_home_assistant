@@ -1,9 +1,0 @@
-{
-  "domain": "mypackager",
-  "name": "My Packager",
-  "version": "1.0.0",
-  "documentation": "https://example.com",
-  "requirements": [],
-  "dependencies": [],
-  "codeowners": ["@tuo_github"]
-}
