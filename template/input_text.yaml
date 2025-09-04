@@ -1,1 +1,14 @@
-
+# Lista aiutanti testo per webhook.
+input_text:
+    rx:
+        name: "Testo RX"
+        icon: mdi:account
+    password:
+        name: "Testo Password"
+        icon: mdi:account
+    azione:
+        name: "Testo Azione"
+        icon: mdi:account
+    numero:
+        name: "Testo Numero"
+        icon: mdi:account
