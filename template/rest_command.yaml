@@ -1,1 +1,1323 @@
+# Lista comandi http verso centrale
+rest_command:
+#Comando per ON e OFF area
+    area_1_on:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-1-X-X-X-X-X-X-X"
+        method: POST
+    area_1_off:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=OFF-AREA-1-X-X-X-X-X-X-X"
+        method: POST
+    area_2_on:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-2-X-X-X-X-X-X"
+        method: POST
+    area_2_off:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=OFF-AREA-X-2-X-X-X-X-X-X"
+        method: POST
+    area_3_on:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-3-X-X-X-X-X"
+        method: POST
+    area_3_off:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=OFF-AREA-X-X-3-X-X-X-X-X"
+        method: POST
+    area_4_on:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-4-X-X-X-X"
+        method: POST
+    area_4_off:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=OFF-AREA-X-X-X-4-X-X-X-X"
+        method: POST
+    area_5_on:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-5-X-X-X"
+        method: POST
+    area_5_off:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=OFF-AREA-X-X-X-X-5-X-X-X"
+        method: POST
+    area_6_on:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-X-6-X-X"
+        method: POST
+    area_6_off:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=OFF-AREA-X-X-X-X-X-6-X-X"
+        method: POST    
+    area_7_on:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-X-X-7-X"
+        method: POST
+    area_7_off:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=OFF-AREA-X-X-X-X-X-X-7-X"
+        method: POST
+    area_8_on:        
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-X-X-X-8"
+        method: POST
+    area_8_off:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=OFF-AREA-X-X-X-X-X-X-X-8"
+        method: POST
 
+#Comando per On area Immediato
+    area_1_on_i:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-1-X-X-X-X-X-X-X-I"
+        method: POST
+    area_2_on_i:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-2-X-X-X-X-X-X-I"
+        method: POST
+    area_3_on_i:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-3-X-X-X-X-X-I"
+        method: POST
+    area_4_on_i:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-4-X-X-X-X-I"
+        method: POST
+    area_5_on_i:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-5-X-X-X-I"
+        method: POST
+    area_6_on_i:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-X-6-X-X-I"
+        method: POST
+    area_7_on_i:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-X-X-7-X-I"
+        method: POST
+    area_8_on_i:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-X-X-X-8-I"
+        method: POST
+        
+#Comando per ON area Forzato
+    area_1_on_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-1-X-X-X-X-X-X-X-F"
+        method: POST
+    area_2_on_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-2-X-X-X-X-X-X-F"
+        method: POST
+    area_3_on_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-3-X-X-X-X-X-F"
+        method: POST
+    area_4_on_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-4-X-X-X-X-F"
+        method: POST
+    area_5_on_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-5-X-X-X-F"
+        method: POST
+    area_6_on_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-X-6-X-X-F"
+        method: POST
+    area_7_on_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-X-X-7-X-F"
+        method: POST
+    area_8_on_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-X-X-X-8-F"
+        method: POST
+
+#Comando per ON area Immediato e Forzato
+    area_1_on_i_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-1-X-X-X-X-X-X-X-I-F"
+        method: POST
+    area_2_on_i_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-2-X-X-X-X-X-X-I-F"
+        method: POST
+    area_3_on_i_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-3-X-X-X-X-X-I-F"
+        method: POST
+    area_4_on_i_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-4-X-X-X-X-I-F"
+        method: POST
+    area_5_on_i_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-5-X-X-X-I-F"
+        method: POST
+    area_6_on_i_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-X-6-X-X-I-F"
+        method: POST
+    area_7_on_i_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-X-X-7-X-I-F"
+        method: POST
+    area_8_on_i_f:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-X-X-X-X-X-X-X-8-I-F"
+        method: POST
+
+#Comando ON e OFF di tutte le aree
+    area_tutte_on:        
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-1-2-3-4-5-6-7-8"
+        method: POST
+    area_tutte_off:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=OFF-AREA-1-2-3-4-5-6-7-8"
+        method: POST
+
+#Comando ON di tutte le aree Immediato
+    area_tutte_on_i:        
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-1-2-3-4-5-6-7-8-I"
+        method: POST
+
+#Comando ON di tutte le aree Forzato
+    area_tutte_on_f:        
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-1-2-3-4-5-6-7-8-F"
+        method: POST
+
+#Comando ON di tutte le aree Immediato e Forzato
+    area_tutte_on_i_f:        
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ON-AREA-1-2-3-4-5-6-7-8-I-F"
+        method: POST
+
+
+#Comando escludi zona filo      
+    zona_f1_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-1"
+        method: POST
+    zona_f2_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-2"
+        method: POST 
+    zona_f3_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-3"
+        method: POST
+    zona_f4_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-4"
+        method: POST  
+    zona_f5_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-5"
+        method: POST  
+    zona_f6_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-6"
+        method: POST  
+    zona_f7_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-7"
+        method: POST  
+    zona_f8_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-8"
+        method: POST  
+    zona_f9_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-9"
+        method: POST  
+    zona_f10_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-10"
+        method: POST  
+    zona_f11_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-11"
+        method: POST  
+    zona_f12_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-12"
+        method: POST  
+    zona_f13_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-13"
+        method: POST  
+    zona_f14_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-14"
+        method: POST  
+    zona_f15_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-15"
+        method: POST  
+    zona_f16_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-16"
+        method: POST  
+    zona_f17_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-17"
+        method: POST  
+    zona_f18_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-18"
+        method: POST  
+    zona_f19_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-19"
+        method: POST  
+    zona_f20_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-20"
+        method: POST  
+    zona_f21_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-21"
+        method: POST  
+    zona_f22_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-22"
+        method: POST  
+    zona_f23_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-23"
+        method: POST  
+    zona_f24_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-24"
+        method: POST  
+    zona_f25_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-25"
+        method: POST  
+    zona_f26_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-26"
+        method: POST  
+    zona_f27_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-27"
+        method: POST  
+    zona_f28_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-28"
+        method: POST  
+    zona_f29_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-29"
+        method: POST  
+    zona_f30_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-30"
+        method: POST  
+    zona_f31_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-31"
+        method: POST 
+    zona_f32_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-32"
+        method: POST 
+    zona_f33_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-33"
+        method: POST 
+    zona_f34_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-34"
+        method: POST 
+    zona_f35_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-35"
+        method: POST 
+    zona_f36_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-36"
+        method: POST 
+    zona_f37_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-37"
+        method: POST 
+    zona_f38_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-38"
+        method: POST 
+    zona_f39_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-39"
+        method: POST 
+    zona_f40_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-40"
+        method: POST 
+    zona_f41_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-41"
+        method: POST 
+    zona_f42_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-42"
+        method: POST 
+    zona_f43_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-43"
+        method: POST 
+    zona_f44_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-44"
+        method: POST 
+    zona_f45_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-45"
+        method: POST 
+    zona_f46_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-46"
+        method: POST 
+    zona_f47_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-47"
+        method: POST 
+    zona_f48_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-48"
+        method: POST 
+    zona_f49_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-49"
+        method: POST
+    zona_f50_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-50"
+        method: POST 
+    zona_f51_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-51"
+        method: POST 
+    zona_f52_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-52"
+        method: POST 
+    zona_f53_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-53"
+        method: POST 
+    zona_f54_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-54"
+        method: POST 
+    zona_f55_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-55"
+        method: POST 
+    zona_f56_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-56"
+        method: POST 
+    zona_f57_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-57"
+        method: POST 
+    zona_f58_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-58"
+        method: POST 
+    zona_f59_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-59"
+        method: POST 
+    zona_f60_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-60"
+        method: POST 
+    zona_f61_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-61"
+        method: POST 
+    zona_f62_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-62"
+        method: POST 
+    zona_f63_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-63"
+        method: POST 
+    zona_f64_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-F-64"
+        method: POST 
+
+
+#Comando includi zona filo
+    zona_f1_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-1"
+        method: POST
+    zona_f2_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-2"
+        method: POST 
+    zona_f3_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-3"
+        method: POST
+    zona_f4_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-4"
+        method: POST  
+    zona_f5_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-5"
+        method: POST  
+    zona_f6_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-6"
+        method: POST  
+    zona_f7_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-7"
+        method: POST  
+    zona_f8_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-8"
+        method: POST  
+    zona_f9_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-9"
+        method: POST  
+    zona_f10_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-10"
+        method: POST  
+    zona_f11_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-11"
+        method: POST  
+    zona_f12_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-12"
+        method: POST  
+    zona_f13_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-13"
+        method: POST  
+    zona_f14_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-14"
+        method: POST  
+    zona_f15_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-15"
+        method: POST  
+    zona_f16_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-16"
+        method: POST  
+    zona_f17_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-17"
+        method: POST  
+    zona_f18_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-18"
+        method: POST  
+    zona_f19_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-19"
+        method: POST  
+    zona_f20_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-20"
+        method: POST  
+    zona_f21_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-21"
+        method: POST  
+    zona_f22_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-22"
+        method: POST  
+    zona_f23_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-23"
+        method: POST  
+    zona_f24_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-24"
+        method: POST  
+    zona_f25_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-25"
+        method: POST  
+    zona_f26_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-26"
+        method: POST  
+    zona_f27_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-27"
+        method: POST  
+    zona_f28_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-28"
+        method: POST  
+    zona_f29_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-29"
+        method: POST  
+    zona_f30_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-30"
+        method: POST  
+    zona_f31_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-31"
+        method: POST 
+    zona_f32_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-32"
+        method: POST 
+    zona_f33_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-33"
+        method: POST 
+    zona_f34_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-34"
+        method: POST 
+    zona_f35_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-35"
+        method: POST 
+    zona_f36_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-36"
+        method: POST 
+    zona_f37_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-37"
+        method: POST 
+    zona_f38_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-38"
+        method: POST 
+    zona_f39_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-39"
+        method: POST 
+    zona_f40_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-40"
+        method: POST 
+    zona_f41_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-41"
+        method: POST 
+    zona_f42_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-42"
+        method: POST 
+    zona_f43_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-43"
+        method: POST 
+    zona_f44_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-44"
+        method: POST 
+    zona_f45_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-45"
+        method: POST 
+    zona_f46_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-46"
+        method: POST 
+    zona_f47_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-47"
+        method: POST 
+    zona_f48_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-48"
+        method: POST 
+    zona_f49_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-49"
+        method: POST
+    zona_f50_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-50"
+        method: POST 
+    zona_f51_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-51"
+        method: POST 
+    zona_f52_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-52"
+        method: POST 
+    zona_f53_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-53"
+        method: POST 
+    zona_f54_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-54"
+        method: POST 
+    zona_f55_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-55"
+        method: POST 
+    zona_f56_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-56"
+        method: POST 
+    zona_f57_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-57"
+        method: POST 
+    zona_f58_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-58"
+        method: POST 
+    zona_f59_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-59"
+        method: POST 
+    zona_f60_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-60"
+        method: POST 
+    zona_f61_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-61"
+        method: POST 
+    zona_f62_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-62"
+        method: POST 
+    zona_f63_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-63"
+        method: POST 
+    zona_f64_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-F-64"
+        method: POST 
+
+
+#Comando escludi zona radio
+    zona_r1_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-1"
+        method: POST
+    zona_r2_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-2"
+        method: POST 
+    zona_r3_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-3"
+        method: POST
+    zona_r4_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-4"
+        method: POST  
+    zona_r5_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-5"
+        method: POST  
+    zona_r6_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-6"
+        method: POST  
+    zona_r7_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-7"
+        method: POST  
+    zona_r8_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-8"
+        method: POST  
+    zona_r9_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-9"
+        method: POST  
+    zona_r10_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-10"
+        method: POST  
+    zona_r11_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-11"
+        method: POST  
+    zona_r12_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-12"
+        method: POST  
+    zona_r13_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-13"
+        method: POST  
+    zona_r14_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-14"
+        method: POST  
+    zona_r15_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-15"
+        method: POST  
+    zona_r16_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-16"
+        method: POST  
+    zona_r17_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-17"
+        method: POST  
+    zona_r18_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-18"
+        method: POST  
+    zona_r19_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-19"
+        method: POST  
+    zona_r20_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-20"
+        method: POST  
+    zona_r21_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-21"
+        method: POST  
+    zona_r22_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-22"
+        method: POST  
+    zona_r23_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-23"
+        method: POST  
+    zona_r24_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-24"
+        method: POST  
+    zona_r25_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-25"
+        method: POST  
+    zona_r26_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-26"
+        method: POST  
+    zona_r27_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-27"
+        method: POST  
+    zona_r28_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-28"
+        method: POST  
+    zona_r29_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-29"
+        method: POST  
+    zona_r30_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-30"
+        method: POST  
+    zona_r31_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-31"
+        method: POST 
+    zona_r32_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-32"
+        method: POST 
+    zona_r33_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-33"
+        method: POST 
+    zona_r34_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-34"
+        method: POST 
+    zona_r35_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-35"
+        method: POST 
+    zona_r36_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-36"
+        method: POST 
+    zona_r37_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-37"
+        method: POST 
+    zona_r38_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-38"
+        method: POST 
+    zona_r39_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-39"
+        method: POST 
+    zona_r40_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-40"
+        method: POST 
+    zona_r41_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-41"
+        method: POST 
+    zona_r42_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-42"
+        method: POST 
+    zona_r43_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-43"
+        method: POST 
+    zona_r44_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-44"
+        method: POST 
+    zona_r45_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-45"
+        method: POST 
+    zona_r46_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-46"
+        method: POST 
+    zona_r47_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-47"
+        method: POST 
+    zona_r48_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-48"
+        method: POST 
+    zona_r49_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-49"
+        method: POST
+    zona_r50_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-50"
+        method: POST 
+    zona_r51_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-51"
+        method: POST 
+    zona_r52_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-52"
+        method: POST 
+    zona_r53_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-53"
+        method: POST 
+    zona_r54_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-54"
+        method: POST 
+    zona_r55_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-55"
+        method: POST 
+    zona_r56_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-56"
+        method: POST 
+    zona_r57_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-57"
+        method: POST 
+    zona_r58_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-58"
+        method: POST 
+    zona_r59_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-59"
+        method: POST 
+    zona_r60_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-60"
+        method: POST 
+    zona_r61_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-61"
+        method: POST 
+    zona_r62_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-62"
+        method: POST 
+    zona_r63_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-63"
+        method: POST 
+    zona_r64_escludi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ESCLUDI-R-64"
+        method: POST 
+
+
+#Comando includi zona radio
+    zona_r1_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-1"
+        method: POST
+    zona_r2_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-2"
+        method: POST 
+    zona_r3_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-3"
+        method: POST
+    zona_r4_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-4"
+        method: POST  
+    zona_r5_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-5"
+        method: POST  
+    zona_r6_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-6"
+        method: POST  
+    zona_r7_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-7"
+        method: POST  
+    zona_r8_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-8"
+        method: POST  
+    zona_r9_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-9"
+        method: POST  
+    zona_r10_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-10"
+        method: POST  
+    zona_r11_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-11"
+        method: POST  
+    zona_r12_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-12"
+        method: POST  
+    zona_r13_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-13"
+        method: POST  
+    zona_r14_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-14"
+        method: POST  
+    zona_r15_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-15"
+        method: POST  
+    zona_r16_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-16"
+        method: POST  
+    zona_r17_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-17"
+        method: POST  
+    zona_r18_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-18"
+        method: POST  
+    zona_r19_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-19"
+        method: POST  
+    zona_r20_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-20"
+        method: POST  
+    zona_r21_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-21"
+        method: POST  
+    zona_r22_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-22"
+        method: POST  
+    zona_r23_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-23"
+        method: POST  
+    zona_r24_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-24"
+        method: POST  
+    zona_r25_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-25"
+        method: POST  
+    zona_r26_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-26"
+        method: POST  
+    zona_r27_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-27"
+        method: POST  
+    zona_r28_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-28"
+        method: POST  
+    zona_r29_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-29"
+        method: POST  
+    zona_r30_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-30"
+        method: POST  
+    zona_r31_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-31"
+        method: POST 
+    zona_r32_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-32"
+        method: POST 
+    zona_r33_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-33"
+        method: POST 
+    zona_r34_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-34"
+        method: POST 
+    zona_r35_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-35"
+        method: POST 
+    zona_r36_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-36"
+        method: POST 
+    zona_r37_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-37"
+        method: POST 
+    zona_r38_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-38"
+        method: POST 
+    zona_r39_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-39"
+        method: POST 
+    zona_r40_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-40"
+        method: POST 
+    zona_r41_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-41"
+        method: POST 
+    zona_r42_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-42"
+        method: POST 
+    zona_r43_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-43"
+        method: POST 
+    zona_r44_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-44"
+        method: POST 
+    zona_r45_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-45"
+        method: POST 
+    zona_r46_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-46"
+        method: POST 
+    zona_r47_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-47"
+        method: POST 
+    zona_r48_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-48"
+        method: POST 
+    zona_r49_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-49"
+        method: POST
+    zona_r50_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-50"
+        method: POST 
+    zona_r51_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-51"
+        method: POST 
+    zona_r52_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-52"
+        method: POST 
+    zona_r53_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-53"
+        method: POST 
+    zona_r54_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-54"
+        method: POST 
+    zona_r55_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-55"
+        method: POST 
+    zona_r56_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-56"
+        method: POST 
+    zona_r57_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-57"
+        method: POST 
+    zona_r58_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-58"
+        method: POST 
+    zona_r59_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-59"
+        method: POST 
+    zona_r60_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-60"
+        method: POST 
+    zona_r61_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-61"
+        method: POST 
+    zona_r62_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-62"
+        method: POST 
+    zona_r63_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-63"
+        method: POST 
+    zona_r64_includi:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=INCLUDI-R-64"
+        method: POST 
+
+
+#Comando attiva uscita   
+    uscita_1_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-1"
+        method: POST  
+    uscita_2_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-2"
+        method: POST  
+    uscita_3_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-3"
+        method: POST  
+    uscita_4_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-4"
+        method: POST  
+    uscita_5_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-5"
+        method: POST  
+    uscita_6_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-6"
+        method: POST  
+    uscita_7_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-7"
+        method: POST  
+    uscita_8_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-8"
+        method: POST  
+    uscita_9_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-9"
+        method: POST  
+    uscita_10_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-10"
+        method: POST  
+    uscita_11_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-11"
+        method: POST  
+    uscita_12_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-12"
+        method: POST   
+    uscita_13_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-13"
+        method: POST  
+    uscita_14_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-14"
+        method: POST  
+    uscita_15_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-15"
+        method: POST  
+    uscita_16_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-16"
+        method: POST  
+    uscita_17_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-17"
+        method: POST  
+    uscita_18_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-18"
+        method: POST  
+    uscita_19_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-19"
+        method: POST  
+    uscita_20_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-20"
+        method: POST  
+    uscita_21_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-21"
+        method: POST  
+    uscita_22_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-22"
+        method: POST  
+    uscita_23_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-23"
+        method: POST  
+    uscita_24_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-24"
+        method: POST  
+    uscita_25_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-25"
+        method: POST 
+    uscita_26_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-26"
+        method: POST 
+    uscita_27_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-27"
+        method: POST 
+    uscita_28_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-28"
+        method: POST 
+    uscita_29_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-29"
+        method: POST 
+    uscita_30_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-30"
+        method: POST 
+    uscita_31_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-31"
+        method: POST 
+    uscita_32_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-32"
+        method: POST 
+    uscita_33_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-33"
+        method: POST 
+    uscita_34_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-34"
+        method: POST 
+    uscita_35_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-35"
+        method: POST 
+    uscita_36_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-36"
+        method: POST 
+    uscita_37_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-37"
+        method: POST 
+    uscita_38_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-38"
+        method: POST 
+    uscita_39_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-39"
+        method: POST 
+    uscita_40_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-40"
+        method: POST 
+    uscita_41_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-41"
+        method: POST 
+    uscita_42_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-42"
+        method: POST 
+    uscita_43_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-43"
+        method: POST 
+    uscita_44_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-44"
+        method: POST 
+    uscita_45_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-45"
+        method: POST 
+    uscita_46_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-46"
+        method: POST 
+    uscita_47_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-47"
+        method: POST 
+    uscita_48_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-48"
+        method: POST 
+    uscita_49_attiva:9
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-49"
+        method: POST 
+    uscita_50_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-50"
+        method: POST 
+    uscita_51_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-51"
+        method: POST 
+    uscita_52_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-52"
+        method: POST 
+    uscita_53_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-53"
+        method: POST 
+    uscita_54_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-54"
+        method: POST 
+    uscita_55_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-55"
+        method: POST 
+    uscita_56_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-56"
+        method: POST 
+    uscita_57_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-57"
+        method: POST 
+    uscita_58_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-58"
+        method: POST 
+    uscita_59_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-59"
+        method: POST 
+    uscita_60_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-60"
+        method: POST 
+    uscita_61_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-61"
+        method: POST
+    uscita_62_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-62"
+        method: POST
+    uscita_63_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-63"
+        method: POST
+    uscita_64_attiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=ATTIVA-64"
+        method: POST
+
+
+#Comando disattiva uscita
+    uscita_1_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-1"
+        method: POST  
+    uscita_2_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-2"
+        method: POST  
+    uscita_3_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-3"
+        method: POST  
+    uscita_4_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-4"
+        method: POST  
+    uscita_5_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-5"
+        method: POST  
+    uscita_6_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-6"
+        method: POST  
+    uscita_7_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-7"
+        method: POST  
+    uscita_8_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-8"
+        method: POST  
+    uscita_9_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-9"
+        method: POST  
+    uscita_10_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-10"
+        method: POST  
+    uscita_11_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-11"
+        method: POST  
+    uscita_12_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-12"
+        method: POST   
+    uscita_13_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-13"
+        method: POST  
+    uscita_14_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-14"
+        method: POST  
+    uscita_15_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-15"
+        method: POST  
+    uscita_16_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-16"
+        method: POST  
+    uscita_17_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-17"
+        method: POST  
+    uscita_18_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-18"
+        method: POST  
+    uscita_19_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-19"
+        method: POST  
+    uscita_20_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-20"
+        method: POST  
+    uscita_21_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-21"
+        method: POST  
+    uscita_22_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-22"
+        method: POST  
+    uscita_23_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-23"
+        method: POST  
+    uscita_24_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-24"
+        method: POST  
+    uscita_25_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-25"
+        method: POST 
+    uscita_26_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-26"
+        method: POST 
+    uscita_27_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-27"
+        method: POST 
+    uscita_28_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-28"
+        method: POST 
+    uscita_29_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-29"
+        method: POST 
+    uscita_30_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-30"
+        method: POST 
+    uscita_31_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-31"
+        method: POST 
+    uscita_32_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-32"
+        method: POST 
+    uscita_33_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-33"
+        method: POST 
+    uscita_34_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-34"
+        method: POST 
+    uscita_35_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-35"
+        method: POST 
+    uscita_36_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-36"
+        method: POST 
+    uscita_37_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-37"
+        method: POST 
+    uscita_38_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-38"
+        method: POST 
+    uscita_39_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-39"
+        method: POST 
+    uscita_40_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-40"
+        method: POST 
+    uscita_41_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-41"
+        method: POST 
+    uscita_42_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-42"
+        method: POST 
+    uscita_43_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-43"
+        method: POST 
+    uscita_44_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-44"
+        method: POST 
+    uscita_45_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-45"
+        method: POST 
+    uscita_46_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-46"
+        method: POST 
+    uscita_47_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-47"
+        method: POST 
+    uscita_48_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-48"
+        method: POST 
+    uscita_49_disattiva:9
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-49"
+        method: POST 
+    uscita_50_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-50"
+        method: POST 
+    uscita_51_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-51"
+        method: POST 
+    uscita_52_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-52"
+        method: POST 
+    uscita_53_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-53"
+        method: POST 
+    uscita_54_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-54"
+        method: POST 
+    uscita_55_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-55"
+        method: POST 
+    uscita_56_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-56"
+        method: POST 
+    uscita_57_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-57"
+        method: POST 
+    uscita_58_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-58"
+        method: POST 
+    uscita_59_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-59"
+        method: POST 
+    uscita_60_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-60"
+        method: POST 
+    uscita_61_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-61"
+        method: POST
+    uscita_62_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-62"
+        method: POST
+    uscita_63_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-63"
+        method: POST
+    uscita_64_disattiva:
+        url: "!secret rest_command_url/httpr.php?key=!secret rest_command_key&action=DISATTIVA-64"
+        method: POST
+      
