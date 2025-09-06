@@ -1,0 +1,1102 @@
+### APPEND NUMBER TO CODE ###
+
+append_number_to_code:
+  sequence:
+  - data:
+      entity_id: input_text.alarm_code
+      value: '{{ states(''input_text.alarm_code'') | default('''') ~ number }}'
+    action: input_text.set_value
+    enabled: true
+  alias: append_number_to_code
+  description: ''
+
+### DISARM TOTALE ###
+
+alarm_disarm_check:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_tutte_off
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_disarm_check
+  description: ''
+append_number_to_code:
+  sequence:
+  - data:
+      entity_id: input_text.alarm_code
+      value: '{{ states(''input_text.alarm_code'') | default('''') ~ number }}'
+    action: input_text.set_value
+    enabled: true
+  alias: append_number_to_code
+  description: ''
+
+
+### DISARM A1 ###
+
+alarm_disarm_check_a1:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_1_off
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_disarm_check_a1
+  description: ''
+
+
+### DISARM A2 ###
+
+alarm_disarm_check_a2:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_2_off
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_disarm_check_a2
+  description: ''
+
+
+### DISARM A3 ###
+
+alarm_disarm_check_a3:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_3_off
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_disarm_check_a3
+  description: ''
+
+### DISARM A4 ###
+
+alarm_disarm_check_a4:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_4_off
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_disarm_check_a4
+  description: ''
+
+### DISARM A5 ###
+
+alarm_disarm_check_a5:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_5_off
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_disarm_check_a5
+  description: ''
+
+### DISARM A6 ###
+
+alarm_disarm_check_a6:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_6_off
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_disarm_check_a6
+  description: ''
+
+### DISARM A7 ###
+
+alarm_disarm_check_a7:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_7_off
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_disarm_check_a7
+  description: ''
+
+### DISARM A8 ###
+
+alarm_disarm_check_a8:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_8_off
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_disarm_check_a8
+  description: ''
+
+
+### ARM TOTALE ###
+
+alarm_arm_check:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_tutte_on
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: 'alarm_arm_check '
+  description: ''
+
+
+### ARM A1 ###
+
+alarm_arm_check:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_tutte_on
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: 'alarm_arm_check '
+  description: ''
+
+alarm_arm_check_a1:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_1_on
+        metadata: {}
+        data: {}
+        enabled: true
+    enabled: true
+  alias: alarm_arm_check_a1
+  description: ''
+
+alarm_arm_check_a1_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:333
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_1_on_f
+        metadata: {}33333
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a1_f
+  description: ''
+
+alarm_arm_check_a1_i:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template333
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_1_on_i
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a1_i
+  description: ''
+
+alarm_arm_check_a1_i_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_1_on_i_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a1_i_f
+  description: ''
+
+
+### ARM A2 ###
+
+alarm_arm_check_a2:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_2_on
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a2
+  description: ''
+
+alarm_arm_check_a2_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_2_on_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a2_f
+  description: ''
+
+alarm_arm_check_a2_i:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_2_on_i
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a2_i
+  description: ''
+
+alarm_arm_check_a2_i_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_2_on_i_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a2_i_f
+  description: ''
+
+
+### ARM A3 ###
+
+alarm_arm_check_a3:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_3_on
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a3
+  description: ''
+
+alarm_arm_check_a3_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_3_on_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a3_f
+  description: ''
+
+alarm_arm_check_a3_i:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_3_on_i
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a3_i
+  description: ''
+
+alarm_arm_check_a3_i_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_3_on_i_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a3_i_f
+  description: ''
+
+
+### ARM A4 ###
+
+alarm_arm_check_a4:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_4_on
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a4
+  description: ''
+
+alarm_arm_check_a4_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_4_on_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a4_f
+  description: ''
+
+alarm_arm_check_a4_i:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_4_on_i
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a4_i
+  description: ''
+
+alarm_arm_check_a4_i_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_4_on_i_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a4_i_f
+  description: ''
+
+
+### ARM A5 ###
+
+alarm_arm_check_a5:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_5_on
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a5
+  description: ''
+
+alarm_arm_check_a5_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_5_on_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a5_f
+  description: ''
+
+alarm_arm_check_a5_i:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_5_on_i
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a5_i
+  description: ''
+
+alarm_arm_check_a5_i_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_5_on_i_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a5_i_f
+  description: ''
+
+
+### ARM A6 ###
+
+alarm_arm_check_a6:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_6_on
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a6
+  description: ''
+
+alarm_arm_check_a6_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_6_on_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a6_f
+  description: ''
+
+alarm_arm_check_a6_i:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_6_on_i
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a6_i
+  description: ''
+
+alarm_arm_check_a6_i_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_6_on_i_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a6_i_f
+  description: ''
+
+
+### ARM A7 ###
+
+alarm_arm_check_a7:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_7_on
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a7
+  description: ''
+
+alarm_arm_check_a7_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_7_on_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a7_f
+  description: ''
+
+alarm_arm_check_a7_i:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_7_on_i
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a7_i
+  description: ''
+
+alarm_arm_check_a7_i_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_7_on_i_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a7_i_f
+  description: ''
+
+
+### ARM A8 ###
+
+alarm_arm_check_a8:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_8_on
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a8
+  description: ''
+
+alarm_arm_check_a8_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_8_on_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a8_f
+  description: ''
+
+alarm_arm_check_a8_i:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_8_on_i
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a8_i
+  description: ''
+
+alarm_arm_check_a8_i_f:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
+
+          {% set allowed_codes = states(''input_text.password_allarme'') %}
+
+          {{ alarm_code in allowed_codes }}
+
+          '
+      sequence:
+      - data:
+          entity_id: input_text.alarm_code
+          value: ''
+        action: input_text.set_value
+      - action: rest_command.area_8_on_i_f
+        metadata: {}
+        data: {}
+    enabled: true
+  alias: alarm_arm_check_a8_i_f
+  description: '' 
+
