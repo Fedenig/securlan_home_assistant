@@ -40,7 +40,7 @@ Altri stati di diagnostica possono essere aggiunti manualmente.
 
 ## INSTALLARE LE SEGUENTI DIPENDENZE DI SVILUPPO
 
-### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE CONFIGURATIONS.yaml
+### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE CONFIGURATIONS
 
 ```js
 homeassistant:
@@ -50,9 +50,9 @@ homeassistant:
 api:
 ```
 
-### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRETS.yaml
+### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRETS
 
-Indirizzo-IP e porta scheda SmartHome per invio stati e comandi alla centrale SecurLan.
+Nel file secrets.yaml si deve definire Indirizzo IP e porta scheda SmartHome per il corretto invio di stati e comandi alla centrale SecurLan.
 Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino ad action=  prelevati dalla vostra SmartHome come da esempio sotto:
 
 192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=
@@ -63,19 +63,16 @@ rest_command_url: indirizzo ip/httpr.php?key=token_webhook&action=
 
 --------------------------------------------------
 
-Password allarme da digitare su tastiera
-
-Inserire la password di convalida comandi aree da tastiera verso centrale
-
-Solo numeri con numero massimo di 6 cifre a vostra discrezione - default 1234
+Nel file secrets.yaml si deve definire la password di convalida comandi aree da tastiera verso centrale da digitare su tastiera.
+Solo ammessi solo numeri con numero massimo di 6 cifre a vostra discrezione - default 1234
 
 ```js
 password_allarme: 1234
 ```
 
-### PROGRAMMAZIONE DA INSERIRE IN FILE SECRETS.yaml
+### PROGRAMMAZIONE DA INSERIRE IN FILE SECRETS
 
-ID webhook per validare ricezione eventuali comandi json in ingresso automations.
+Nel file secrets.yaml definire l'ID webhook per validare ricezione eventuali comandi json in ingresso automations.
 
 Inserire un codice alfa numerico tipo ' -WvovUayJo0t8MF5qWVIxNMGZ '
 
@@ -85,7 +82,7 @@ webhook_id_in:
 
 ---------------------------------------------------
 
-Password webhook per ricezione comandi dalla centrale.
+Nel file secrets.yaml definire la password webhook per ricezione comandi dalla centrale.
 
 Inserire un codice solo numerico tipo ' 1234554321 '
 
