@@ -11,10 +11,11 @@ E' necessario
 
 ## PROGRAMMAZIONE DA INSERIRE IN FILE CONFIGURATION.YAML DI HOMEASSISTANT ##
 
+# packages dir include
 homeassistant:
   packages: !include_dir_named packages
   
-## API
+# API enable
 api:
 
 
