@@ -1,9 +1,9 @@
 {
-  "domain": "mypackager",
-  "name": "Securlan",
+  "domain": "securlan-homeassistant",
+  "name": "SecurLan",
   "version": "1.0.0",
   "documentation": "https://github.com/Fedenig/securlan-homeassistant",
   "requirements": [],
   "dependencies": [],
-  "codeowners": ["@tuo_github"]
+  "codeowners": ["@Fedenig"]
 }
