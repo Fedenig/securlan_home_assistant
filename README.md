@@ -1,4 +1,22 @@
+[![Get invited](https://slack.developers.italia.it/badge.svg)](https://securlan.it/supporto/)
+
 # Integrazione custom per Home Assistant
+L'integrazione consente di popolare Home Assistant dei controlli di una centrale di allarme SecurLan per 8 Aree, 64 zone Filo, 64 Zone Radio e 64 Uscite.
+AREE:
+Ogni controllo di singola Area consente da Home Assitant l'inserimento ( ritardato, forzato, immediato o imnmediato/forzato ) ed il disinserimento.
+L'azione sulla Area è subordinata al controllo via password con tastiera di controllo dedicata.
+La password da utilizzare sulla tastiera è definibile per codice numerico da 1 a 6 cifre.
+A tale scopo vedi sotto programmazione da inserire in file secret.yaml del vostro Home Assistant.
+
+ZONE FILO e RADIO
+Ogni controllo di Zona Filo o Radio consente di inviare alla centrale il comando di Esclusione o Inclusione.
+
+Tramite API di Home Assistant, utilizzando un Bearer Token permanente, sarà possibile ricevere dalla centrale di allarme gli stati ed i comandi di Area, Zona Filo e Radio ed Uscita.
+Per le Aree vengono inviati ad Home Assistant gli stati di ON e OFF.
+Per le Zone Filo e Radio vengono inviati ad Home Assistant dalla centrale gli stati di Esclusione/Inclusione, Apertura/Chiusura, Allarme/Riposo.
+Per le Uscite vengono inviati ad Home Assistant dalla centrale gli stati di uscita Attivata/Disattivata.
+Peer la Diagnostiva vengono inviati ad Home Assistant dalla centrale gli stati Rete 220V, Batteria Centrale, Tamper Centrale e Tamper Sirena.
+Altri stati di diagnostica possono essere aggiunti manualmente.
 
 # securlan-homeassistant
 
@@ -17,7 +35,7 @@ E' necessario
 
 
 
-## PROGRAMMAZIONE DA INSERIRE IN FILE CONFIGURATION.YAML DI HOMEASSISTANT
+## PROGRAMMAZIONE OBBLIGATORI DA INSERIRE IN FILE CONFIGURATION.YAML DI HOMEASSISTANT
 
 ```js
 homeassistant:
@@ -69,11 +87,8 @@ Inserire un codice solo numerico tipo ' 1234554321 '
 password_webhook_in: 
 
 
-[![License](https://img.shields.io/github/license/italia/bootstrap-italia.svg)](https://github.com/italia/bootstrap-italia/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/italia/bootstrap-italia.svg)](https://github.com/italia/bootstrap-italia/issues)
-[![Join the #design channel](https://img.shields.io/badge/Slack%20channel-%23design-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
-[![Get invited](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
-[![18app on forum.italia.it](https://img.shields.io/badge/Forum-18app-blue.svg)](https://forum.italia.it/c/18app-carta-docente)
+
+
 
 # Annunci / Status del progetto
 
