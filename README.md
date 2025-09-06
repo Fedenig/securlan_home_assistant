@@ -1,28 +1,34 @@
 [![Get invited](https://slack.developers.italia.it/badge.svg)](https://securlan.it/supporto/)
 
-# Integrazione custom per Home Assistant
-L'integrazione consente di popolare Home Assistant dei controlli di una centrale di allarme SecurLan per 8 Aree, 64 zone Filo, 64 Zone Radio e 64 Uscite.
-AREE:
-Ogni controllo di singola Area consente da Home Assitant l'inserimento ( ritardato, forzato, immediato o imnmediato/forzato ) ed il disinserimento.
-L'azione sulla Area è subordinata al controllo via password con tastiera di controllo dedicata.
-La password da utilizzare sulla tastiera è definibile per codice numerico da 1 a 6 cifre.
-A tale scopo vedi sotto programmazione da inserire in file secret.yaml del vostro Home Assistant.
-
-ZONE FILO e RADIO
-Ogni controllo di Zona Filo o Radio consente di inviare alla centrale il comando di Esclusione o Inclusione.
-
-Tramite API di Home Assistant, utilizzando un Bearer Token permanente, sarà possibile ricevere dalla centrale di allarme gli stati ed i comandi di Area, Zona Filo e Radio ed Uscita.
-Per le Aree vengono inviati ad Home Assistant gli stati di ON e OFF.
-Per le Zone Filo e Radio vengono inviati ad Home Assistant dalla centrale gli stati di Esclusione/Inclusione, Apertura/Chiusura, Allarme/Riposo.
-Per le Uscite vengono inviati ad Home Assistant dalla centrale gli stati di uscita Attivata/Disattivata.
-Peer la Diagnostiva vengono inviati ad Home Assistant dalla centrale gli stati Rete 220V, Batteria Centrale, Tamper Centrale e Tamper Sirena.
-Altri stati di diagnostica possono essere aggiunti manualmente.
-
 # securlan-homeassistant
 
 > Home Assistant / Centrali di Allarme SecurLan / Evoforce srl
 
 *Read this in other languages: [English](README.EN.md).*
+
+# Integrazione custom per Home Assistant
+L'integrazione consente di popolare Home Assistant dei controlli di una centrale di allarme SecurLan per 8 Aree, 64 zone Filo, 64 Zone Radio e 64 Uscite.
+Vengono inoltre carivati tutti gli scripts per inmviare alla centrale i comandi di On/Off Area, Esclusione/Inclusione Zona e Attivazione/Disattizione Uscita.
+I nomi di Area, Zona Filo e Radio ed Uscita sono definiti a default ma liberamente riprogrammabili.
+
+## AREE:
+Ogni controllo di singola Area consente da Home Assitant l'inserimento ( ritardato, forzato, immediato o imnmediato/forzato ) ed il disinserimento.
+L'azione sulla Area è subordinata al controllo via password con tastiera di controllo dedicata.
+La password da utilizzare sulla tastiera è definibile per codice numerico da 1 a 6 cifre.
+A tale scopo vedi sotto programmazione da inserire in file secret.yaml del vostro Home Assistant.
+
+## ZONE FILO e RADIO
+Ogni controllo di Zona Filo o Radio consente di inviare alla centrale il comando di Esclusione o Inclusione.
+
+Tramite API di Home Assistant, utilizzando un Bearer Token permanente, sarà possibile ricevere dalla centrale di allarme gli stati ed i comandi di Area, Zona Filo e Radio ed Uscita.
+Per le Aree vengono inviati ad Home Assistant gli stati di ON e OFF.
+Per le Zone Filo e Radio vengono inviati ad Home Assistant dalla centrale gli stati di Esclusione/Inclusione, Apertura/Chiusura, Allarme/Riposo.
+
+## USCITE
+Per le Uscite vengono inviati ad Home Assistant dalla centrale gli stati di uscita Attivata/Disattivata.
+Peer la Diagnostiva vengono inviati ad Home Assistant dalla centrale gli stati Rete 220V, Batteria Centrale, Tamper Centrale e Tamper Sirena.
+Altri stati di diagnostica possono essere aggiunti manualmente.
+
 
 
 ## Nota:
