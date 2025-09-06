@@ -1,5 +1,8 @@
+[![Get invited](https://github/Fedenig/securlan_home_assistant/edit/main/securlan.jpg)](https://securlan.it/supporto/)
+
 # securlan_home_assistant- Versione 1.0.0
 [![Get invited](https://slack.developers.italia.it/badge.svg)](https://securlan.it/supporto/)
+
 
 > Home Assistant / Centrali di Allarme SecurLan / Evoforce srl
 
