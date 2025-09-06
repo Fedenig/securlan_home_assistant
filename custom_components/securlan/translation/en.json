@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "Securlan alarm panel configuration",
-        "description": "Enter IP address and port number of the gateway.",
+        "description": "Enter IP address and port number of the panel.",
         "data": {
           "host": "Host IP address",
           "port": "Port number"
