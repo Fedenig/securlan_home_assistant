@@ -14,7 +14,7 @@ Vengono caricati tutti gli scripts per inviare alla centrale i comandi di On/Off
 Viene caricato un template di definzione personalizzata degli stati di On/Off Area, Inclusione/Esclusione, Pronta/Non Pronta, Allarme/Normale di Zona e stato Attiva e Disattivata di Uscita.
 I nomi di Area, Zona Filo e Radio ed Uscita sono definiti a default ma liberamente riprogrammabili.
 Viene caricato un file Rest Command che definisce tutti i comandi inviabili da Home Assistant alla centrale.
-Allo scopo programmare correttamente in file secrets.yaml il valore defino al seguente punto [DIPENDENZE DI SVILUPPO](#programmazione-obbligatoria-da-inserire-in-file-secrets.yaml)
+Allo scopo programmare correttamente in file secrets.yaml il valore defino al seguente punto [DIPENDENZE DI SVILUPPO](#programmazione-obbligatoria-da-inserire-in-file-secrets)
 
 
 - [Come iniziare](#come-iniziare)
@@ -40,7 +40,7 @@ Altri stati di diagnostica possono essere aggiunti manualmente.
 
 ## INSTALLARE LE SEGUENTI DIPENDENZE DI SVILUPPO
 
-### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE CONFIGURATION.YAML
+### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE CONFIGURATIONS
 
 ```js
 homeassistant:
@@ -50,7 +50,7 @@ homeassistant:
 api:
 ```
 
-### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRETS.YAML
+### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRETS
 
 Indirizzo-IP e porta scheda SmartHome per invio stati e comandi alla centrale SecurLan.
 Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino ad action=  prelevati dalla vostra SmartHome come da esempio sotto:
