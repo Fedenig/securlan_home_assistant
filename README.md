@@ -1,15 +1,22 @@
 [![Get invited](https://slack.developers.italia.it/badge.svg)](https://securlan.it/supporto/)
 
 # securlan-homeassistant
-
+# Come iniziare
 > Home Assistant / Centrali di Allarme SecurLan / Evoforce srl
 
 *Read this in other languages: [English](README.EN.md).*
 
 # Integrazione custom per Home Assistant
 L'integrazione consente di popolare Home Assistant dei controlli di una centrale di allarme SecurLan per 8 Aree, 64 zone Filo, 64 Zone Radio e 64 Uscite.
-Vengono inoltre carivati tutti gli scripts per inmviare alla centrale i comandi di On/Off Area, Esclusione/Inclusione Zona e Attivazione/Disattizione Uscita.
+Vengono caricati gli Aiutanti che determinano la presenza delle entità di cenytrale ( Aree, Zone, Uscite e Diagnostica ).
+Vengono caricati tutti gli scripts per inviare alla centrale i comandi di On/Off Area, Esclusione/Inclusione Zona e Attivazione/Disattivazione Uscita.
+Viene caricato un template di definzione personalizzata degli stati di On/Off Area, Inclusione/Esclusione, Pronta/Non Pronta, Allarme/Normale di Zona e stato Attiva e Disattivata di Uscita.
 I nomi di Area, Zona Filo e Radio ed Uscita sono definiti a default ma liberamente riprogrammabili.
+Viene caricato un file Rest Command che definisce tutti i comandi inviabili da Home Assistant alla centrale.
+Allo scopo programmare correttamente in file secrets.yaml il valore defino al punto [Come iniziare](### USCITE)
+
+
+- [Come iniziare](#come-iniziare)
 
 ### AREE:
 Ogni controllo di singola Area consente da Home Assitant l'inserimento ( ritardato, forzato, immediato o imnmediato/forzato ) ed il disinserimento.
@@ -30,8 +37,8 @@ Peer la Diagnostiva vengono inviati ad Home Assistant dalla centrale gli stati R
 Altri stati di diagnostica possono essere aggiunti manualmente.
 
 
-## INSTALLARE LE DIPENDENZE DI SVILUPPO
-### PROGRAMMAZIONE OBBLIGATORI DA INSERIRE IN FILE CONFIGURATION.YAML
+## INSTALLARE LE SEGUENTI DIPENDENZE DI SVILUPPO
+### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE CONFIGURATION.YAML
 
 ```js
 homeassistant:
@@ -41,10 +48,9 @@ homeassistant:
 api:
 ```
 
-
 ### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRET.YAML
 
-Indirizzo IP e porta scheda SmartHome per invio stati e comandi alla centrale SecurLan.
+Indirizzo-IP e porta scheda SmartHome per invio stati e comandi alla centrale SecurLan.
 Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino ad action=  prelevati dalla vostra SmartHome come da esempio sotto:
 
 192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=
@@ -86,6 +92,10 @@ password_webhook_in:
 ```
 
 
+
+# Manutenzione 
+
+## Licenza 
 
 
 
