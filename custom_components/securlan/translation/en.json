@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "title": "Securlan alarm panel configuration",
+        "title": "Integrazione centrale di allarme SecurLan",
         "description": "Enter IP address and port number of the panel.",
         "data": {
           "host": "Host IP address",
