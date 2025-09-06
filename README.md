@@ -1,1 +1,5 @@
-Test
+NOTICE
+______________________________________________________________________________________________________________________________
+This is a custom integration of SecurLan alarm panel control under Home Assistant supervisor
+
+INTEGRATION
