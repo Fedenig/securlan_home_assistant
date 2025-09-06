@@ -1,13 +1,14 @@
-NOTA:
+# NOTA:
 
 Questa è una integrazione custom per integrare in Home Assistant il controllo delle centrali di allarme SecurLan prodotte da Evoforce srl.
 
-INTEGRAZIONE
+# INTEGRAZIONE
+
 E' necessario 
 
 
 
-PROGRAMMAZIONE DA INSERIRE IN FILE CONFIGURATION.YAML DI HOMEASSISTANT
+# PROGRAMMAZIONE DA INSERIRE IN FILE CONFIGURATION.YAML DI HOMEASSISTANT
 
 homeassistant:
   packages: !include_dir_named packages
@@ -16,7 +17,7 @@ api:
 
 
 
-PROGRAMMAZIONE DA INSERIRE IN FILE SECRET.YAML DI HOMEASSISTANT
+# PROGRAMMAZIONE DA INSERIRE IN FILE SECRET.YAML DI HOMEASSISTANT
 
 #####################################################################################################
 Indirizzo IP e porta scheda SmartHome per invio stati e comandi alla centrale SecurLan.
