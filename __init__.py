@@ -5,7 +5,7 @@ from homeassistant.core import HomeAssistant
 
 _LOGGER = logging.getLogger(__name__)
 
-DOMAIN = "securlan-home_assistant"
+DOMAIN = "securlan_home_assistant"
 
 async def async_setup(hass: HomeAssistant, config: dict):
     """Setup del custom component."""
