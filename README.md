@@ -14,7 +14,7 @@ Vengono caricati tutti gli scripts per inviare alla centrale i comandi di On/Off
 Viene caricato un template di definzione personalizzata degli stati di On/Off Area, Inclusione/Esclusione, Pronta/Non Pronta, Allarme/Normale di Zona e stato Attiva e Disattivata di Uscita.
 I nomi di Area, Zona Filo e Radio ed Uscita sono definiti a default ma liberamente riprogrammabili.
 Viene caricato un file Rest Command che definisce tutti i comandi inviabili da Home Assistant alla centrale.
-Allo scopo programmare correttamente in file secrets.yaml il valore defino al [punto](#controllo-uscite)
+Allo scopo programmare correttamente in file secrets.yaml il valore defino al [punto](#programmazione-obbligatoria-da-inserire-in-file-secrets-yaml)
 
 
 - [Come iniziare](#come-iniziare)
@@ -39,6 +39,7 @@ Altri stati di diagnostica possono essere aggiunti manualmente.
 
 
 ## INSTALLARE LE SEGUENTI DIPENDENZE DI SVILUPPO
+
 ### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE CONFIGURATION.YAML
 
 ```js
@@ -49,7 +50,7 @@ homeassistant:
 api:
 ```
 
-### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRET.YAML
+### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRETS.YAML
 
 Indirizzo-IP e porta scheda SmartHome per invio stati e comandi alla centrale SecurLan.
 Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino ad action=  prelevati dalla vostra SmartHome come da esempio sotto:
@@ -60,7 +61,7 @@ Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino
 rest_command_url: indirizzo ip/httpr.php?key=token_webhook&action=
 ```
 
-### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRET.YAML
+--------------------------------------------------
 
 Password allarme da digitare su tastiera
 
@@ -72,7 +73,7 @@ Solo numeri con numero massimo di 6 cifre a vostra discrezione - default 1234
 password_allarme: 1234
 ```
 
-## PROGRAMMAZIONE DA INSERIRE IN FILE SECRET.YAML
+### PROGRAMMAZIONE DA INSERIRE IN FILE SECRET.YAML
 
 ID webhook per validare ricezione eventuali comandi json in ingresso automations.
 
@@ -82,7 +83,7 @@ Inserire un codice alfa numerico tipo ' -WvovUayJo0t8MF5qWVIxNMGZ '
 webhook_id_in:
 ```
 
-### PROGRAMMAZIONE DA INSERIRE IN FILE SECRET.YAML
+---------------------------------------------------
 
 Password webhook per ricezione comandi dalla centrale.
 
