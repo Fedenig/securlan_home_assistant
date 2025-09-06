@@ -37,7 +37,10 @@ In sezione HACS cliccare sui tre puntini posti in alto a detra e selezionare dal
 Apparirà il popup del download.
 Inserire nel campo Archvio Digitale il seguente link:  https://github.com/eyesoft/home_assistant_buspro/
 Nel campo Tipo selezionare Integrazione.
-A seguire premere AGGIUNGI. La procedura avrà inizio.
+A seguire premere AGGIUNGI.
+Il link inserito farò riferimento alla integrazione securlan-homeassistant.
+Continuare con AGGIUNGI.
+
 Portarsi in IMPOSTAZIONI / Integrazioni e ciccare sul tasto AGGIUNGI INTEGRAZIONE.
 Dalla lista selezionare 
 
@@ -110,10 +113,8 @@ password_webhook_in:
 
 
 
-## Come iniziare
-
-
-
+## PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD
+Al link http://......   sono diposnibili dei file .yaml per ricreare i controlli di Area ( on/off ) tramite password in tastiera.
 
 
 ## IMMAGINI
