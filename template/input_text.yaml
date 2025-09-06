@@ -12,11 +12,7 @@ input_text:
     numero:
         name: "Testo Numero"
         icon: mdi:account
-
-# Webhook key out
-    webhook_key:
-        initial: !secret webhook_key_out
-
+    
 # Password allarme
     password_allarme:
         initial: !secret password_allarme
