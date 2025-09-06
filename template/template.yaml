@@ -1,5 +1,22 @@
 # Lista aiutanti template sensor.
 template:
+# Url RestCommand    
+  - sensor:
+      - name: "rest_url"
+        state: !secret rest_command_url
+        
+# Trigger Bubble Card
+  - trigger:
+      - trigger: event
+        event_type: bubble_card_update_modules
+    sensor:
+      - name: "Bubble Card Modules"
+        state: "saved"
+        icon: "mdi:puzzle"
+        attributes:
+          modules: "{{ trigger.event.data.modules }}"
+          last_updated: "{{ trigger.event.data.last_updated }}"
+		  
 # Diagnostica
   - sensor:
       - name: "Stato personalizzato rete 220V"
