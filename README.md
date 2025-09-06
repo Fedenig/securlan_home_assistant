@@ -35,7 +35,7 @@ Altri stati di diagnostica possono essere aggiunti manualmente.
 # DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS
 In sezione HACS cliccare sui tre puntini posti in alto a detra e selezionare dalla tendina Archivi Digitali Personalizzati.
 Apparirà il popup del download.
-Inserire nel campo Archvio Digitale il seguente link:  https://.......... 
+Inserire nel campo Archvio Digitale il seguente link:  https://github.com/eyesoft/home_assistant_buspro/
 Nel campo Tipo selezionare Integrazione.
 A seguire premere AGGIUNGI. La procedura avrà inizio.
 Portarsi in IMPOSTAZIONI / Integrazioni e ciccare sul tasto AGGIUNGI INTEGRAZIONE.
