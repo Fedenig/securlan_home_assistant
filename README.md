@@ -32,7 +32,9 @@ rest_command_url: indirizzo ip/httpr.php?key=token_webhook&action=
 ####################################################################
 
 Password allarme da digitare su tastiera
-Inserire la password di convalida comandi aree da tastiera verso centrale ##
+
+Inserire la password di convalida comandi aree da tastiera verso centrale
+
 Solo numeri con numero massimo di 6 cifre a vostra discrezione - default 1234
 ####################################################################
 
@@ -41,6 +43,7 @@ password_allarme: 1234
 ####################################################################
 
 ID webhook per validare ricezione comandi json in ingresso automations
+
 Inserire un codice alfa numerico tipo ' -WvovUayJo0t8MF5qWVIxNMGZ '
 ####################################################################
 
@@ -49,6 +52,7 @@ webhook_id_in:
 #####################################################################
 
 Password webhook per ricezione comandi dalla centrale
+
 Inserire un codice solo numerico tipo ' 1234554321 '
 #####################################################################
 
