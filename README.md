@@ -32,12 +32,14 @@ Peer la Diagnostiva vengono inviati ad Home Assistant dalla centrale gli stati R
 Altri stati di diagnostica possono essere aggiunti manualmente.
 
 
-## DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS
+# DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS
 In sezione HACS cliccare sui tre puntini posti in alto a detra e selezionare dalla tendina Archivi Digitali Personalizzati.
 Apparirà il popup del download.
 Inserire nel campo Archvio Digitale il seguente link:  https://.......... 
 Nel campo Tipo selezionare Integrazione.
 A seguire premere AGGIUNGI. La procedura avrà inizio.
+Portarsi in IMPOSTAZIONI / Integrazioni e ciccare sul tasto AGGIUNGI INTEGRAZIONE.
+Dalla lista selezionare 
 
 
 
@@ -52,7 +54,7 @@ A seguire premere AGGIUNGI. La procedura avrà inizio.
 
 
 
-## DEFINIZONE DELLE DIPENDENZE DI SVILUPPO
+## DEFINIZIONE DELLE DIPENDENZE DI SVILUPPO
 Dopo avere scaricato ed avviato l'integrazione si deve procedere con la programmazion dei seguenti dati.
 
 ### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE CONFIGURATIONS
