@@ -118,16 +118,3 @@ password_webhook_in:
 Al link http://......   sono diposnibili dei file .yaml per ricreare i controlli di Area ( on/off ) tramite password in tastiera.
 
 
-## IMMAGINI
-
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
-
-
-# INDICE
-
-- [Come iniziare](#come-iniziare)
-- [Manutenzione](#manutenzione)
-- [Licenza](#licenza)
-
-
-
