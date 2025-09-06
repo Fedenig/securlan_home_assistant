@@ -35,7 +35,7 @@ Altri stati di diagnostica possono essere aggiunti manualmente.
 # DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS
 In sezione HACS cliccare sui tre puntini posti in alto a detra e selezionare dalla tendina Archivi Digitali Personalizzati.
 Apparirà il popup del download.
-Inserire nel campo Archvio Digitale il seguente link:  https://github.com/eyesoft/home_assistant_buspro/
+Inserire nel campo Archvio Digitale il seguente link: https://github.com/Fedenig/securlan-homeassistant
 Nel campo Tipo selezionare Integrazione.
 A seguire premere AGGIUNGI.
 Il link inserito farò riferimento alla integrazione securlan-homeassistant.
