@@ -1,4 +1,4 @@
-# securlan-homeassistant- Versione 1.0.0
+# securlan_home_assistant- Versione 1.0.0
 [![Get invited](https://slack.developers.italia.it/badge.svg)](https://securlan.it/supporto/)
 
 > Home Assistant / Centrali di Allarme SecurLan / Evoforce srl
@@ -36,7 +36,7 @@ Altri stati di diagnostica possono essere aggiunti manualmente.
 # DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS
 In sezione HACS cliccare sui tre puntini posti in alto a detra e selezionare dalla tendina Archivi Digitali Personalizzati.
 Apparirà il popup del download.
-Inserire nel campo Archvio Digitale il seguente link: https://github.com/Fedenig/securlan-homeassistant
+Inserire nel campo Archvio Digitale il seguente link: https://github.com/Fedenig/securlan_home_assistant
 Nel campo Tipo selezionare Integrazione.
 A seguire premere AGGIUNGI.
 Il link inserito farò riferimento alla integrazione securlan-homeassistant.
