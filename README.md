@@ -40,7 +40,7 @@ Altri stati di diagnostica possono essere aggiunti manualmente.
 
 ## INSTALLARE LE SEGUENTI DIPENDENZE DI SVILUPPO
 
-### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE CONFIGURATIONS (.yaml)
+### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE CONFIGURATIONS.yaml
 
 ```js
 homeassistant:
@@ -50,7 +50,7 @@ homeassistant:
 api:
 ```
 
-### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRETS (.yaml)
+### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRETS.yaml
 
 Indirizzo-IP e porta scheda SmartHome per invio stati e comandi alla centrale SecurLan.
 Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino ad action=  prelevati dalla vostra SmartHome come da esempio sotto:
@@ -73,7 +73,7 @@ Solo numeri con numero massimo di 6 cifre a vostra discrezione - default 1234
 password_allarme: 1234
 ```
 
-### PROGRAMMAZIONE DA INSERIRE IN FILE SECRETs (.yaml)
+### PROGRAMMAZIONE DA INSERIRE IN FILE SECRETS.yaml
 
 ID webhook per validare ricezione eventuali comandi json in ingresso automations.
 
