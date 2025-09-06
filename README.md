@@ -11,9 +11,6 @@ INTEGRATION
 
 ### PROGRAMMAZIONE DA INSERIRE IN SECRET.YAML ###
 
-# Use this file to store secrets like usernames and passwords.
-# Learn more at https://www.home-assistant.io/docs/configuration/secrets/
-
 #####################################################################################################
 # Indirizzo IP e porta scheda SmartHome per invio stati e comandi alla centrale #
 #### Inserire indirizzo IP e stringa fino a action= prelevati da SmartHome come da esempio sotto ####
