@@ -1,11 +1,12 @@
 [![Get invited](https://slack.developers.italia.it/badge.svg)](https://securlan.it/supporto/)
 
 # securlan-homeassistant
-# Come iniziare
+
 > Home Assistant / Centrali di Allarme SecurLan / Evoforce srl
 
 *Read this in other languages: [English](README.EN.md).*
 
+## Come iniziare
 # Integrazione custom per Home Assistant
 L'integrazione consente di popolare Home Assistant dei controlli di una centrale di allarme SecurLan per 8 Aree, 64 zone Filo, 64 Zone Radio e 64 Uscite.
 Vengono caricati gli Aiutanti che determinano la presenza delle entità di cenytrale ( Aree, Zone, Uscite e Diagnostica ).
