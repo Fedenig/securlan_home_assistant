@@ -30,7 +30,7 @@ Peer la Diagnostiva vengono inviati ad Home Assistant dalla centrale gli stati R
 Altri stati di diagnostica possono essere aggiunti manualmente.
 
 
-## PROGRAMMAZIONE OBBLIGATORI DA INSERIRE IN FILE CONFIGURATION.YAML DI HOMEASSISTANT
+## PROGRAMMAZIONE OBBLIGATORI DA INSERIRE IN FILE CONFIGURATION.YAML
 
 ```js
 homeassistant:
@@ -40,50 +40,49 @@ homeassistant:
 api:
 ```
 
-## PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRET.YAML DI HOMEASSISTANT
 
-###################################################################
+## PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRET.YAML
 
 Indirizzo IP e porta scheda SmartHome per invio stati e comandi alla centrale SecurLan.
 Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino ad action=  prelevati dalla vostra SmartHome come da esempio sotto:
 
 192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=
-####################################################################
 
+```js
 rest_command_url: indirizzo ip/httpr.php?key=token_webhook&action=
+```
 
-####################################################################
+## PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRET.YAML
 
 Password allarme da digitare su tastiera
 
 Inserire la password di convalida comandi aree da tastiera verso centrale
 
 Solo numeri con numero massimo di 6 cifre a vostra discrezione - default 1234
-####################################################################
 
+```js
 password_allarme: 1234
+```
 
-####################################################################
+## PROGRAMMAZIONE DA INSERIRE IN FILE SECRET.YAML
 
-ID webhook per validare ricezione comandi json in ingresso automations
+ID webhook per validare ricezione eventuali comandi json in ingresso automations.
 
 Inserire un codice alfa numerico tipo ' -WvovUayJo0t8MF5qWVIxNMGZ '
-####################################################################
 
+```js
 webhook_id_in:
+```
 
-#####################################################################
+## PROGRAMMAZIONE DA INSERIRE IN FILE SECRET.YAML
 
-Password webhook per ricezione comandi dalla centrale
+Password webhook per ricezione comandi dalla centrale.
 
 Inserire un codice solo numerico tipo ' 1234554321 '
-#####################################################################
 
+```js
 password_webhook_in: 
-
-
-
-
+```
 
 # Annunci / Status del progetto
 
