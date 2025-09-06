@@ -4,9 +4,6 @@
 
 > Home Assistant / Centrali di Allarme SecurLan / Evoforce srl
 
-*Read this in other languages: [English](README.EN.md).*
-
-## Come iniziare
 # Integrazione custom per Home Assistant
 L'integrazione consente di popolare Home Assistant dei controlli di una centrale di allarme SecurLan per 8 Aree, 64 zone Filo, 64 Zone Radio e 64 Uscite.
 Vengono caricati gli Aiutanti che determinano la presenza delle entità di cenytrale ( Aree, Zone, Uscite e Diagnostica ).
@@ -35,7 +32,28 @@ Peer la Diagnostiva vengono inviati ad Home Assistant dalla centrale gli stati R
 Altri stati di diagnostica possono essere aggiunti manualmente.
 
 
-## INSTALLARE LE SEGUENTI DIPENDENZE DI SVILUPPO
+## DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS
+In sezione HACS cliccare sui tre puntini posti in alto a detra e selezionare dalla tendina Archivi Digitali Personalizzati.
+Apparirà il popup del download.
+Inserire nel campo Archvio Digitale il seguente link:  https://.......... 
+Nel campo Tipo selezionare Integrazione.
+A seguire premere AGGIUNGI. La procedura avrà inizio.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## DEFINIZONE DELLE DIPENDENZE DI SVILUPPO
+Dopo avere scaricato ed avviato l'integrazione si deve procedere con la programmazion dei seguenti dati.
 
 ### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE CONFIGURATIONS
 
@@ -89,9 +107,10 @@ password_webhook_in:
 
 
 
-# Manutenzione 
 
-## Licenza 
+## Come iniziare
+
+
 
 
 
