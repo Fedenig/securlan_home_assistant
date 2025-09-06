@@ -1,9 +1,0 @@
-{
-  "domain": "securlan_home_assistant",
-  "name": "SecurLan",
-  "version": "1.0.0",
-  "documentation": "https://github.com/Fedenig/securlan_home_assistant",
-  "requirements": [],
-  "dependencies": [],
-  "codeowners": ["@Fedenig"]
-}
