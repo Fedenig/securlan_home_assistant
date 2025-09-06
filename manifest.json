@@ -1,8 +1,8 @@
 {
   "domain": "mypackager",
-  "name": "My Packager",
+  "name": "Securlan",
   "version": "1.0.0",
-  "documentation": "https://github.com/tuo-utente/tuo_component",
+  "documentation": "https://github.com/Fedenig/securlan-homeassistant",
   "requirements": [],
   "dependencies": [],
   "codeowners": ["@tuo_github"]
