@@ -30,17 +30,6 @@ Peer la Diagnostiva vengono inviati ad Home Assistant dalla centrale gli stati R
 Altri stati di diagnostica possono essere aggiunti manualmente.
 
 
-
-## Nota:
-
-Questa è una integrazione custom per integrare in Home Assistant il controllo delle centrali di allarme SecurLan prodotte da Evoforce srl.
-
-## Procedura per l'integrazione:
-
-E' necessario 
-
-
-
 ## PROGRAMMAZIONE OBBLIGATORI DA INSERIRE IN FILE CONFIGURATION.YAML DI HOMEASSISTANT
 
 ```js
@@ -51,7 +40,7 @@ homeassistant:
 api:
 ```
 
-## PROGRAMMAZIONE DA INSERIRE IN FILE SECRET.YAML DI HOMEASSISTANT
+## PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRET.YAML DI HOMEASSISTANT
 
 ###################################################################
 
