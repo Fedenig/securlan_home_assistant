@@ -1,4 +1,5 @@
 NOTA:
+
 Questa è una integrazione custom per integrare in Home Assistant il controllo delle centrali di allarme SecurLan prodotte da Evoforce sr.
 
 INTEGRAZIONE
