@@ -14,7 +14,7 @@ Vengono caricati tutti gli scripts per inviare alla centrale i comandi di On/Off
 Viene caricato un template di definzione personalizzata degli stati di On/Off Area, Inclusione/Esclusione, Pronta/Non Pronta, Allarme/Normale di Zona e stato Attiva e Disattivata di Uscita.
 I nomi di Area, Zona Filo e Radio ed Uscita sono definiti a default ma liberamente riprogrammabili.
 Viene caricato un file Rest Command che definisce tutti i comandi inviabili da Home Assistant alla centrale.
-Allo scopo programmare correttamente in file secrets.yaml il valore defino al [punto](#programmazione-obbligatoria-da-inserire-in-file-secrets-yaml)
+Allo scopo programmare correttamente in file secrets.yaml il valore defino al seguente punto [DIPENDENZE DI SVILUPPO](#programmazione-obbligatoria-da-inserire-in-file-secrets.yaml)
 
 
 - [Come iniziare](#come-iniziare)
