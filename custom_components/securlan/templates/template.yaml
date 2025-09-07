@@ -1578,448 +1578,448 @@ template:
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_1') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_1') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_1') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 2 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_2_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_2') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_2') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_2') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 3 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_3_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_3') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_3') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_3') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 4 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_4_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_4') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_4') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_4') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 5 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_5_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_5') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_5') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_5') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 6 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_6_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_6') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_6') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_6') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 7 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_7_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_7_stato_aperta_chiusa') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_7') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_7') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 8 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_8_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_8') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_8') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_8') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 9 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_9_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_9_stato_aperta_chiusa') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_9') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_9') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 10 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_10_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_10') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_10') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_10') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 11 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_11_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_11') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_11') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_11') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 12 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_12_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_12') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_12') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_12') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 13 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_13_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_13') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_13') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_13') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 14 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_14_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_14') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_14') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_14') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 15 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_15_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_15_stato_aperta_chiusa) == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_15') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_15') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 16 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_16_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_16') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_16') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_16') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 17 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_17_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_17') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_17') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_17') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 18 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_18_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_18') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_18') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_18') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 19 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_19_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_19') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_19') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_19') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 20 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_20_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_20') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_20') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_20') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 21 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_21_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_21') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_21') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_21') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 22 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_22_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_22') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_22') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_22') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 23 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_23_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_23') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_23') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_23') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 24 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_24_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_24') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_24') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_24') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 25 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_25_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_25') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_25') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_25') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 26 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_26_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_26') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_26') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_26') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 27 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_27_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_27') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_27') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_27') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 28 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_28_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_28') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_28') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_28') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 29 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_29_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_29') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_29') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_29') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 30 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_30_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_30') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_30') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_30') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 31 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_31_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_31') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_31') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_31') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 32 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_32_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_32') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_32') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_32') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 33 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_33_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_33') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_33') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_33') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 34 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_34_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_34') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_34') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_34') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 35 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_35_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_35') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_35') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_35') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 36 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_36_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_36') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_36') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_36') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 37 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_37_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_37') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_37') == 'on' else 'mdi:motion-sensor' }}		
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_37') == 'on' else 'mdi:motion-sensor' }}		
   - sensor:
       - name: "Stato personalizzato zona radio 38 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_38_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_38') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_38') == 'on' else 'mdi:motion-sensor' }}		
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_38') == 'on' else 'mdi:motion-sensor' }}		
   - sensor:
       - name: "Stato personalizzato zona radio 39 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_39_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_39') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_39') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_39') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 40 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_40_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_40') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_40') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_40') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 41 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_41_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_41') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_41') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_41') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 42 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_42_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_42') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_42') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_42') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 43 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_43_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_43') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_43') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_43') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 44 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_44_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_44') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_44') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_44') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 45 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_45_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_45') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_45') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_45') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 46 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_46_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_46') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_46') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_46') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 47 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_47_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_47') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_47') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_47') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 48 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_48_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_48') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_48') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_48') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 49 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_49_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_49') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_49') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_49') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 50 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_50_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_50') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_50') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_50') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 51 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_51_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_51') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_51') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_51') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 52 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_52_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_52') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_52') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_52') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 53 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_53_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_53') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_53') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_53') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 54 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_54_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_54') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_54') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_54') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 55 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_55_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_55') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_55') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_55') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 56 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_56_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_56') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_56') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_56') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 57 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_57_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_57') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_57') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_57') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 58 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_58_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_58') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_58') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_58') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 59 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_59_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_59') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_59') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_59') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 60 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_60_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_60') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_60') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_60') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 61 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_61_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_61') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_61') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_61') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 62 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_62_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_62') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_62') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_62') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 63 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_63_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_63') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_63') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_63') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
       - name: "Stato personalizzato zona radio 64 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_64_esclusa"
         state: >
             {{  'Esclusa' if states('input_boolean.zona_r_64') == 'on' else 'Inclusa'  }}
         icon: > 
-            {{  ''mdi:motion-sensor-off' if states('input_boolean.zona_r_64') == 'on' else 'mdi:motion-sensor' }}
+            {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_64') == 'on' else 'mdi:motion-sensor' }}
      
 # Zone radio non pronta			
   - sensor:
