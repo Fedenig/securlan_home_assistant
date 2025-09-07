@@ -81,7 +81,7 @@ Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino
 
 ```js
 # Indirizzo IP e porta scheda SmartHome per invio stati e comandi alla centrale
-rest_command_url: indirizzo ip/httpr.php?key=token_webhook&action=
+rest_command_url: INDIRIZZO IP:PORTA/httpr.php?key=token_webhook&action=
 ```
 
 --------------------------------------------------
