@@ -7,6 +7,7 @@ DOMAIN = "securlan"
 
 async def async_setup(hass, config):
     """Setup asincrono del componente custom."""
+    hass.states.async_set(f"{DOMAIN}.status", "ok")
 
     async def handle_copy_files(call):
         """Gestisce la chiamata al servizio per copiare i file."""
