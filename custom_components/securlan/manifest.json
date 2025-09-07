@@ -7,5 +7,5 @@
   "requirements": [],
   "dependencies": [],
   "codeowners": ["@Fedenig"],
-  "icon": "https://github.com/Fedenig/securlan_home_assistant/icon.png"
+  "icon": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/assets/icon.png"
 }
