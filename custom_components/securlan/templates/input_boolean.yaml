@@ -1283,8 +1283,8 @@ input_boolean:
         icon: mdi:lightbulb-on
     uscita_5:
         name: "U5-Uscita"
-        icon: mdi:lightbulb-on	
-    uscita_6:
+        icon: mdi:lightbulb-on
+		uscita_6:
         name: "U6-Uscita"
         icon: mdi:lightbulb-on
     uscita_7:
@@ -1461,7 +1461,7 @@ input_boolean:
     uscita_64:
         name: "U64-Uscita"
         icon: mdi:lightbulb-on
-		
+
 # Diagnostica
     rete_220v:
         name: "Rete 220V"
