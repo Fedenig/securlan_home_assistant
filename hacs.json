@@ -5,6 +5,6 @@
   "domains": ["securlan"],
   "homeassistant": "2025.9.1",
   "country": ["IT"],
-  "icon": "https://github.com/Fedenig/securlan_home_assistant/main/assets/icon.png",
+  "icon": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/assets/icon.png",
   "banner":
 }
