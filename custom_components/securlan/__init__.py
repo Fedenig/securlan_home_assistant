@@ -37,5 +37,17 @@ async def async_setup(hass, config):
 
     # Registra il servizio
     hass.services.async_register(DOMAIN, "copy_files", handle_copy_files)
-
+    
+    # Elenco dei servizi di reload supportati da HA
+    RELOAD_SERVICES = [
+        ("automation", "reload"),
+        ("script", "reload"),
+        ("input_boolean", "reload"),
+        ("input_text", "reload"),
+        ("input_number", "reload"),
+        ("input_datetime", "reload"),
+        ("group", "reload"),
+        ("scene", "reload"),
+    ]
+    
     return True
