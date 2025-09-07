@@ -33,7 +33,8 @@ Per le Uscite vengono inviati ad Home Assistant dalla centrale gli stati di usci
 Per la Diagnostiva vengono inviati ad Home Assistant dalla centrale gli stati Rete 220V, Batteria Centrale, Tamper Centrale e Tamper Sirena.  
 Altri stati di diagnostica possono essere aggiunti manualmente.  
 
-#### NOTA: è indispensabile che nella vostra installazione di Home Assistant siano presenti il modulo HACS ed il File Editor.<br>
+### NOTA:  
+#### è indispensabile che nella vostra installazione di Home Assistant siano presenti il modulo HACS ed il File Editor.<br>
 #### Per utilizzare la grafica degli oggetti pre-programmati ( codice.yaml e JS template ) a controllo della centrale ( On/Off Aree con tastiera e password ), Inclusione / Esclusione zona e relativo stato, Attivazione / Disattivazione e Uscita e relativo stato è suggerita l'installazione le seguenti applicazioni:  
 <br>
 - Bubble Card<br>
