@@ -2,7 +2,8 @@
 
 > Home Assistant / Centrali di Allarme SecurLan / Evoforce srl
 
-# Integrazione custom per Home Assistant
+
+## Integrazione custom per Home Assistant
 L'integrazione consente di popolare Home Assistant dei controlli di una centrale di allarme SecurLan per 8 Aree, 64 zone Filo, 64 Zone Radio e 64 Uscite.
 Vengono caricati gli Aiutanti che determinano la presenza delle entità di centrale ( Aree, Zone, Uscite e Diagnostica ).
 Vengono caricati tutti gli scripts per inviare alla centrale i comandi di On/Off Area, Esclusione/Inclusione Zona ed Attivazione/Disattivazione Uscita.
@@ -117,7 +118,7 @@ password_webhook_in:
 
 
 
-## PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD
+### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD
 Al link http://......   sono disponibili esempi dei file .yaml per ricreare i controlli di Area ( on/off ) tramite password in tastiera, zone filo, radio ed uscite.
 
 
