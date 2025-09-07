@@ -3091,7 +3091,7 @@ template:
             {{  'Attivata' if states('input_boolean.uscita_25') == 'on' else 'Disattivata' }}
         icon: > 
             {{  'mdi:lightbulb-on' if states('input_boolean.uscita_25') == 'on' else 'mdi:lightbulb-off' }}   
-- sensor:
+  - sensor:
       - name: "Stato personalizzato uscita 26"
         unique_id: "stato_personalizzato_uscita_26"
         state: >
