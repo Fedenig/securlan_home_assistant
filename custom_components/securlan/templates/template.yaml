@@ -322,7 +322,7 @@ template:
       - name: "Stato personalizzato zona filo 15 - esclusa"
         unique_id: "stato_personalizzato_zona_filo_15_esclusa"
         state: >
-            {{  'Esclusa' if states('input_boolean.zona_f_15) == 'on' else 'Inclusa' }}
+            {{  'Esclusa' if states('input_boolean.zona_f_15') == 'on' else 'Inclusa' }}
         icon: > 
             {{  'mdi:motion-sensor-off' if states('input_boolean.zona_f_15') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
@@ -772,7 +772,7 @@ template:
       - name: "Stato personalizzato zona filo 15 - non pronta"
         unique_id: "stato_personalizzato_zona_filo_15_non pronta"
         state: >
-            {{  'Non Pronta' if states('input_boolean.zona_f_15_stato_aperta_chiusa) == 'on' else 'Pronta'  }}
+            {{  'Non Pronta' if states('input_boolean.zona_f_15_stato_aperta_chiusa') == 'on' else 'Pronta'  }}
         icon: > 
             {{  'mdi:electric-switch' if states('input_boolean.zona_f_15_stato_aperta_chiusa') == 'on' else 'mdi:electric-switch-closed' }}
   - sensor:
@@ -1222,7 +1222,7 @@ template:
       - name: "Stato personalizzato zona filo 15 - allarme"
         unique_id: "stato_personalizzato_zona_filo_15_allarme"
         state: >
-            {{  'Allarme' if states('input_boolean.zona_f_15_stato_aperta_chiusa) == 'on' else 'Normale'  }}
+            {{  'Allarme' if states('input_boolean.zona_f_15_stato_aperta_chiusa') == 'on' else 'Normale'  }}
         icon: > 
             {{  'mdi:alarm-light-outline' if states('input_boolean.zona_f_15_stato_allarme') == 'on' else 'mdi:alarm-light-off-outline' }}
   - sensor:
@@ -1672,7 +1672,7 @@ template:
       - name: "Stato personalizzato zona radio 15 - esclusa"
         unique_id: "stato_personalizzato_zona_radio_15_esclusa"
         state: >
-            {{  'Esclusa' if states('input_boolean.zona_r_15_stato_aperta_chiusa) == 'on' else 'Inclusa'  }}
+            {{  'Esclusa' if states('input_boolean.zona_r_15') == 'on' else 'Inclusa'  }}
         icon: > 
             {{  'mdi:motion-sensor-off' if states('input_boolean.zona_r_15') == 'on' else 'mdi:motion-sensor' }}
   - sensor:
@@ -2122,7 +2122,7 @@ template:
       - name: "Stato personalizzato zona radio 15 - non pronta"
         unique_id: "stato_personalizzato_zona_radio_15_non_pronta"
         state: >
-            {{  'Non Pronta' if states('input_boolean.zona_r_15_stato_aperta_chiusa) == 'on' else 'Pronta'  }}
+            {{  'Non Pronta' if states('input_boolean.zona_r_15_stato_aperta_chiusa') == 'on' else 'Pronta'  }}
         icon: > 
             {{  'mdi:electric-switch' if states('input_boolean.zona_r_15_stato_aperta_chiusa') == 'on' else 'mdi:electric-switch-closed' }}
   - sensor:
@@ -2572,7 +2572,7 @@ template:
       - name: "Stato personalizzato zona radio 15 - allarme"
         unique_id: "stato_personalizzato_zona_radio_15_allarme"
         state: >
-            {{  'Allarme' if states('input_boolean.zona_r_15_stato_aperta_chiusa) == 'on' else 'Normale'  }}
+            {{  'Allarme' if states('input_boolean.zona_r_15_stato_aperta_chiusa') == 'on' else 'Normale'  }}
         icon: > 
             {{  'mdi:alarm-light-outline' if states('input_boolean.zona_r_15_stato_allarme') == 'on' else 'mdi:alarm-light-off-outline' }}
   - sensor:
