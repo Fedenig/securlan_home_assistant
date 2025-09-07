@@ -34,21 +34,21 @@ Altri stati di diagnostica possono essere aggiunti manualmente.
 
 
 ## DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS
-In sezione HACS cliccare sui tre puntini posti in alto a destra e selezionare dalla tendina Archivi Digitali Personalizzati.
-Apparirà il popup del download.
-Inserire nel campo Archvio Digitale il seguente link: https://github.com/Fedenig/securlan_home_assistant
-Nel campo Tipo selezionare Integrazione.
-A seguire premere AGGIUNGI.
-Il link inserito farò riferimento alla integrazione securlan-homeassistant.
-Continuare con AGGIUNGI.
-Un link con il nome della integrazione custom SecurLan verrà mostrato nella parte superiore del popup.
-L'icona cestino consente la sua rimozione in futuro. Chiudere il popup.
-Ora l'archivio SecurLan apparirà nella lista delle repository di HACS.
-Ora la repo deve essere scaricata. 
-Cliccare sui tre puntini posti sulla destra della riga della repo Securlan e dalla lista selezionare SCARICA.
-In alternativa cliccare sulla riga della integrazione SecurLan e dalla pagina delle info in basso a detra cliccare sul tasto SCARICA.
-Dopo aver effettuato il download portarsi su Strumenti per sviluppatori.
-Effettuare una Verifica Configurazione ed un Riavvio di Home Assistant.
+In sezione HACS cliccare sui tre puntini posti in alto a destra e selezionare dalla tendina Archivi Digitali Personalizzati.  
+Apparirà il popup del download.  
+Inserire nel campo Archvio Digitale il seguente link: https://github.com/Fedenig/securlan_home_assistant.  
+Nel campo Tipo selezionare Integrazione.  
+A seguire premere AGGIUNGI.  
+Il link inserito farò riferimento alla integrazione securlan-homeassistant.  
+Continuare con AGGIUNGI.  
+Un link con il nome della integrazione custom SecurLan verrà mostrato nella parte superiore del popup.  
+L'icona cestino consente la sua rimozione in futuro. Chiudere il popup.  
+Ora l'archivio SecurLan apparirà nella lista delle repository di HACS.  
+Ora la repo deve essere scaricata.  
+Cliccare sui tre puntini posti sulla destra della riga della repo Securlan e dalla lista selezionare SCARICA.  
+In alternativa cliccare sulla riga della integrazione SecurLan e dalla pagina delle info in basso a detra cliccare sul tasto SCARICA.  
+Dopo aver effettuato il download portarsi su Strumenti per sviluppatori.  
+Effettuare una Verifica Configurazione ed un Riavvio di Home Assistant.  
 
 
 
