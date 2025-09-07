@@ -670,7 +670,7 @@ template:
             {{  'Esclusa' if states('input_boolean.zona_f_64') == 'on' else 'Inclusa' }}
         icon: > 
             {{  'mdi:motion-sensor-off' if states('input_boolean.zona_f_64') == 'on' else 'mdi:motion-sensor' }}
-			     
+
 # Zone filo non pronta	
   - sensor:
       - name: "Stato personalizzato zona filo 1 - non pronta"
