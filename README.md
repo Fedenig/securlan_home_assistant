@@ -32,8 +32,18 @@ Per le Uscite vengono inviati ad Home Assistant dalla centrale gli stati di usci
 Per la Diagnostiva vengono inviati ad Home Assistant dalla centrale gli stati Rete 220V, Batteria Centrale, Tamper Centrale e Tamper Sirena.  
 Altri stati di diagnostica possono essere aggiunti manualmente.  
 
+#### NOTA: è indispensabile che nella vostra installazione di Home Assistant siano presenti il modulo HACS ed il File Editor.<br>
+#### Per utilizzare la grafica degli oggetti pre-programmati ( codice.yaml e JS template ) a controllo della centrale ( On/Off Aree con tastiera e password ), Inclusione / Esclusione zona e relativo stato, Attivazione / Disattivazione e Uscita e relativo stato è suggerita l'installazione le seguenti applicazioni:  
+<br>
+- Bubble Card<br>
+- Button Card<br> 
+- Browser Mod<br>
+- Card-mod<br>
+- Mushroom<br>
+- Custom-ui<br>
+<br>
 
-## DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS
+#### DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS ED INSTALLAZIONE
 In sezione HACS cliccare sui tre puntini posti in alto a destra e selezionare dalla tendina Archivi Digitali Personalizzati.  
 Apparirà il popup del download.  
 Inserire nel campo Archvio Digitale il seguente link: https://github.com/Fedenig/securlan_home_assistant.  
@@ -43,20 +53,34 @@ Il link inserito farò riferimento alla integrazione securlan-homeassistant.
 Continuare con AGGIUNGI.  
 Un link con il nome della integrazione custom SecurLan verrà mostrato nella parte superiore del popup.  
 L'icona cestino consente la sua rimozione in futuro. Chiudere il popup.  
-Ora l'archivio SecurLan apparirà nella lista delle repository di HACS.  
-Ora la repo deve essere scaricata.  
+Ora l'archivio HACS conterrà la repository SecurLan che apparirà nella lista con ricerca.  
+Ora la repository deve essere manualmente scaricata.  
 Cliccare sui tre puntini posti sulla destra della riga della repo Securlan e dalla lista selezionare SCARICA.  
 In alternativa cliccare sulla riga della integrazione SecurLan e dalla pagina delle info in basso a detra cliccare sul tasto SCARICA.  
-Dopo aver effettuato il download portarsi su Strumenti per sviluppatori.  
-Effettuare una Verifica Configurazione ed un Riavvio di Home Assistant.  
+### Dopo aver effettuato il download aprire il file configuration.yaml ed inserire:  
 
+```js
+homeassistant:
+  packages: !include_dir_named packages
 
+# API
+api:
+securlan:
+```
+A seguire portarsi su Strumenti per sviluppatori.  
+Effettuare una Verifica Configurazione.  
+Effettuare una ricarica di tuuta la configurazione YAML.  
+A seguire effettuare un Riavvio di Home Assistant.  
+Al riavvio portarsi su Strumenti per sviluppatori. Aprire lista AZIONI. Nella lista cercare securlan.copy_file.  
+Cliccare su ESEGUI AZIONE.  Ad azione eseguitaeffettuare un Riavvio di Home Assistant.  
+Al riavvio troverete dispobili tutti gli elementi di Area, Zona Filo, Zona Radio ed Uscite ( sezione Dispositivi e Servizi / Aiutanti ).  
+In sezione Automazione e Scenari saranno presenti le Automazioni e gli Script dedicati al controllo delle azioni da e verso la centrale di Allarme.  
+Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
 
+#### DEFINIZIONE DELLE DIPENDENZE DI SVILUPPO
+Dopo avere effettuato procedera sopra esposta procedere con la programmazion dei seguenti dati.
 
-## DEFINIZIONE DELLE DIPENDENZE DI SVILUPPO
-Dopo avere scaricato ed avviato l'integrazione si deve procedere con la programmazion dei seguenti dati.
-
-### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE DI SISTEMA CONFIGURATION
+#### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE DI SISTEMA CONFIGURATION
 
 ```js
 homeassistant:
@@ -67,7 +91,7 @@ api:
 securlan:
 ```
 
-### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE DI SISTEMA SECRETS
+#### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE DI SISTEMA SECRETS
 
 Nel file secrets.yaml si deve definire Indirizzo IP e porta scheda SmartHome per il corretto invio di stati e comandi alla centrale SecurLan.  
 Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino ad action=  prelevati dalla vostra SmartHome come da esempio sotto:
@@ -89,7 +113,7 @@ Solo ammessi solo numeri con numero massimo di 6 cifre a vostra discrezione - de
 password_allarme: 1234
 ```
 
-### PROGRAMMAZIONE DA INSERIRE IN FILE DI SISTEMA SECRETS
+#### PROGRAMMAZIONE DA INSERIRE IN FILE DI SISTEMA SECRETS
 
 Nel file secrets.yaml definire l'ID webhook per validare ricezione eventuali comandi json in ingresso automations.
 
@@ -114,7 +138,7 @@ password_webhook_in:
 
 
 
-### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD
+#### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD
 Al link http://......   sono disponibili esempi dei file .yaml per ricreare i controlli di Area ( on/off ) tramite password in tastiera, zone filo, radio ed uscite.
 
 
