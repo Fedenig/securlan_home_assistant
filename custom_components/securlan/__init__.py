@@ -3,7 +3,7 @@ import shutil
 import logging
 
 _LOGGER = logging.getLogger(__name__)
-DOMAIN = "securlan_home_assistant"
+DOMAIN = "securlan"
 
 async def async_setup(hass, config):
     """Setup asincrono del componente custom."""
