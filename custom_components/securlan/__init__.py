@@ -9,7 +9,7 @@ async def async_setup(homeassistant, config):
     """Setup asincrono del componente custom."""
 
     try:
-        config_path = homeassstant.config.path("packages")
+        config_path = homeassistant.config.path("packages")
 
         if not os.path.exists(config_path):
             os.makedirs(config_path)
