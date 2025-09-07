@@ -276,30 +276,6 @@ alarm_arm_check:
 
 ### ARM A1 ###
 
-alarm_arm_check:
-  sequence:
-  - choose:
-    - conditions:
-      - condition: template
-        value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-
-          {% set allowed_codes = states(''input_text.password_allarme'') %}
-
-          {{ alarm_code in allowed_codes }}
-
-          '
-      sequence:
-      - data:
-          entity_id: input_text.alarm_code
-          value: ''
-        action: input_text.set_value
-      - action: rest_command.area_tutte_on
-        metadata: {}
-        data: {}
-    enabled: true
-  alias: 'alarm_arm_check '
-  description: ''
-
 alarm_arm_check_a1:
   sequence:
   - choose:
