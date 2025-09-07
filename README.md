@@ -11,13 +11,13 @@ Vengono caricati tutti gli scripts per inviare alla centrale i comandi di On/Off
 Viene caricato un template di definzione personalizzata degli stati di On/Off Area, Inclusione/Esclusione, Pronta/Non Pronta, Allarme/Normale di Zona e stato Attivata/Disattivata Uscita.
 I nomi di Area, Zona Filo e Radio ed Uscita sono definiti dai file a default ma sono liberamente riprogrammabili.
 Viene caricato un file RestCommand che definisce tutti i comandi inviabili da Home Assistant alla centrale.
-Allo scopo programmare correttamente nel file secrets.yaml il valore definito al seguente punto [DIPENDENZE DI SVILUPPO](#programmazione-obbligatoria-da-inserire-in-file-secrets)
+Allo scopo programmare correttamente nel file secrets.yaml il valore definito al seguente punto [DIPENDENZE DI SVILUPPO](#programmazione-obbligatoria-da-inserire-in-file-di-sistema-secrets)
 
 ### CONTROLLO AREE - Da Home assistant verso la centrale
 Ogni controllo di singola Area consente da Home Assistant l'inserimento ( ritardato, forzato, immediato o imnmediato/forzato ) ed il disinserimento.
 L'azione sulla Area è subordinabile al controllo via password con tastiera di controllo dedicata.
 La password da utilizzare sulla tastiera è definibile per codice numerico da 1 a 6 cifre.
-A tale scopo vedi sotto programmazione da inserire in file secret.yaml del vostro Home Assistant al punto [DIPENDENZE DI SVILUPPO](#programmazione-obbligatoria-da-inserire-in-file-secrets)
+A tale scopo vedi sotto programmazione da inserire in file secret.yaml del vostro Home Assistant al punto [DIPENDENZE DI SVILUPPO](#programmazione-obbligatoria-da-inserire-in-file-di-sistema-secrets)
 
 ### CONTROLLO ZONE FILO e RADIO - Da Home assistant verso la centrale
 Ogni controllo di Zona Filo o Radio consente di inviare alla centrale il comando di Esclusione o Inclusione.
@@ -35,10 +35,21 @@ Altri stati di diagnostica possono essere aggiunti manualmente.
 
 
 ## DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS
-In sezione HACS effettuare la ricerca con nome SecurLan.
+In sezione HACS cliccare sui tre puntini posti in alto a destra e selezionare dalla tendina Archivi Digitali Personalizzati.
+Apparirà il popup del download.
+Inserire nel campo Archvio Digitale il seguente link: https://github.com/Fedenig/securlan_home_assistant
+Nel campo Tipo selezionare Integrazione.
+A seguire premere AGGIUNGI.
+Il link inserito farò riferimento alla integrazione securlan-homeassistant.
+Continuare con AGGIUNGI.
+Un link con il nome della integrazione custom SecurLan verrà mostrato nella parte superiore del popup.
+L'icona cestino consente la sua rimozione. Chiudere il popup.
+Ora l'archivio SecurLan apparirà nella lista degli archivi scaricati di HACS.
+Portarsi su Strumenti per sviluppatori ed effettuare una Verifica Configurazione ed un Riavvio di Home Assistant.
+
+
 L'integrazione viene mostrata nella riga di elemento trovato.
 Procedere con il download.
-
 Portarsi in IMPOSTAZIONI / Integrazioni e ciccare sul tasto AGGIUNGI INTEGRAZIONE.
 Dalla lista selezionare 
 
@@ -50,7 +61,7 @@ Dalla lista selezionare
 ## DEFINIZIONE DELLE DIPENDENZE DI SVILUPPO
 Dopo avere scaricato ed avviato l'integrazione si deve procedere con la programmazion dei seguenti dati.
 
-### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE CONFIGURATIONS
+### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE DI SISTEMA CONFIGURATION
 
 ```js
 homeassistant:
@@ -58,9 +69,10 @@ homeassistant:
 
 # API
 api:
+securlan:
 ```
 
-### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE SECRETS
+### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE DI SISTEMA SECRETS
 
 Nel file secrets.yaml si deve definire Indirizzo IP e porta scheda SmartHome per il corretto invio di stati e comandi alla centrale SecurLan.
 Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino ad action=  prelevati dalla vostra SmartHome come da esempio sotto:
@@ -80,7 +92,7 @@ Solo ammessi solo numeri con numero massimo di 6 cifre a vostra discrezione - de
 password_allarme: 1234
 ```
 
-### PROGRAMMAZIONE DA INSERIRE IN FILE SECRETS
+### PROGRAMMAZIONE DA INSERIRE IN FILE DI SISTEMA SECRETS
 
 Nel file secrets.yaml definire l'ID webhook per validare ricezione eventuali comandi json in ingresso automations.
 
