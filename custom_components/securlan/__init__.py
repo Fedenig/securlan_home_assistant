@@ -5,11 +5,11 @@ import logging
 _LOGGER = logging.getLogger(__name__)
 DOMAIN = "securlan"
 
-async def async_setup(hass, config):
+async def async_setup(homeassistant, config):
     """Setup asincrono del componente custom."""
 
     try:
-        config_path = hass.config.path("packages")
+        config_path = homeassstant.config.path("packages")
 
         if not os.path.exists(config_path):
             os.makedirs(config_path)
