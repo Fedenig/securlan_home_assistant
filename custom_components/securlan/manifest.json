@@ -1,5 +1,5 @@
 {
-  "domain": "securlan_home_assistant",
+  "domain": "securlan",
   "name": "SecurLan",
   "version": "1.0.0",
   "icon": "https://github.com/Fedenig/securlan_home_assistant/blob/main/icon.png",
