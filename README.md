@@ -4,13 +4,13 @@
 
 
 ## Integrazione custom per Home Assistant
-L'integrazione consente di popolare Home Assistant dei controlli di una centrale di allarme SecurLan per 8 Aree, 64 zone Filo, 64 Zone Radio e 64 Uscite.
-Vengono caricati gli Aiutanti che determinano la presenza delle entità di centrale ( Aree, Zone, Uscite e Diagnostica ).
-Vengono caricati tutti gli scripts per inviare alla centrale i comandi di On/Off Area, Esclusione/Inclusione Zona ed Attivazione/Disattivazione Uscita.
-Viene caricato un template di definzione personalizzata degli stati di On/Off Area, Inclusione/Esclusione, Pronta/Non Pronta, Allarme/Normale di Zona e stato Attivata/Disattivata Uscita.
-I nomi di Area, Zona Filo e Radio ed Uscita sono definiti dai file a default ma sono liberamente riprogrammabili.
-Viene caricato un file RestCommand che definisce tutti i comandi inviabili da Home Assistant alla centrale.
-Allo scopo programmare correttamente nel file secrets.yaml il valore definito al seguente punto [DIPENDENZE DI SVILUPPO](#programmazione-obbligatoria-da-inserire-in-file-di-sistema-secrets)
+L'integrazione consente di popolare Home Assistant dei controlli di una centrale di allarme SecurLan per 8 Aree, 64 zone Filo, 64 Zone Radio e 64 Uscite.  
+Vengono caricati gli Aiutanti che determinano la presenza delle entità di centrale ( Aree, Zone, Uscite e Diagnostica ).  
+Vengono caricati tutti gli scripts per inviare alla centrale i comandi di On/Off Area, Esclusione/Inclusione Zona ed Attivazione/Disattivazione Uscita.  
+Viene caricato un template di definzione personalizzata degli stati di On/Off Area, Inclusione/Esclusione, Pronta/Non Pronta, Allarme/Normale di Zona e stato Attivata/Disattivata Uscita.  
+I nomi di Area, Zona Filo e Radio ed Uscita sono definiti dai file a default ma sono liberamente riprogrammabili.  
+Viene caricato un file RestCommand che definisce tutti i comandi inviabili da Home Assistant alla centrale.  
+Allo scopo programmare correttamente nel file secrets.yaml il valore definito al seguente punto [DIPENDENZE DI SVILUPPO](#programmazione-obbligatoria-da-inserire-in-file-di-sistema-secrets)  
 
 ### CONTROLLO AREE - Da Home assistant verso la centrale
 Ogni controllo di singola Area consente da Home Assistant l'inserimento ( ritardato, forzato, immediato o imnmediato/forzato ) ed il disinserimento.
