@@ -35,16 +35,6 @@ alarm_disarm_check:
     enabled: true
   alias: alarm_disarm_check
   description: ''
-append_number_to_code:
-  sequence:
-  - data:
-      entity_id: input_text.alarm_code
-      value: '{{ states(''input_text.alarm_code'') | default('''') ~ number }}'
-    action: input_text.set_value
-    enabled: true
-  alias: append_number_to_code
-  description: ''
-
 
 ### DISARM A1 ###
 
