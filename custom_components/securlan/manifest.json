@@ -3,7 +3,7 @@
   "name": "SecurLan",
   "version": "1.0.0",
   "config_flow": true,
-  "icon": "https://github.com/Fedenig/securlan_home_assistant/main/assets/icon.png",
+  "icon": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/assets/icon.png",
   "documentation": "https://github.com/Fedenig/securlan_home_assistant",
   "requirements": [],
   "dependencies": [],
