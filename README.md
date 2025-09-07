@@ -80,6 +80,7 @@ Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino
 192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=
 
 ```js
+# Indirizzo IP e porta scheda SmartHome per invio stati e comandi alla centrale
 rest_command_url: indirizzo ip/httpr.php?key=token_webhook&action=
 ```
 
@@ -89,6 +90,7 @@ Nel file secrets.yaml si deve definire la password di convalida comandi aree da 
 Solo ammessi solo numeri con numero massimo di 6 cifre a vostra discrezione - default 1234
 
 ```js
+# Password controllo antifurto da tastiera
 password_allarme: 1234
 ```
 
@@ -99,6 +101,7 @@ Nel file secrets.yaml definire l'ID webhook per validare ricezione eventuali com
 Inserire un codice alfa numerico tipo ' -WvovUayJo0t8MF5qWVIxNMGZ '
 
 ```js
+# ID webhook per ricezione comandi dalla centrale. Da programmare in SmartHome - Homeassistant
 webhook_id_in:
 ```
 
@@ -109,6 +112,7 @@ Nel file secrets.yaml definire la password webhook per ricezione comandi dalla c
 Inserire un codice solo numerico tipo ' 1234554321 '
 
 ```js
+# Password webhook per ricezione comandi dalla centrale. Da programmare in SmartHome - Homeassistant
 password_webhook_in: 
 ```
 
