@@ -1,4 +1,4 @@
-[![Get invited](https://github.com/Fedenig/securlan_home_assistant/blob/main/securlan_logo.png)](https://securlan.it/supporto/)
+[![Get invited](https://github.com/Fedenig/securlan_home_assistant/blob/main/icon.png)](https://securlan.it/supporto/)
 
 # securlan_home_assistant- Versione 1.0.0
 
