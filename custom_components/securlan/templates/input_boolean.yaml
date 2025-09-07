@@ -266,13 +266,13 @@ input_boolean:
         icon: mdi:motion-sensor  
     zona_f_54:
         name: "F54-Zona"
-        icon: mdi:motion-sensor  
+        icon: mdi:motion-sensor
     zona_f_55:
         name: "F55-Zona"
-        icon: mdi:motion-sensor  		
+        icon: mdi:motion-sensor
     zona_f_56:
         name: "F56-Zona"
-        icon: mdi:motion-sensor  
+        icon: mdi:motion-sensor
     zona_f_57:
         name: "F57-Zona"
         icon: mdi:motion-sensor  
@@ -463,7 +463,7 @@ input_boolean:
         icon: mdi:motion-sensor  
     zona_f_55_stato_aperta_chiusa:
         name: "F55-Zona-PNP"
-        icon: mdi:motion-sensor  		
+        icon: mdi:motion-sensor
     zona_f_56_stato_aperta_chiusa:
         name: "F56-Zona-PNP"
         icon: mdi:motion-sensor  
@@ -657,7 +657,7 @@ input_boolean:
         icon: mdi:motion-sensor  
     zona_f_55_stato_allarme:
         name: "F55-Zona-ALL"
-        icon: mdi:motion-sensor  		
+        icon: mdi:motion-sensor
     zona_f_56_stato_allarme:
         name: "F56-Zona-ALL"
         icon: mdi:motion-sensor  
@@ -851,7 +851,7 @@ input_boolean:
         icon: mdi:motion-sensor  
     zona_r_55:
         name: "R55-Zona"
-        icon: mdi:motion-sensor  		
+        icon: mdi:motion-sensor
     zona_r_56:
         name: "R56-Zona"
         icon: mdi:motion-sensor  
@@ -1045,7 +1045,7 @@ input_boolean:
         icon: mdi:motion-sensor  
     zona_r_55_stato_aperta_chiusa:
         name: "R55-Zona-PNP"
-        icon: mdi:motion-sensor  		
+        icon: mdi:motion-sensor
     zona_r_56_stato_aperta_chiusa:
         name: "R56-Zona-PNP"
         icon: mdi:motion-sensor  
@@ -1073,7 +1073,7 @@ input_boolean:
     zona_r_64_stato_aperta_chiusa:
         name: "R64-Zona-PNP"
         icon: mdi:motion-sensor  
-		
+
 # Zona radio allarme
     zona_r_1_stato_allarme:
         name: "R1-Zona-ALL"
@@ -1239,7 +1239,7 @@ input_boolean:
         icon: mdi:motion-sensor  
     zona_r_55_stato_allarme:
         name: "R55-Zona-ALL"
-        icon: mdi:motion-sensor  		
+        icon: mdi:motion-sensor
     zona_r_56_stato_allarme:
         name: "R56-Zona-ALL"
         icon: mdi:motion-sensor  
