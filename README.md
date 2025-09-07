@@ -13,10 +13,10 @@ Viene caricato un file RestCommand che definisce tutti i comandi inviabili da Ho
 Allo scopo programmare correttamente nel file secrets.yaml il valore definito al seguente punto [DIPENDENZE DI SVILUPPO](#programmazione-obbligatoria-da-inserire-in-file-di-sistema-secrets)  
 
 ### CONTROLLO AREE - Da Home assistant verso la centrale
-Ogni controllo di singola Area consente da Home Assistant l'inserimento ( ritardato, forzato, immediato o imnmediato/forzato ) ed il disinserimento.
-L'azione sulla Area è subordinabile al controllo via password con tastiera di controllo dedicata.
-La password da utilizzare sulla tastiera è definibile per codice numerico da 1 a 6 cifre.
-A tale scopo vedi sotto programmazione da inserire in file secret.yaml del vostro Home Assistant al punto [DIPENDENZE DI SVILUPPO](#programmazione-obbligatoria-da-inserire-in-file-di-sistema-secrets)
+Ogni controllo di singola Area consente da Home Assistant l'inserimento ( ritardato, forzato, immediato o imnmediato/forzato ) ed il disinserimento.  
+L'azione sulla Area è subordinabile al controllo via password con tastiera di controllo dedicata.  
+La password da utilizzare sulla tastiera è definibile per codice numerico da 1 a 6 cifre.  
+A tale scopo vedi sotto programmazione da inserire in file secret.yaml del vostro Home Assistant al punto [DIPENDENZE DI SVILUPPO](#programmazione-obbligatoria-da-inserire-in-file-di-sistema-secrets)  
 
 ### CONTROLLO ZONE FILO e RADIO - Da Home assistant verso la centrale
 Ogni controllo di Zona Filo o Radio consente di inviare alla centrale il comando di Esclusione o Inclusione.
@@ -25,12 +25,12 @@ Ogni controllo di Zona Filo o Radio consente di inviare alla centrale il comando
 Ogni controllo di Uscita consente di inviare alla centrale il comando di Attivazone/Disattivazione della Uscita.
 
 ### COMANDI INVIATI DALLA CENTRALE VERSO HOMEASSISTANT
-Tramite API di Home Assistant, utilizzando un Bearer Token permanente, sarà possibile ricevere dalla centrale di allarme gli stati ed i comandi di Area, Zona Filo e Radio ed Uscita.
-Per le Aree vengono inviati ad Home Assistant gli stati di ON e OFF.
-Per le Zone Filo e Radio vengono inviati ad Home Assistant dalla centrale gli stati di Esclusione/Inclusione, Apertura/Chiusura, Allarme/Riposo.
-Per le Uscite vengono inviati ad Home Assistant dalla centrale gli stati di uscita Attivata/Disattivata.
-Per la Diagnostiva vengono inviati ad Home Assistant dalla centrale gli stati Rete 220V, Batteria Centrale, Tamper Centrale e Tamper Sirena.
-Altri stati di diagnostica possono essere aggiunti manualmente.
+Tramite API di Home Assistant, utilizzando un Bearer Token permanente, sarà possibile ricevere dalla centrale di allarme gli stati ed i comandi di Area, Zona Filo e Radio ed Uscita.  
+Per le Aree vengono inviati ad Home Assistant gli stati di ON e OFF.  
+Per le Zone Filo e Radio vengono inviati ad Home Assistant dalla centrale gli stati di Esclusione/Inclusione, Apertura/Chiusura, Allarme/Riposo.  
+Per le Uscite vengono inviati ad Home Assistant dalla centrale gli stati di uscita Attivata/Disattivata.  
+Per la Diagnostiva vengono inviati ad Home Assistant dalla centrale gli stati Rete 220V, Batteria Centrale, Tamper Centrale e Tamper Sirena.  
+Altri stati di diagnostica possono essere aggiunti manualmente.  
 
 
 ## DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS
@@ -69,7 +69,7 @@ securlan:
 
 ### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE DI SISTEMA SECRETS
 
-Nel file secrets.yaml si deve definire Indirizzo IP e porta scheda SmartHome per il corretto invio di stati e comandi alla centrale SecurLan.
+Nel file secrets.yaml si deve definire Indirizzo IP e porta scheda SmartHome per il corretto invio di stati e comandi alla centrale SecurLan.  
 Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino ad action=  prelevati dalla vostra SmartHome come da esempio sotto:
 
 192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=
