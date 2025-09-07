@@ -4,7 +4,6 @@ template:
   - sensor:
       - name: "rest_url"
         state: !secret rest_command_url
-        
 # Trigger Bubble Card
   - trigger:
       - trigger: event
@@ -16,7 +15,6 @@ template:
         attributes:
           modules: "{{ trigger.event.data.modules }}"
           last_updated: "{{ trigger.event.data.last_updated }}"
-		  
 # Diagnostica
   - sensor:
       - name: "Stato personalizzato rete 220V"
