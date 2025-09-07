@@ -1266,7 +1266,7 @@ rest_command:
     uscita_48_disattiva:
         url: http://{{ states('sensor.rest_url') }}DISATTIVA-48
         method: POST 
-    uscita_49_disattiva:9
+    uscita_49_disattiva:
         url: http://{{ states('sensor.rest_url') }}DISATTIVA-49
         method: POST 
     uscita_50_disattiva:
