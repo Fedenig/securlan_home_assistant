@@ -4,7 +4,7 @@ import logging
 
 _LOGGER = logging.getLogger(__name__)
 
-DOMAIN = "mypackages"
+DOMAIN = "securlan_home_assistant"
 
 def setup(hass, config):
     """Set up del custom component."""
