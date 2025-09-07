@@ -1,7 +1,8 @@
-# ![Logo](https://github.com/Fedenig/securlan_home_assistant/blob/main/icon.png) # securlan_home_assistant- Versione 1.0.0
+# ![Logo](https://github.com/Fedenig/securlan_home_assistant/blob/main/icon.png) # securlan_home_assistant- Versione 1.0.0  
 
-> Home Assistant / Centrali di Allarme SecurLan / Evoforce srl
+> Home Assistant / Centrali di Allarme SecurLan / Evoforce srl  
 
+> Per gestire questa integrazione è indispensabile avere installato in centrale la scheda SmartHome.  
 
 ## Integrazione custom per Home Assistant
 L'integrazione consente di popolare Home Assistant dei controlli di una centrale di allarme SecurLan per 8 Aree, 64 zone Filo, 64 Zone Radio e 64 Uscite.  
@@ -57,7 +58,7 @@ Ora l'archivio HACS conterrà la repository SecurLan che apparirà nella lista c
 Ora la repository deve essere manualmente scaricata.  
 Cliccare sui tre puntini posti sulla destra della riga della repo Securlan e dalla lista selezionare SCARICA.  
 In alternativa cliccare sulla riga della integrazione SecurLan e dalla pagina delle info in basso a detra cliccare sul tasto SCARICA.  
-### Dopo aver effettuato il download aprire il file configuration.yaml ed inserire:  
+### Dopo aver effettuato il download aprire il file configuration.yaml ed inserire le seguenti informazioni:  
 
 ```js
 homeassistant:
@@ -78,19 +79,8 @@ In sezione Automazione e Scenari saranno presenti le Automazioni e gli Script de
 Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
 
 #### DEFINIZIONE DELLE DIPENDENZE DI SVILUPPO
-Dopo avere effettuato procedera sopra esposta procedere con la programmazion dei seguenti dati.
-
-#### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE DI SISTEMA CONFIGURATION
-
-```js
-homeassistant:
-  packages: !include_dir_named packages
-
-# API
-api:
-securlan:
-```
-
+Dopo avere effettuato la procedera sopra esposta, procedere con la programmazione dei seguenti dati.
+<br>
 #### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE DI SISTEMA SECRETS
 
 Nel file secrets.yaml si deve definire Indirizzo IP e porta scheda SmartHome per il corretto invio di stati e comandi alla centrale SecurLan.  
@@ -99,14 +89,14 @@ Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino
 192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=
 
 ```js
-# Indirizzo IP e porta scheda SmartHome per invio stati e comandi alla centrale
+# Indirizzo IP e porta scheda SmartHome per invio stati e comandi alla centrale  
 rest_command_url: INDIRIZZO IP:PORTA/httpr.php?key=token_webhook&action=
 ```
 
 --------------------------------------------------
 
-Nel file secrets.yaml si deve definire la password di convalida comandi aree da tastiera verso centrale da digitare su tastiera.
-Solo ammessi solo numeri con numero massimo di 6 cifre a vostra discrezione - default 1234
+Nel file secrets.yaml si deve definire la password di convalida comandi aree da tastiera verso centrale da digitare su tastiera.  
+Solo ammessi solo numeri con numero massimo di 6 cifre a vostra discrezione - default 1234  
 
 ```js
 # Password controllo antifurto da tastiera
@@ -114,9 +104,8 @@ password_allarme: 1234
 ```
 
 #### PROGRAMMAZIONE DA INSERIRE IN FILE DI SISTEMA SECRETS
-
-Nel file secrets.yaml definire l'ID webhook per validare ricezione eventuali comandi json in ingresso automations.
-
+<br>
+Nel file secrets.yaml definire l'ID webhook per validare ricezione eventuali comandi json in ingresso automations.  
 Inserire un codice alfa numerico tipo ' -WvovUayJo0t8MF5qWVIxNMGZ '
 
 ```js
@@ -127,18 +116,19 @@ webhook_id_in:
 ---------------------------------------------------
 
 Nel file secrets.yaml definire la password webhook per ricezione comandi dalla centrale.
-
 Inserire un codice solo numerico tipo ' 1234554321 '
 
 ```js
 # Password webhook per ricezione comandi dalla centrale. Da programmare in SmartHome - Homeassistant
 password_webhook_in: 
 ```
+<br>
 
+#### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD, SULLE ZONE E SULLE USCITE.  
+Al link http://........   sono disponibili esempi dei file .yaml per ricreare i controlli di Area ( on/off ) tramite password in tastiera, zone filo, radio ed uscite.  
+Sotto alcune immagini che mostrano il modo con cui sono stati pre-programmati i controlli del sistema di allarme SecurLan.  
 
+#### IMMAGINI
 
-
-#### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD
-Al link http://......   sono disponibili esempi dei file .yaml per ricreare i controlli di Area ( on/off ) tramite password in tastiera, zone filo, radio ed uscite.
-
+![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
 
