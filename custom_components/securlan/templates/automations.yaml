@@ -1,6 +1,6 @@
 automation:
     - id: '1234567654321'
-      alias: Webhook-in-comandi
+      alias: Webhook_in_comandi
       description: ''
       triggers:
       - trigger: webhook
