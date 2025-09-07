@@ -1,3 +1,0 @@
-copy_files:
-  name: Copia ed aggiorna files in cartella packages
-  description: Copia ed aggiorna i files dalla cartella del componente nella cartella /config/packages.
