@@ -1,10 +1,6 @@
 {
   "name": "SecurLan",
   "render_readme": true,
-  "filename": "custom_components/securlan/__init__.py",
-  "domains": ["securlan"],
-  "homeassistant": "2025.9.1",
   "country": ["IT"],
-  "icon": "mdi:home-assistant",
-  "banner":
+  "icon": "mdi:home-assistant"
 }
