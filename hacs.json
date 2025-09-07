@@ -1,4 +1,9 @@
 {
   "name": "SecurLan",
   "render_readme": true
+  "filename": "custom_components/securlan/__init__.py",
+  "domains": ["securlan"],
+  "homeassistant": "2025.9.1",
+  "country": ["IT"],
+  "icon": "https://raw.githubusercontent.com/tuoutente/turepo/main/assets/icon.png"
 }
