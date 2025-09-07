@@ -2,6 +2,9 @@ import os
 import shutil
 import logging
 
+_LOGGER = logging.getLogger(__name__)
+DOMAIN = "securlan"
+
 async def async_setup(hass, config):
     """Setup asincrono del componente custom."""
 
@@ -11,6 +14,7 @@ async def async_setup(hass, config):
             config_path = hass.config.path("packages")
             if not os.path.exists(config_path):
                 os.makedirs(config_path)
+                _LOGGER.info("Creata cartella packages in %s", config_path)
 
             source_dir = os.path.join(os.path.dirname(__file__), "templates")
 
@@ -22,8 +26,10 @@ async def async_setup(hass, config):
                     if not os.path.exists(dest_file):
                         shutil.copy2(src_file, dest_file)
                         _LOGGER.info("File %s copiato in packages", filename)
+                    else:
+                        _LOGGER.info("File %s già presente, non sovrascritto", filename)
 
-            hass.bus.async_fire("securlan_copy_done")  # opzionale: evento nel bus
+            hass.bus.async_fire("mypackages_copy_done")
             _LOGGER.info("Copia completata con successo.")
         except Exception as e:
             _LOGGER.error("Errore durante la copia file: %s", e)
@@ -32,4 +38,3 @@ async def async_setup(hass, config):
     hass.services.async_register(DOMAIN, "copy_files", handle_copy_files)
 
     return True
-
