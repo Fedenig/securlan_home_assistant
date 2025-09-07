@@ -1072,7 +1072,7 @@ rest_command:
     uscita_48_attiva:
         url: http://{{ states('sensor.rest_url') }}ATTIVA-48
         method: POST 
-    uscita_49_attiva:9
+    uscita_49_attiva:
         url: http://{{ states('sensor.rest_url') }}ATTIVA-49
         method: POST 
     uscita_50_attiva:
