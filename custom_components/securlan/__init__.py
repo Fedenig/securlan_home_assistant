@@ -18,6 +18,7 @@ RELOAD_SERVICES = [
     ("input_datetime", "reload"),
     ("group", "reload"),
     ("scene", "reload"),
+    ("rest_command", "reload"),
 ]
 
 async def reload_supported_integrations(hass: HomeAssistant):
