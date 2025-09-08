@@ -98,7 +98,10 @@ esempio: 192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=
 
 ```js
 # Indirizzo IP e porta scheda SmartHome per invio stati e comandi alla centrale  
-rest_command_url: 
+# 'INDIRIZZO IP:PORTA/httpr.php?key=TOKEN&action='  
+# esempio: 192.168.1.100/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=  
+
+rest_command_url: 192.168.1.100/httpr.......
 ```
 
 --------------------------------------------------
@@ -107,7 +110,8 @@ Nel file secrets.yaml si deve definire la password di convalida comandi aree ver
 Solo ammessi solo numeri con massimo di 6 cifre a vostra discrezione - default 1234  
 
 ```js
-# Password controllo antifurto da tastiera  
+# Password controllo antifurto da tastiera
+
 password_allarme: 1234
 ```
 
