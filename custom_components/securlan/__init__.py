@@ -8,7 +8,7 @@ _LOGGER = logging.getLogger(__name__)
 
 DOMAIN = "securlan"
 
-# Elenco dei servizi di reload supportati da HA
+# Elenco dei servizi di reload candidati
 RELOAD_SERVICES = [
     ("automation", "reload"),
     ("script", "reload"),
@@ -16,14 +16,16 @@ RELOAD_SERVICES = [
     ("input_text", "reload"),
     ("input_number", "reload"),
     ("input_datetime", "reload"),
-    ("group", "reload"),
     ("scene", "reload"),
     ("rest_command", "reload"),
 ]
 
 async def reload_supported_integrations(hass: HomeAssistant):
-    """Chiama i servizi di reload per le integrazioni supportate."""
+    """Chiama i servizi di reload solo se disponibili."""
     for domain, service in RELOAD_SERVICES:
+        if not hass.services.has_service(domain, service):
+            _LOGGER.debug("Servizio %s.%s non disponibile, salto", domain, service)
+            continue
         try:
             await hass.services.async_call(domain, service, blocking=True)
             _LOGGER.info("Servizio di reload chiamato: %s.%s", domain, service)
@@ -43,21 +45,21 @@ async def async_setup(hass: HomeAssistant, config: dict):
             _LOGGER.warning("La cartella 'templates' non è stata trovata: %s", templates_path)
             return
 
-        if not os.path.exists(config_path):
-            os.makedirs(config_path)
-            _LOGGER.info("Cartella 'packages' creata: %s", config_path)
-        else:
-            _LOGGER.info("Cartella 'packages' già esistente: %s", config_path)
+        def copy_all():
+            if not os.path.exists(config_path):
+                os.makedirs(config_path)
+                _LOGGER.info("Cartella 'packages' creata: %s", config_path)
+            else:
+                _LOGGER.info("Cartella 'packages' già esistente: %s", config_path)
 
-        for filename in os.listdir(templates_path):
-            src_file = os.path.join(templates_path, filename)
-            dst_file = os.path.join(config_path, filename)
+            for filename in os.listdir(templates_path):
+                src_file = os.path.join(templates_path, filename)
+                dst_file = os.path.join(config_path, filename)
+                if os.path.isfile(src_file):
+                    shutil.copy(src_file, dst_file)
+                    _LOGGER.info("File copiato/aggiornato: %s -> %s", src_file, dst_file)
 
-            if os.path.isfile(src_file):
-                shutil.copy(src_file, dst_file)
-                _LOGGER.info("File copiato/aggiornato: %s -> %s", src_file, dst_file)
-
-        # Ricarica i domini supportati dopo la copia
+        await hass.async_add_executor_job(copy_all)
         await reload_supported_integrations(hass)
 
     # Creazione automatica alla partenza di Home Assistant
@@ -87,14 +89,15 @@ async def async_setup(hass: HomeAssistant, config: dict):
             _LOGGER.error("Il file '%s' non esiste nella cartella templates", src_file)
             return
 
-        if not os.path.exists(config_path):
-            os.makedirs(config_path)
-            _LOGGER.info("Cartella 'packages' creata: %s", config_path)
+        def copy_one():
+            if not os.path.exists(config_path):
+                os.makedirs(config_path)
+                _LOGGER.info("Cartella 'packages' creata: %s", config_path)
 
-        shutil.copy(src_file, dst_file)
-        _LOGGER.info("File copiato/aggiornato: %s -> %s", src_file, dst_file)
+            shutil.copy(src_file, dst_file)
+            _LOGGER.info("File copiato/aggiornato: %s -> %s", src_file, dst_file)
 
-        # Ricarica i domini supportati dopo la copia
+        await hass.async_add_executor_job(copy_one)
         await reload_supported_integrations(hass)
 
         hass.components.persistent_notification.create(
