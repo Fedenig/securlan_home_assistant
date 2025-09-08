@@ -72,16 +72,17 @@ securlan:
 ```
 Salvare ed a seguire portarsi su Strumenti per sviluppatori.  
 Effettuare una Verifica Configurazione.  
-Effettuare una ricarica di tuta la configurazione YAML.  
+Effettuare una ricarica di tutta la configurazione YAML.  
 Effettuare un Riavvio di Home Assistant.  
 Al riavvio troverete dispobili tutti gli elementi di Area, Zona Filo, Zona Radio ed Uscite ( sezione Dispositivi e Servizi / Aiutanti ).  
 In sezione Automazione e Scenari saranno presenti le Automazioni e gli Script dedicati al controllo delle azioni da e verso la centrale di Allarme.  
 Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
 I dati di controllo dell'antifurto SecurLan sono stati inseriti in files .yaml presenti in una nuova cartella chiamata packages.  
-NOTA: se al riavvio Home Assistant non avesse creato la cartella e caricato all'interno i files .yaml, portarsi su Strumenti per sviluppatori.  
+### NOTA: 
+se al riavvio Home Assistant non avesse creato la cartella e caricato all'interno i files .yaml, portarsi su Strumenti per sviluppatori.  
 Entrare in lista AZIONI. In AZIONI inserire in ricerca il testo  securlan.copy_file.  
 Selezionata l'azione securlan.copy_file cliccare su ESEGUI AZIONE.  
-Ad azione eseguita effettuare un Riavvio di Home Assistant.  
+Ad azione eseguita effettuare una Verifica Configurazione, una ricarica di tutta la configurazione YAML ed un Riavvio di Home Assistant.  
 <br>
 #### DEFINIZIONE DELLE DIPENDENZE DI SVILUPPO   
 Dopo avere effettuato la procedera sopra esposta, procedere con la programmazione dei seguenti dati.
