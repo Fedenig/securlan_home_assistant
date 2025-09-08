@@ -1,15 +1,14 @@
-import logging
 import os
 import shutil
-from homeassistant.core import HomeAssistant, ServiceCall
-from homeassistant.const import EVENT_HOMEASSISTANT_START
+import logging
+from homeassistant.core import HomeAssistant
 
 _LOGGER = logging.getLogger(__name__)
 
 DOMAIN = "securlan"
 
-# Elenco dei servizi di reload candidati
-RELOAD_SERVICES = [
+# Domini candidati al reload (solo se disponibili nei servizi di HA)
+CANDIDATE_RELOAD_SERVICES = [
     ("automation", "reload"),
     ("script", "reload"),
     ("input_boolean", "reload"),
@@ -20,103 +19,102 @@ RELOAD_SERVICES = [
     ("rest_command", "reload"),
 ]
 
-async def reload_supported_integrations(hass: HomeAssistant):
-    """Chiama i servizi di reload solo se disponibili."""
-    for domain, service in RELOAD_SERVICES:
-        if not hass.services.has_service(domain, service):
-            _LOGGER.debug("Servizio %s.%s non disponibile, salto", domain, service)
-            continue
-        try:
-            await hass.services.async_call(domain, service, blocking=True)
-            _LOGGER.info("Servizio di reload chiamato: %s.%s", domain, service)
-        except Exception as e:
-            _LOGGER.warning("Errore durante reload %s.%s: %s", domain, service, e)
-
 
 async def async_setup(hass: HomeAssistant, config: dict):
-    """Setup del custom component."""
+    """Setup del componente custom."""
 
-    async def create_packages_from_templates(_=None):
-        """Copia o aggiorna tutti i file dalla cartella templates alla cartella packages."""
-        config_path = hass.config.path("packages")
-        templates_path = hass.config.path("custom_components", DOMAIN, "templates")
-
-        if not os.path.exists(templates_path):
-            _LOGGER.warning("La cartella 'templates' non è stata trovata: %s", templates_path)
-            return
-
-        def copy_all():
-            if not os.path.exists(config_path):
-                os.makedirs(config_path)
-                _LOGGER.info("Cartella 'packages' creata: %s", config_path)
+    async def async_create_packages_service(call):
+        """Servizio manuale: crea la cartella packages se non esiste."""
+        packages_path = hass.config.path("packages")
+        try:
+            if not os.path.exists(packages_path):
+                _LOGGER.info("Creo cartella packages in %s", packages_path)
+                await hass.async_add_executor_job(os.makedirs, packages_path)
             else:
-                _LOGGER.info("Cartella 'packages' già esistente: %s", config_path)
+                _LOGGER.info("Cartella packages già esistente: %s", packages_path)
+        except Exception as e:
+            _LOGGER.error("Errore durante creazione packages: %s", e, exc_info=True)
 
-            for filename in os.listdir(templates_path):
-                src_file = os.path.join(templates_path, filename)
-                dst_file = os.path.join(config_path, filename)
-                if os.path.isfile(src_file):
-                    shutil.copy(src_file, dst_file)
-                    _LOGGER.info("File copiato/aggiornato: %s -> %s", src_file, dst_file)
-
-        await hass.async_add_executor_job(copy_all)
-        await reload_supported_integrations(hass)
-
-    # Creazione automatica alla partenza di Home Assistant
-    hass.bus.async_listen_once(EVENT_HOMEASSISTANT_START, create_packages_from_templates)
-
-    # Servizio manuale: crea/aggiorna tutti i file
-    async def handle_create_service(call: ServiceCall):
-        await create_packages_from_templates()
-        hass.components.persistent_notification.create(
-            "La cartella 'packages' è stata popolata/aggiornata dai file in 'templates'.",
-            title="Custom Packages"
-        )
-
-    # Servizio manuale: copia o aggiorna un singolo file specificato
-    async def handle_copy_file_service(call: ServiceCall):
-        filename = call.data.get("filename")
-        if not filename:
-            _LOGGER.error("Parametro 'filename' mancante nel servizio copy_file")
-            return
-
-        config_path = hass.config.path("packages")
+    async def async_copy_templates_to_packages(hass: HomeAssistant):
+        """Copia i file dalla cartella templates a packages."""
         templates_path = hass.config.path("custom_components", DOMAIN, "templates")
-        src_file = os.path.join(templates_path, filename)
-        dst_file = os.path.join(config_path, filename)
+        packages_path = hass.config.path("packages")
 
-        if not os.path.exists(src_file):
-            _LOGGER.error("Il file '%s' non esiste nella cartella templates", src_file)
-            return
+        try:
+            _LOGGER.info("Inizio copia templates da %s a %s", templates_path, packages_path)
 
-        def copy_one():
-            if not os.path.exists(config_path):
-                os.makedirs(config_path)
-                _LOGGER.info("Cartella 'packages' creata: %s", config_path)
+            # Creazione cartella packages se non esiste
+            if not os.path.exists(packages_path):
+                _LOGGER.info("Creo cartella packages")
+                await hass.async_add_executor_job(os.makedirs, packages_path)
 
-            shutil.copy(src_file, dst_file)
-            _LOGGER.info("File copiato/aggiornato: %s -> %s", src_file, dst_file)
+            # Lista file in templates
+            try:
+                filenames = await hass.async_add_executor_job(os.listdir, templates_path)
+            except FileNotFoundError:
+                _LOGGER.error("Cartella templates non trovata: %s", templates_path)
+                return
 
-        await hass.async_add_executor_job(copy_one)
-        await reload_supported_integrations(hass)
+            for filename in filenames:
+                if filename.endswith(".yaml"):
+                    src = os.path.join(templates_path, filename)
+                    dst = os.path.join(packages_path, filename)
 
-        hass.components.persistent_notification.create(
-            f"File '{filename}' copiato/aggiornato nella cartella 'packages'.",
-            title="Custom Packages"
-        )
+                    def _copy():
+                        os.makedirs(os.path.dirname(dst), exist_ok=True)
+                        shutil.copy(src, dst)
 
-    # Servizio manuale: ricarica tutte le entità in packages
-    async def handle_reload_packages_service(call: ServiceCall):
-        await reload_supported_integrations(hass)
-        hass.components.persistent_notification.create(
-            "Tutti i domini supportati sono stati ricaricati dalle configurazioni in 'packages'.",
-            title="Custom Packages"
-        )
+                    _LOGGER.info("Copio %s → %s", src, dst)
+                    await hass.async_add_executor_job(_copy)
+
+            _LOGGER.info("Copia templates completata")
+
+        except Exception as e:
+            _LOGGER.error("Errore durante copia templates: %s", e, exc_info=True)
+
+    async def async_reload_supported_domains(hass: HomeAssistant):
+        """Ricarica i domini che supportano reload."""
+        try:
+            _LOGGER.info("Avvio reload domini supportati...")
+            services = hass.services.async_services()
+            reloaded = []
+
+            for domain, service in CANDIDATE_RELOAD_SERVICES:
+                if domain in services and service in services[domain]:
+                    try:
+                        _LOGGER.info("Ricarico %s.%s", domain, service)
+                        await hass.services.async_call(domain, service, blocking=True)
+                        reloaded.append(f"{domain}.{service}")
+                    except Exception as e:
+                        _LOGGER.error("Errore durante reload %s.%s: %s", domain, service, e)
+
+            if reloaded:
+                _LOGGER.info("Domini ricaricati: %s", reloaded)
+            else:
+                _LOGGER.info("Nessun dominio ricaricato")
+
+        except Exception as e:
+            _LOGGER.error("Errore durante reload domini: %s", e, exc_info=True)
+
+    async def async_copy_file_service(call):
+        """Servizio manuale: copia solo i file in packages."""
+        _LOGGER.info("Servizio copy_file avviato")
+        await async_copy_templates_to_packages(hass)
+
+    async def async_reload_packages_service(call):
+        """Servizio manuale: copia + reload domini."""
+        _LOGGER.info("Servizio reload_packages avviato")
+        try:
+            await async_copy_templates_to_packages(hass)
+            await async_reload_supported_domains(hass)
+            _LOGGER.info("Servizio reload_packages completato con successo")
+        except Exception as e:
+            _LOGGER.error("Errore in reload_packages: %s", e, exc_info=True)
 
     # Registra i servizi
-    hass.services.async_register(DOMAIN, "create_packages", handle_create_service)
-    hass.services.async_register(DOMAIN, "copy_file", handle_copy_file_service)
-    hass.services.async_register(DOMAIN, "reload_packages", handle_reload_packages_service)
+    hass.services.async_register(DOMAIN, "create_packages", async_create_packages_service)
+    hass.services.async_register(DOMAIN, "copy_file", async_copy_file_service)
+    hass.services.async_register(DOMAIN, "reload_packages", async_reload_packages_service)
 
-    _LOGGER.info("Custom component '%s' caricato con successo", DOMAIN)
+    _LOGGER.info("Componente %s caricato correttamente", DOMAIN)
     return True
