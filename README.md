@@ -11,7 +11,7 @@ Vengono caricati tutti gli scripts per inviare alla centrale i comandi di On/Off
 Viene caricato un template di definzione personalizzata degli stati di On/Off Area, Inclusione/Esclusione, Pronta/Non Pronta, Allarme/Normale di Zona e stato Attivata/Disattivata Uscita.  
 I nomi di Area, Zona Filo e Radio ed Uscita sono definiti dai file a default ma sono liberamente riprogrammabili.  
 Viene caricato un file RestCommand che definisce tutti i comandi inviabili da Home Assistant alla centrale.  
-Allo scopo programmare correttamente nel file secrets.yaml il valore definito al seguente punto [DIPENDENZE DI SVILUPPO](#programmazione-obbligatoria-da-inserire-in-file-di-sistema-secrets)  
+Allo scopo programmare correttamente nel file secrets.yaml il valore definito al seguente punto [DIPENDENZE DI SVILUPPO](#definizione-delle-dipendenze-di-sviluppo)  
 
 ### CONTROLLO AREE - Da Home assistant verso la centrale
 Ogni controllo di singola Area consente da Home Assistant l'inserimento ( ritardato, forzato, immediato o imnmediato/forzato ) ed il disinserimento.  
@@ -79,7 +79,7 @@ Al riavvio troverete dispobili tutti gli elementi di Area, Zona Filo, Zona Radio
 In sezione Automazione e Scenari saranno presenti le Automazioni e gli Script dedicati al controllo delle azioni da e verso la centrale di Allarme.  
 Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
 
-#### DEFINIZIONE DELLE DIPENDENZE DI SVILUPPO
+#### DEFINIZIONE DELLE DIPENDENZE DI SVILUPPO   
 Dopo avere effettuato la procedera sopra esposta, procedere con la programmazione dei seguenti dati.
 <br>
 #### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE DI SISTEMA SECRETS
