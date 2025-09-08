@@ -13,7 +13,7 @@ async def async_setup(hass: HomeAssistant, config: dict):
     """Setup del custom component."""
 
     async def create_packages_from_templates(_=None):
-        """Copia i file dalla cartella templates alla cartella packages."""
+        """Copia o aggiorna tutti i file dalla cartella templates alla cartella packages."""
         config_path = hass.config.path("packages")
         templates_path = hass.config.path("custom_components", DOMAIN, "templates")
 
@@ -32,11 +32,8 @@ async def async_setup(hass: HomeAssistant, config: dict):
             dst_file = os.path.join(config_path, filename)
 
             if os.path.isfile(src_file):
-                if not os.path.exists(dst_file):
-                    shutil.copy(src_file, dst_file)
-                    _LOGGER.info("File copiato: %s -> %s", src_file, dst_file)
-                else:
-                    _LOGGER.debug("File già presente, nessuna copia: %s", dst_file)
+                shutil.copy(src_file, dst_file)
+                _LOGGER.info("File copiato/aggiornato: %s -> %s", src_file, dst_file)
 
     # Creazione automatica alla partenza di Home Assistant
     hass.bus.async_listen_once(EVENT_HOMEASSISTANT_START, create_packages_from_templates)
@@ -45,7 +42,7 @@ async def async_setup(hass: HomeAssistant, config: dict):
     async def handle_create_service(call: ServiceCall):
         await create_packages_from_templates()
         hass.components.persistent_notification.create(
-            "La cartella 'packages' è stata popolata dai file in 'templates'.",
+            "La cartella 'packages' è stata popolata/aggiornata dai file in 'templates'.",
             title="Custom Packages"
         )
 
