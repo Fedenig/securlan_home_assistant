@@ -121,7 +121,8 @@ Procedere con la generazione del Token e copia dello stesso per poi inserirlo in
 In SmartHome, una volta attivato il servizio Home Assistant, programmati Indirizzo Ip, Porta ed il Bearer Token, la centrale Securlan sarà in grado di notificare ad Home Assistant tutte le variazioni di stato relativamente ad Aree, Zone Filo e Radio, Uscite e Diagnostica.  
 Da questo momento lo stato delle 8 aree, 64 zone filo, 64 zone radio e la diagnostica di base di centrale saranno costantemente in real time notificati ad Home Assistant ad ogni variazione.  
 
-<br>
+<br> 
+
 #### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD, SULLE ZONE E SULLE USCITE.  
 Al link http://.................   sono disponibili esempi dei file .yaml per generare gli oggetti grafici di controllo Area ( on/off ) tramite password in tastiera, zone filo, radio ed uscite.  
 Sotto alcune immagini che mostrano il modo con cui sono stati creati i controlli da Home Assistant verso il sistema di allarme SecurLan.  
