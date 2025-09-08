@@ -17,7 +17,7 @@ Allo scopo programmare correttamente nel file secrets.yaml il valore definito al
 Ogni controllo di singola Area consente da Home Assistant l'inserimento ( ritardato, forzato, immediato o imnmediato/forzato ) ed il disinserimento.  
 L'azione sulla Area è subordinabile al controllo via password con tastiera di controllo dedicata.  
 La password da utilizzare sulla tastiera è definibile per codice numerico da 1 a 6 cifre.  
-A tale scopo vedi sotto programmazione da inserire in file secret.yaml del vostro Home Assistant al punto [DIPENDENZE DI SVILUPPO](#programmazione-obbligatoria-da-inserire-in-file-di-sistema-secrets)  
+A tale scopo vedi sotto programmazione da inserire in file secret.yaml del vostro Home Assistant al punto [DIPENDENZE DI SVILUPPO](#definizione-delle-dipendenze-di-sviluppo)  
 
 ### CONTROLLO ZONE FILO e RADIO - Da Home assistant verso la centrale
 Ogni controllo di Zona Filo o Radio consente di inviare alla centrale il comando di Esclusione o Inclusione.
@@ -33,9 +33,9 @@ Per le Uscite vengono inviati ad Home Assistant dalla centrale gli stati di usci
 Per la Diagnostiva vengono inviati ad Home Assistant dalla centrale gli stati Rete 220V, Batteria Centrale, Tamper Centrale e Tamper Sirena.  
 Altri stati di diagnostica possono essere aggiunti manualmente.  
 
-### NOTA:  
+### MODULI GRAFICI:  
 #### è indispensabile che nella vostra installazione di Home Assistant siano presenti il modulo HACS ed il File Editor.<br>
-#### Per utilizzare la grafica degli oggetti pre-programmati ( codice.yaml e JS template ) a controllo della centrale ( On/Off Aree con tastiera e password ), Inclusione / Esclusione zona e relativo stato, Attivazione / Disattivazione e Uscita e relativo stato è suggerita l'installazione le seguenti applicazioni:  
+#### Per utilizzare la grafica degli oggetti pre-programmati ( codice.yaml e JS template ) a controllo della centrale ( On/Off Aree con tastiera e password ), Inclusione/Esclusione zona e relativo stato, Attivazione/ Disattivazione e Uscita e relativo stato è suggerita l'installazione dei seguenti moduli:  
 <br>
 - Bubble Card<br>
 - Button Card<br> 
@@ -45,7 +45,8 @@ Altri stati di diagnostica possono essere aggiunti manualmente.
 - Custom-ui<br>
 <br>
 
-#### DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS ED INSTALLAZIONE
+# INSTALLAZIONE
+#### DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS E PROCEDURA 
 In sezione HACS cliccare sui tre puntini posti in alto a destra e selezionare dalla tendina Archivi Digitali Personalizzati.  
 Apparirà il popup del download.  
 Inserire nel campo Archvio Digitale il seguente link: https://github.com/Fedenig/securlan_home_assistant.  
@@ -55,11 +56,11 @@ Il link inserito farò riferimento alla integrazione securlan-homeassistant.
 Continuare con AGGIUNGI.  
 Un link con il nome della integrazione custom SecurLan verrà mostrato nella parte superiore del popup.  
 L'icona cestino consente la sua rimozione in futuro. Chiudere il popup.  
-Ora l'archivio HACS conterrà la repository SecurLan che apparirà nella lista con ricerca.  
-Ora la repository deve essere manualmente scaricata.  
-Cliccare sui tre puntini posti sulla destra della riga della repo Securlan e dalla lista selezionare SCARICA.  
-In alternativa cliccare sulla riga della integrazione SecurLan e dalla pagina delle info in basso a detra cliccare sul tasto SCARICA.  
-### Dopo aver effettuato il download aprire il file configuration.yaml ed inserire le seguenti informazioni:  
+Ora l'archivio HACS del vostro Home Assistant conterrà nella sua lista anche la repository SecurLan ( inserire nome in ricerca).  
+Procedere con il downoload manuale della repository.  
+Cliccare sui tre puntini posti sulla destra della riga della repository Securlan e dalla lista selezionare SCARICA.  
+In alternativa cliccare sulla riga della repository SecurLan e dalla pagina delle info in basso a destra cliccare sul tasto SCARICA.  
+### Dopo aver effettuato il download aprire con File Editor il file configuration.yaml ed inserire le seguenti informazioni:  
 
 ```js
 homeassistant:
@@ -69,42 +70,47 @@ homeassistant:
 api:
 securlan:
 ```
-A seguire portarsi su Strumenti per sviluppatori.  
+Salvare ed a seguire portarsi su Strumenti per sviluppatori.  
 Effettuare una Verifica Configurazione.  
-Effettuare una ricarica di tuuta la configurazione YAML.  
-A seguire effettuare un Riavvio di Home Assistant.  
-Al riavvio portarsi su Strumenti per sviluppatori. Aprire lista AZIONI. Nella lista cercare securlan.copy_file.  
-Cliccare su ESEGUI AZIONE.  Ad azione eseguitaeffettuare un Riavvio di Home Assistant.  
+Effettuare una ricarica di tuta la configurazione YAML.  
+Effettuare un Riavvio di Home Assistant.  
 Al riavvio troverete dispobili tutti gli elementi di Area, Zona Filo, Zona Radio ed Uscite ( sezione Dispositivi e Servizi / Aiutanti ).  
 In sezione Automazione e Scenari saranno presenti le Automazioni e gli Script dedicati al controllo delle azioni da e verso la centrale di Allarme.  
 Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
-
+I dati di controllo dell'antifurto SecurLan sono stati inseriti in files .yaml presenti in una nuova cartella chiamata packages.  
+NOTA: se al riavvio Home Assistant non avesse creato la cartella e caricato all'interno i files .yaml, portarsi su Strumenti per sviluppatori.  
+Entrare in lista AZIONI. In AZIONI inserire in ricerca il testo  securlan.copy_file.  
+Selezionata l'azione securlan.copy_file cliccare su ESEGUI AZIONE.  
+Ad azione eseguita effettuare un Riavvio di Home Assistant.  
+<br>
 #### DEFINIZIONE DELLE DIPENDENZE DI SVILUPPO   
 Dopo avere effettuato la procedera sopra esposta, procedere con la programmazione dei seguenti dati.
 <br>
 #### PROGRAMMAZIONE OBBLIGATORIA DA INSERIRE IN FILE DI SISTEMA SECRETS
 
-Nel file secrets.yaml si deve definire Indirizzo IP e porta scheda SmartHome per il corretto invio di stati e comandi alla centrale SecurLan.  
-Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino ad action=  prelevati dalla vostra SmartHome come da esempio sotto:
+Nel file secrets.yaml si deve definire Indirizzo IP e porta che fanno capo alla scheda SmartHome.
+Questi dati sono fondamentali per il corretto invio di stati e comandi da Home Assistsnt alla centrale SecurLan.  
+Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino ad action=  prelevabili dalla vostra SmartHome, come da esempio sotto:
 
 192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=
 
 ```js
 # Indirizzo IP e porta scheda SmartHome per invio stati e comandi alla centrale  
-rest_command_url: INDIRIZZO IP:PORTA/httpr.php?key=token_webhook&action=
+rest_command_url: INDIRIZZO IP:PORTA/httpr.php?key=TOKEN&action=
 ```
 
 --------------------------------------------------
 
-Nel file secrets.yaml si deve definire la password di convalida comandi aree da tastiera verso centrale da digitare su tastiera.  
-Solo ammessi solo numeri con numero massimo di 6 cifre a vostra discrezione - default 1234  
+Nel file secrets.yaml si deve definire la password di convalida comandi aree verso la centrale, da digitare sulla tastiera.  
+Solo ammessi solo numeri con massimo di 6 cifre a vostra discrezione - default 1234  
 
 ```js
-# Password controllo antifurto da tastiera
+# Password controllo antifurto da tastiera  
 password_allarme: 1234
 ```
 
-#### PROGRAMMAZIONE DA INSERIRE IN FILE DI SISTEMA SECRETS
+#### PROGRAMMAZIONE OPZIONALE DA INSERIRE IN FILE DI SISTEMA SECRETS<br>
+#### NECESSARA SOLO IN CASO DI UTILIZZO DEI COMANDI DA CENTRALE TRAMITE WEBHOOK CON PAYLOAD
 <br>
 Nel file secrets.yaml definire l'ID webhook per validare ricezione eventuali comandi json in ingresso automations.  
 Inserire un codice alfa numerico tipo ' -WvovUayJo0t8MF5qWVIxNMGZ '
@@ -127,9 +133,11 @@ password_webhook_in:
 
 #### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD, SULLE ZONE E SULLE USCITE.  
 Al link http://........   sono disponibili esempi dei file .yaml per ricreare i controlli di Area ( on/off ) tramite password in tastiera, zone filo, radio ed uscite.  
-Sotto alcune immagini che mostrano il modo con cui sono stati pre-programmati i controlli del sistema di allarme SecurLan.  
+Sotto alcune immagini che mostrano il modo con cui sono stati creati i controlli da Home Assistant verso il sistema di allarme SecurLan.  
+Tali file utilizzano contenuti he necessitano della presenza dei moduli descritti al punto [MODULI GRAFICI](#moduli-grafici)  
+Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
 
-#### IMMAGINI
+#### IMMAGINI DEI CONTROLLI E LORO SIGNIFICATO
 
 ![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
 
