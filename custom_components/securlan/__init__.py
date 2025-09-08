@@ -8,6 +8,27 @@ _LOGGER = logging.getLogger(__name__)
 
 DOMAIN = "securlan"
 
+# Elenco dei servizi di reload supportati da HA
+RELOAD_SERVICES = [
+    ("automation", "reload"),
+    ("script", "reload"),
+    ("input_boolean", "reload"),
+    ("input_text", "reload"),
+    ("input_number", "reload"),
+    ("input_datetime", "reload"),
+    ("group", "reload"),
+    ("scene", "reload"),
+]
+
+async def reload_supported_integrations(hass: HomeAssistant):
+    """Chiama i servizi di reload per le integrazioni supportate."""
+    for domain, service in RELOAD_SERVICES:
+        try:
+            await hass.services.async_call(domain, service, blocking=True)
+            _LOGGER.info("Servizio di reload chiamato: %s.%s", domain, service)
+        except Exception as e:
+            _LOGGER.warning("Errore durante reload %s.%s: %s", domain, service, e)
+
 
 async def async_setup(hass: HomeAssistant, config: dict):
     """Setup del custom component."""
@@ -34,6 +55,9 @@ async def async_setup(hass: HomeAssistant, config: dict):
             if os.path.isfile(src_file):
                 shutil.copy(src_file, dst_file)
                 _LOGGER.info("File copiato/aggiornato: %s -> %s", src_file, dst_file)
+
+        # Ricarica i domini supportati dopo la copia
+        await reload_supported_integrations(hass)
 
     # Creazione automatica alla partenza di Home Assistant
     hass.bus.async_listen_once(EVENT_HOMEASSISTANT_START, create_packages_from_templates)
@@ -68,6 +92,10 @@ async def async_setup(hass: HomeAssistant, config: dict):
 
         shutil.copy(src_file, dst_file)
         _LOGGER.info("File copiato/aggiornato: %s -> %s", src_file, dst_file)
+
+        # Ricarica i domini supportati dopo la copia
+        await reload_supported_integrations(hass)
+
         hass.components.persistent_notification.create(
             f"File '{filename}' copiato/aggiornato nella cartella 'packages'.",
             title="Custom Packages"
