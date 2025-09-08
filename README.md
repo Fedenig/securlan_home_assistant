@@ -132,9 +132,9 @@ password_webhook_in:
 <br>
 
 #### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD, SULLE ZONE E SULLE USCITE.  
-Al link http://........   sono disponibili esempi dei file .yaml per ricreare i controlli di Area ( on/off ) tramite password in tastiera, zone filo, radio ed uscite.  
+Al link http://.................   sono disponibili esempi dei file .yaml per generare gli oggetti grafici di controllo Area ( on/off ) tramite password in tastiera, zone filo, radio ed uscite.  
 Sotto alcune immagini che mostrano il modo con cui sono stati creati i controlli da Home Assistant verso il sistema di allarme SecurLan.  
-Tali file utilizzano contenuti he necessitano della presenza dei moduli descritti al punto [MODULI GRAFICI](#moduli-grafici)  
+Tali files.yaml utilizzano contenuti che necessitano della presenza dei moduli descritti al punto [MODULI GRAFICI](#moduli-grafici)  
 Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
 
 #### IMMAGINI DEI CONTROLLI E LORO SIGNIFICATO
