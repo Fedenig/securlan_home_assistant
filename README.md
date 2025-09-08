@@ -139,20 +139,22 @@ Ad azione eseguita effettuare una Verifica Configurazione, una ricarica di tutta
 
 <br>
 
-#### PROGRAMMAZIONE PER AUTORIZZARE I COMANDI DA CENTRALE SECURLAN VERSO HOME ASSISTANT
+## PROGRAMMAZIONE PER AUTORIZZARE I COMANDI DALLA CENTRALE SECURLAN VERSO HOME ASSISTANT
 
-Per consentire alla centrale di allarme Securlan di inviare ad Home Assistant gli stati real time delle Aree (on/off, non pronta, allarme),  delle Zone Filo e Radio (esclusa, non pronta, allarme), delle Uscite (attivata/disattivata) e della Diagnostica è necessario programmare nella scheda SmartHome l'attivazione del servizio Home Assistant ed inserire le informazioni relative a Indirizzo Ip e Porta di Home assistant ed inserire un Bearer Token a lungo termine.  
+Per consentire alla centrale di allarme Securlan di inviare ad Home Assistant gli stati real time delle Aree (on/off, non pronta, allarme),  delle Zone Filo e Radio (esclusa, non pronta, allarme), delle Uscite (attivata/disattivata) e della Diagnostica è necessario programmare nella scheda SmartHome l'attivazione del servizio Home Assistant.  
+Dopo l'attivazione è necessario inserire le informazioni relative all'Indirizzo Ip e Porta di Home assistant ed inserire un Bearer Token a lungo termine.  
 Indirizzo IP (default 'homeassistant.local') e Porta (default '8123') sono facilmente reperibili dalla sezione rete in Impostazioni.  
 Per il Bearer Token, se non ancora creato e disponibile per questa integrazione, è necessario crearne uno allo scopo.  
-Portarsi in sezione Generale (cliccare sulla lista di sinistra sul nome del vostro account) e poi in Sicurezza (parte allta della sezione).  
+Portarsi in sezione Generale (cliccare sulla lista di sinistra sul nome del vostro account) e poi in Sicurezza (vedi parte alta della sezione Generale).  
 Sulla parte inferiore del pannello Sicurezza è presente un tasto CREA TOKEN.  
-Procedere con la generazione del Token e copia dello stesso per poi inserirlo in sezione Home Assistant della SmartHome.  
+Procedere con la generazione del Token e la copia dello stesso per poi inserirlo in sezione Home Assistant della SmartHome.  
 In SmartHome, una volta attivato il servizio Home Assistant, programmati Indirizzo Ip, Porta ed il Bearer Token, la centrale Securlan sarà in grado di notificare ad Home Assistant tutte le variazioni di stato relativamente ad Aree, Zone Filo e Radio, Uscite e Diagnostica.  
 Da questo momento lo stato delle 8 aree, 64 zone filo, 64 zone radio e la diagnostica di base di centrale saranno costantemente in real time notificati ad Home Assistant ad ogni variazione.  
 
 <br> 
 
 #### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD, SULLE ZONE E SULLE USCITE.  
+
 Al link http://.................   sono disponibili esempi dei file .yaml per generare gli oggetti grafici di controllo Area ( on/off ) tramite password in tastiera, zone filo, radio, uscite e diagnostica di base.    
 Sotto alcune immagini che mostrano il modo con cui sono stati creati i controlli da Home Assistant verso il sistema di allarme SecurLan.  
 Tali files.yaml utilizzano contenuti che necessitano della presenza dei moduli descritti al punto [MODULI GRAFICI](#moduli-grafici)  
@@ -160,7 +162,7 @@ Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di cent
 
 <br> 
 
-#### IMMAGINI DI ESEMPIO PLANCIA ANTIFURTO CONTROLLI VERSO CENTRALE SECURLAN
+#### SOTTO ALCUNE IMMAGINI DI ESEMPIO PLANCIA ANTIFURTO CONTROLLI VERSO CENTRALE SECURLAN
 
 <br> 
 
@@ -199,6 +201,7 @@ Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di cent
 <br> 
 
 ![SETUP BROWSER MOD](https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/assets/setup_pannello_browser_mod.png)
+
 <br> 
 <br> 
 <br> 
