@@ -132,9 +132,9 @@ Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di cent
 I dati di controllo dell'antifurto SecurLan sono stati inseriti in diversi files .yaml presenti in una nuova cartella chiamata packages.  
 
 ## NOTA IMPORTANTE: 
-se al riavvio Home Assistant non avesse creato la cartella e caricato all'interno i files .yaml, portarsi su Strumenti per sviluppatori.  
-Entrare in lista AZIONI. In AZIONI inserire in ricerca il testo  securlan.copy_file.  
-Selezionata l'azione securlan.copy_file cliccare su ESEGUI AZIONE.  
+se al riavvio Home Assistant non avesse creato la cartella Packages e caricato al suo interno i files .yaml, portarsi su Strumenti per sviluppatori.  
+Entrare in lista AZIONI. In AZIONI inserire in ricerca il testo securlan.  
+Selezionata l'azione **Create Packages** (securlan.create_packages) e cliccare su **ESEGUI AZIONE**.  
 Ad azione eseguita effettuare una Verifica Configurazione, una ricarica di tutta la configurazione YAML ed un Riavvio di Home Assistant.  
 
 <br>
@@ -155,7 +155,12 @@ Da questo momento lo stato delle 8 aree, 64 zone filo, 64 zone radio e la diagno
 
 #### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD, SULLE ZONE E SULLE USCITE.  
 
-Al link http://.................   sono disponibili esempi dei file .yaml per generare gli oggetti grafici di controllo Area ( on/off ) tramite password in tastiera, zone filo, radio, uscite e diagnostica di base.    
+Al link **http://www.evoforce.it/homeassistant/file.zip**  
+si può scaricare un file .zip che contiene in formato .txt i codici .yaml per generare gli oggetti grafici di controllo Area ( on/off ) tramite password in tastiera, zone filo, radio, uscite e diagnostica di base.  
+Il file .zip contiene anche la plancia Antifurto ( codice .yaml ) con pre-programmati gli elementi di controllo delle Aree, Zone, Uscite, Diagnostica ed i Popup della tastiera grafica per il controllo del sistema di allarme SecurLan.  
+
+<br> 
+
 Sotto alcune immagini che mostrano il modo con cui sono stati creati i controlli da Home Assistant verso il sistema di allarme SecurLan.  
 Tali files.yaml utilizzano contenuti che necessitano della presenza dei moduli descritti al punto [MODULI GRAFICI](#moduli-grafici)  
 Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
