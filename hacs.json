@@ -1,7 +1,7 @@
 {
   "name": "SecurLan",
   "content_in_root": false,
-  "domains": ["securlan_home_assistant"],
+  "domains": ["securlan"],
   "render_readme": true,
   "country": ["IT"],
   "icon": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/assets/icon.png"
