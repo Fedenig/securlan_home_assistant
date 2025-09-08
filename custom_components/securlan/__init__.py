@@ -30,7 +30,7 @@ async def async_setup(hass, config):
                     else:
                         _LOGGER.info("File %s già presente, non sovrascritto", filename)
 
-            hass.bus.async_fire("mypackages_copy_done")
+            hass.bus.async_fire("securlan_copy_done")
             _LOGGER.info("Copia completata con successo.")
         except Exception as e:
             _LOGGER.error("Errore durante la copia file: %s", e)
