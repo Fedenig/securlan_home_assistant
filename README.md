@@ -124,7 +124,7 @@ Da questo momento lo stato delle 8 aree, 64 zone filo, 64 zone radio e la diagno
 <br> 
 
 #### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD, SULLE ZONE E SULLE USCITE.  
-Al link http://.................   sono disponibili esempi dei file .yaml per generare gli oggetti grafici di controllo Area ( on/off ) tramite password in tastiera, zone filo, radio ed uscite.  
+Al link http://.................   sono disponibili esempi dei file .yaml per generare gli oggetti grafici di controllo Area ( on/off ) tramite password in tastiera, zone filo, radio, uscite e diagnostica di base.    
 Sotto alcune immagini che mostrano il modo con cui sono stati creati i controlli da Home Assistant verso il sistema di allarme SecurLan.  
 Tali files.yaml utilizzano contenuti che necessitano della presenza dei moduli descritti al punto [MODULI GRAFICI](#moduli-grafici)  
 Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
