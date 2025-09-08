@@ -39,14 +39,14 @@ Altri stati di diagnostica possono essere aggiunti manualmente.
 <br>
 - Bubble Card<br>
 - Button Card<br> 
-- Browser Mod<br>
-- Card-mod<br>
-- Mushroom<br>
+- Browser Mod ( installaziopne ed registrazione browser)<br>
 - Custom-ui<br>
+- Lovelace Card-mod<br>
+- Lovelace Mushroom<br>
 <br>
 
 # INSTALLAZIONE
-#### DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS E PROCEDURA 
+#### DOWNLOAD DELLA INTEGRAZIONE TRAMITE HACS E PROCEDURA DI SETUP
 In sezione HACS cliccare sui tre puntini posti in alto a destra e selezionare dalla tendina Archivi Digitali Personalizzati.  
 Apparirà il popup del download.  
 Inserire nel campo Archvio Digitale il seguente link: https://github.com/Fedenig/securlan_home_assistant.  
@@ -77,8 +77,8 @@ Effettuare un Riavvio di Home Assistant.
 Al riavvio troverete dispobili tutti gli elementi di Area, Zona Filo, Zona Radio ed Uscite ( sezione Dispositivi e Servizi / Aiutanti ).  
 In sezione Automazione e Scenari saranno presenti le Automazioni e gli Script dedicati al controllo delle azioni da e verso la centrale di Allarme.  
 Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
-I dati di controllo dell'antifurto SecurLan sono stati inseriti in files .yaml presenti in una nuova cartella chiamata packages.  
-### NOTA: 
+I dati di controllo dell'antifurto SecurLan sono stati inseriti in diversi files .yaml presenti in una nuova cartella chiamata packages.  
+### NOTA IMPORTANTE: 
 se al riavvio Home Assistant non avesse creato la cartella e caricato all'interno i files .yaml, portarsi su Strumenti per sviluppatori.  
 Entrare in lista AZIONI. In AZIONI inserire in ricerca il testo  securlan.copy_file.  
 Selezionata l'azione securlan.copy_file cliccare su ESEGUI AZIONE.  
