@@ -93,11 +93,12 @@ Nel file secrets.yaml si deve definire Indirizzo IP e porta che fanno capo alla 
 Questi dati sono fondamentali per il corretto invio di stati e comandi da Home Assistsnt alla centrale SecurLan.  
 Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino ad action=  prelevabili dalla vostra SmartHome, come da esempio sotto:
 
-192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=
+'INDIRIZZO IP:PORTA/httpr.php?key=TOKEN&action='  
+esempio: 192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=  
 
 ```js
 # Indirizzo IP e porta scheda SmartHome per invio stati e comandi alla centrale  
-rest_command_url: INDIRIZZO IP:PORTA/httpr.php?key=TOKEN&action=
+rest_command_url: 
 ```
 
 --------------------------------------------------
