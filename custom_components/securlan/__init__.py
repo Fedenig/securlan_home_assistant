@@ -102,9 +102,18 @@ async def async_setup(hass: HomeAssistant, config: dict):
             title="Custom Packages"
         )
 
+    # Servizio manuale: ricarica tutte le entità in packages
+    async def handle_reload_packages_service(call: ServiceCall):
+        await reload_supported_integrations(hass)
+        hass.components.persistent_notification.create(
+            "Tutti i domini supportati sono stati ricaricati dalle configurazioni in 'packages'.",
+            title="Custom Packages"
+        )
+
     # Registra i servizi
     hass.services.async_register(DOMAIN, "create_packages", handle_create_service)
     hass.services.async_register(DOMAIN, "copy_file", handle_copy_file_service)
+    hass.services.async_register(DOMAIN, "reload_packages", handle_reload_packages_service)
 
     _LOGGER.info("Custom component '%s' caricato con successo", DOMAIN)
     return True
