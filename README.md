@@ -134,7 +134,48 @@ Sotto alcune immagini che mostrano il modo con cui sono stati creati i controlli
 Tali files.yaml utilizzano contenuti che necessitano della presenza dei moduli descritti al punto [MODULI GRAFICI](#moduli-grafici)  
 Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
 
-#### IMMAGINI DEI CONTROLLI E LORO SIGNIFICATO
+<br> 
 
-![Recordit GIF](http://g.recordit.co/iLN6A0vSD8.gif)
+#### IMMAGINI DI ESEMPIO PLANCIA ANTIFURTO CONTROLLI VERSO CENTRALE SECURLAN
+
+<br> 
+
+#### CONTROLLI CENTRALE DI ALLARME
+
+![CONTROLLI CENTRALE DI ALLARME](https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/assets/controlli_centrale_di_allarme.png)
+
+<br> 
+
+#### CONTROLLI ZONE ED USCITE
+
+<br> 
+
+![CONTROLLI ZONE ED USCITE](https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/assets/controlli_zona_ed_uscita.png)
+
+<br> 
+
+#### CONTROLLO AREE DA TASTIERA
+
+<br> 
+
+![CONTROLLO AREE DA TASTIERA](https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/assets/controllo_area_da_tastiera.png)
+
+<br> 
+
+#### INTEGRAZIONI MODULI DA HACS
+
+<br> 
+
+![INTEGRAZIONI MODULI](https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/assets/integrazioni.png)
+
+<br> 
+
+#### SETUP BROWSER MOD
+
+<br> 
+
+![SETUP BROWSER MOD](https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/assets/setup_pannello_browser_mod.png)
+<br> 
+<br> 
+<br> 
 
