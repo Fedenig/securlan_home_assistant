@@ -133,9 +133,7 @@ Entrare in lista AZIONI. In AZIONI inserire in ricerca il testo securlan.
 Selezionata l'azione **Create Packages** (securlan.create_packages) e cliccare su **ESEGUI AZIONE**.  
 Ad azione eseguita effettuare una Verifica Configurazione, una ricarica di tutta la configurazione YAML ed un Riavvio di Home Assistant.  
 
-<br>
-
-## PROGRAMMAZIONE PER AUTORIZZARE I COMANDI DALLA CENTRALE SECURLAN VERSO HOME ASSISTANT
+## PROGRAMMAZIONE PER AUTORIZZARE I COMANDI DA SECURLAN VERSO HOME ASSISTANT
 
 Per consentire alla centrale di allarme Securlan di inviare ad Home Assistant gli stati real time delle Aree (on/off, non pronta, allarme),  delle Zone Filo e Radio (esclusa, non pronta, allarme), delle Uscite (attivata/disattivata) e della Diagnostica è necessario programmare nella scheda SmartHome l'attivazione del servizio Home Assistant.  
 Dopo l'attivazione è necessario inserire le informazioni relative all'Indirizzo Ip e Porta di Home assistant ed inserire un Bearer Token a lungo termine.  
@@ -146,8 +144,6 @@ Sulla parte inferiore del pannello Sicurezza è presente un tasto CREA TOKEN.
 Procedere con la generazione del Token e la copia dello stesso per poi inserirlo in sezione Home Assistant della SmartHome.  
 In SmartHome, una volta attivato il servizio Home Assistant, programmati Indirizzo Ip, Porta ed il Bearer Token, la centrale Securlan sarà in grado di notificare ad Home Assistant tutte le variazioni di stato relativamente ad Aree, Zone Filo e Radio, Uscite e Diagnostica.  
 Da questo momento lo stato delle 8 aree, 64 zone filo, 64 zone radio e la diagnostica di base di centrale saranno costantemente in real time notificati ad Home Assistant ad ogni variazione.  
-
-<br> 
 
 #### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD, SULLE ZONE E SULLE USCITE.  
 
