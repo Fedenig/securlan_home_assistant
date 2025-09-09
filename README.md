@@ -97,30 +97,26 @@ securlan:
 ### A seguire aprire il file secrets.yaml ed inserire le seguenti informazioni:  
 Definire Indirizzo IP e porta che fanno capo alla scheda SmartHome della centrale Securlan.  
 Questi dati sono fondamentali per il corretto invio di stati e comandi da Home Assistsnt alla centrale SecurLan.  
-Inserire dopo  rest_command_url:  l'indirizzo IP senza http:// e la stringa fino ad action=  prelevabili dalla vostra SmartHome, come da esempio sotto:  
+Inserire dopo **rest_command_url:** l'indirizzo IP senza http:// e la stringa fino ad action=  prelevabili dalla SmartHome,come da esempio sotto:  
+strutura, 'INDIRIZZO IP:PORTA/httpr.php?key=TOKEN&action='  
+esempio, **192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=**   
 
-'INDIRIZZO IP:PORTA/httpr.php?key=TOKEN&action='  
-esempio: 192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=  
+Definire la password di convalida comandi aree verso la centrale, da digitare sulla tastiera.  
+Solo ammessi solo numeri con massimo di 6 cifre a vostra discrezione - default 1234  
 
 ```js
 # Indirizzo IP e porta scheda SmartHome per invio stati e comandi alla centrale  
 # INDIRIZZO IP:PORTA/httpr.php?key=TOKEN&action=  
 # esempio: 192.168.1.100/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=  
 
-rest_command_url: 192.168.1.100/httpr.......
-```
+rest_command_url: 192.168.1.100/httpr.........&action=  
 
---------------------------------------------------
-
-Nel file secrets.yaml si deve definire la password di convalida comandi aree verso la centrale, da digitare sulla tastiera.  
-Solo ammessi solo numeri con massimo di 6 cifre a vostra discrezione - default 1234  
-
-```js
 # Password controllo antifurto da tastiera
 
 password_allarme: 1234
-```
+
 --------------------------------------------------
+
 
 Salvare ed a seguire portarsi su Strumenti per sviluppatori.  
 Effettuare una Verifica Configurazione.  
