@@ -23,9 +23,17 @@ CANDIDATE_RELOAD_SERVICES = [
 async def async_setup(hass: HomeAssistant, config: dict):
     """Setup del componente custom."""
 
+    packages_path = hass.config.path("packages")
+
+    # Creazione automatica cartella packages all'avvio
+    if not os.path.exists(packages_path):
+        _LOGGER.info("Creo cartella packages in %s (all'avvio)", packages_path)
+        await hass.async_add_executor_job(os.makedirs, packages_path)
+    else:
+        _LOGGER.debug("Cartella packages già presente: %s", packages_path)
+
     async def async_create_packages_service(call):
         """Servizio manuale: crea la cartella packages se non esiste."""
-        packages_path = hass.config.path("packages")
         try:
             if not os.path.exists(packages_path):
                 _LOGGER.info("Creo cartella packages in %s", packages_path)
@@ -38,7 +46,6 @@ async def async_setup(hass: HomeAssistant, config: dict):
     async def async_copy_templates_to_packages(hass: HomeAssistant):
         """Copia i file dalla cartella templates a packages."""
         templates_path = hass.config.path("custom_components", DOMAIN, "templates")
-        packages_path = hass.config.path("packages")
 
         try:
             _LOGGER.info("Inizio copia templates da %s a %s", templates_path, packages_path)
@@ -52,9 +59,10 @@ async def async_setup(hass: HomeAssistant, config: dict):
             try:
                 filenames = await hass.async_add_executor_job(os.listdir, templates_path)
             except FileNotFoundError:
-                _LOGGER.error("Cartella templates non trovata: %s", templates_path)
+                _LOGGER.warning("Cartella templates non trovata: %s", templates_path)
                 return
 
+            copied = 0
             for filename in filenames:
                 if filename.endswith(".yaml"):
                     src = os.path.join(templates_path, filename)
@@ -66,8 +74,9 @@ async def async_setup(hass: HomeAssistant, config: dict):
 
                     _LOGGER.info("Copio %s → %s", src, dst)
                     await hass.async_add_executor_job(_copy)
+                    copied += 1
 
-            _LOGGER.info("Copia templates completata")
+            _LOGGER.info("Copia templates completata (%s file)", copied)
 
         except Exception as e:
             _LOGGER.error("Errore durante copia templates: %s", e, exc_info=True)
@@ -115,6 +124,12 @@ async def async_setup(hass: HomeAssistant, config: dict):
     hass.services.async_register(DOMAIN, "create_packages", async_create_packages_service)
     hass.services.async_register(DOMAIN, "copy_file", async_copy_file_service)
     hass.services.async_register(DOMAIN, "reload_packages", async_reload_packages_service)
+
+    # Copia automatica dei templates all'avvio
+    await async_copy_templates_to_packages(hass)
+
+    # Reload automatico dei domini supportati
+    await async_reload_supported_domains(hass)
 
     _LOGGER.info("Componente %s caricato correttamente", DOMAIN)
     return True
