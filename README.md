@@ -114,7 +114,7 @@ rest_command_url: 192.168.1.100/httpr.........&action=
 # Password controllo antifurto da tastiera
 
 password_allarme: 1234
-
+```
 --------------------------------------------------
 
 
