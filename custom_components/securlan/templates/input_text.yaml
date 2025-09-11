@@ -1,21 +1,22 @@
 # Lista aiutanti testo per webhook.
-input_text:
-    rx:
+    input_text:
+      rx:
         name: "Testo RX"
+      icon: mdi:account
+        password:
+      name: "Testo Password"
         icon: mdi:account
-    password:
-        name: "Testo Password"
-        icon: mdi:account
-    azione:
+      azione:
         name: "Testo Azione"
-        icon: mdi:account
-    numero:
-        name: "Testo Numero"
+      icon: mdi:account
+        numero:
+      name: "Testo Numero"
         icon: mdi:account
     
 # Password allarme
     password_allarme:
-        initial: !secret password_allarme
+      initial: !secret password_allarme
+      mode: password
     
 # Un TEXT numerico semplice
     alarm_code:
