@@ -6,6 +6,18 @@ import homeassistant.helpers.config_validation as cv
 DOMAIN = "securlan"
 _LOGGER = logging.getLogger(__name__)
 
+# Domini candidati al reload (solo se disponibili nei servizi di HA)
+CANDIDATE_RELOAD_SERVICES = [
+    ("automation", "reload"),
+    ("script", "reload"),
+    ("input_boolean", "reload"),
+    ("input_text", "reload"),
+    ("input_number", "reload"),
+    ("input_datetime", "reload"),
+    ("scene", "reload"),
+    ("rest_command", "reload"),
+]
+
 SET_PASSWORD_SCHEMA = vol.Schema({
     vol.Required("key"): cv.string,
     vol.Required("value"): cv.string,
@@ -99,4 +111,7 @@ async def async_setup(hass: HomeAssistant, config: dict):
     hass.services.async_register(DOMAIN, "create_packages", async_create_packages)
     hass.services.async_register(DOMAIN, "delete_password", async_delete_password, schema=GET_PASSWORD_SCHEMA)
 
+        _LOGGER.info("Componente %s caricato correttamente", DOMAIN)
+
     return True
+
