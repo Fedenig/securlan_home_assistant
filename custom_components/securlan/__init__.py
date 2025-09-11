@@ -6,9 +6,21 @@ from homeassistant.core import HomeAssistant, ServiceCall
 _LOGGER = logging.getLogger(__name__)
 DOMAIN = "securlan"
 
+# Domini candidati al reload (solo se disponibili nei servizi di HA)
+CANDIDATE_RELOAD_SERVICES = [
+    ("automation", "reload"),
+    ("script", "reload"),
+    ("input_boolean", "reload"),
+    ("input_text", "reload"),
+    ("input_number", "reload"),
+    ("input_datetime", "reload"),
+    ("scene", "reload"),
+    ("rest_command", "reload"),
+]
+
 async def async_setup(hass: HomeAssistant, config: dict):
     """Setup del componente Securlan."""
-
+    
     # 1. Crea cartella packages
     async def async_create_packages_service(call: ServiceCall):
         packages_path = hass.config.path("packages")
