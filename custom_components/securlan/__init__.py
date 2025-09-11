@@ -21,6 +21,9 @@ CANDIDATE_RELOAD_SERVICES = [
 async def async_setup(hass: HomeAssistant, config: dict):
     """Setup del componente Securlan."""
     
+    packages_path = hass.config.path("packages")
+    templates_path = hass.config.path("custom_components", DOMAIN, "templates")
+    
     # 1. Crea cartella packages
     async def async_create_packages_service(call: ServiceCall):
         packages_path = hass.config.path("packages")
