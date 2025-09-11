@@ -24,7 +24,9 @@ async def async_setup(hass: HomeAssistant, config: dict):
     packages_path = hass.config.path("packages")
     templates_path = hass.config.path("custom_components", DOMAIN, "templates")
     
+    # -------------------------------
     # 1. Crea cartella packages
+    # -------------------------------
     async def async_create_packages_service(call: ServiceCall):
         packages_path = hass.config.path("packages")
         if not os.path.exists(packages_path):
@@ -33,7 +35,9 @@ async def async_setup(hass: HomeAssistant, config: dict):
         else:
             _LOGGER.info("Cartella packages già esistente: %s", packages_path)
 
+    # -------------------------------
     # 2. Copia file templates -> packages
+    # -------------------------------
     async def async_copy_file_service(call: ServiceCall):
         templates_path = hass.config.path("custom_components", DOMAIN, "templates")
         packages_path = hass.config.path("packages")
@@ -48,63 +52,100 @@ async def async_setup(hass: HomeAssistant, config: dict):
                 shutil.copy(src, dst)
                 _LOGGER.info("Copiato %s → %s", src, dst)
 
+    # -------------------------------
     # 3. Reload packages (copia + reload domini)
+    # -------------------------------
     async def async_reload_packages_service(call: ServiceCall):
         await async_copy_file_service(call)
         _LOGGER.info("Pacchetti copiati, ricarico domini supportati...")
-        for domain in ["automation", "script", "scene", "input_text", "input_boolean", "input_number", "input_datetime"]:
-            if domain in hass.services.async_services():
-                if "reload" in hass.services.async_services()[domain]:
-                    await hass.services.async_call(domain, "reload", blocking=True)
-                    _LOGGER.info("Ricaricato dominio: %s", domain)
+        services = hass.services.async_services()
+        for domain, service in CANDIDATE_RELOAD_SERVICES:
+            if domain in services and service in services[domain]:
+                try:
+                    await hass.services.async_call(domain, service, blocking=True)
+                    _LOGGER.info("Ricaricato dominio: %s.%s", domain, service)
+                except Exception as e:
+                    _LOGGER.error("Errore reload %s.%s: %s", domain, service, e)
 
+    # -------------------------------
     # 4. Set password
+    # -------------------------------
     async def async_set_password_service(call: ServiceCall):
         key = call.data.get("key")
         value = call.data.get("value")
         if not key or not value:
             _LOGGER.error("Chiave o valore mancanti per set_password")
             return
+
         secrets_path = hass.config.path("secrets.yaml")
-        with open(secrets_path, "a") as f:
-            f.write(f"\n{key}: {value}")
-        _LOGGER.info("Password aggiornata per %s", key)
-        hass.components.persistent_notification.create(
-            f"🔐 Password aggiornata per **{key}**", title="Securlan"
+        secrets = {}
+        if os.path.exists(secrets_path):
+            with open(secrets_path, "r") as f:
+                try:
+                    secrets = yaml.safe_load(f) or {}
+                except Exception:
+                    _LOGGER.warning("Impossibile leggere secrets.yaml, verrà creato nuovo file")
+
+        secrets[key] = value
+        with open(secrets_path, "w") as f:
+            yaml.safe_dump(secrets, f)
+
+        await hass.services.async_call(
+            "persistent_notification",
+            "create",
+            {
+                "title": "Securlan",
+                "message": f"🔐 Password aggiornata per **{key}**"
+            },
         )
 
+    # -------------------------------
     # 5. Get password
+    # -------------------------------
     async def async_get_password_service(call: ServiceCall):
         key = call.data.get("key")
         if not key:
             return
-        secrets_path = hass.config.path("secrets.yaml")
-        if not os.path.exists(secrets_path):
-            return
-        with open(secrets_path, "r") as f:
-            for line in f.readlines():
-                if line.startswith(f"{key}:"):
-                    value = line.split(":", 1)[1].strip()
-                    hass.components.persistent_notification.create(
-                        f"🔑 Password trovata per {key}: {value}", title="Securlan"
-                    )
-                    return
 
+        secrets_path = hass.config.path("secrets.yaml")
+        value = None
+        if os.path.exists(secrets_path):
+            with open(secrets_path, "r") as f:
+                try:
+                    secrets = yaml.safe_load(f) or {}
+                    value = secrets.get(key)
+                except Exception:
+                    _LOGGER.warning("Errore lettura secrets.yaml")
+        message = f"🔑 Password trovata per {key}: {value}" if value else f"❌ Nessuna password trovata per {key}"
+        await hass.services.async_call(
+            "persistent_notification",
+            "create",
+            {"title": "Securlan", "message": message},
+        )
+
+    # -------------------------------
     # 6. Append number a input_text
+    # -------------------------------
     async def async_append_number_service(call: ServiceCall):
         entity_id = call.data.get("entity_id")
         number = call.data.get("number")
         if not entity_id or number is None:
             _LOGGER.error("entity_id o number mancanti in append_number")
             return
-        current = hass.states.get(entity_id)
-        new_value = (current.state if current else "") + str(number)
+        current_state = hass.states.get(entity_id)
+        current_value = current_state.state if current_state else ""
+        new_value = current_value + str(number)
         await hass.services.async_call(
-            "input_text", "set_value", {"entity_id": entity_id, "value": new_value}
+            "input_text",
+            "set_value",
+            {"entity_id": entity_id, "value": new_value},
+            blocking=True
         )
         _LOGGER.info("Aggiornato %s → %s", entity_id, new_value)
 
-    # Registrazione servizi
+    # -------------------------------
+    # Registrazione dei servizi
+    # -------------------------------
     hass.services.async_register(DOMAIN, "create_packages", async_create_packages_service)
     hass.services.async_register(DOMAIN, "copy_file", async_copy_file_service)
     hass.services.async_register(DOMAIN, "reload_packages", async_reload_packages_service)
