@@ -1,8 +1,35 @@
 create_packages:
-  name: Create Packages
-  description: Copia tutti i file dalla cartella templates alla cartella packages.
-  fields: {}
+  description: "Crea la cartella packages se non esiste"
 
 copy_file:
-  name: Copy File
-  description: Copia o aggiorna un singolo file dalla cartella templates alla cartella packages.
+  description: "Copia i file dalla cartella templates alla cartella packages"
+
+reload_packages:
+  description: "Copia i templates e ricarica i domini supportati"
+
+set_password:
+  description: "Imposta una password"
+  fields:
+    key:
+      description: "Nome del segreto"
+      example: "password_allarme"
+    value:
+      description: "Valore della password"
+      example: "1234"
+
+get_password:
+  description: "Recupera una password"
+  fields:
+    key:
+      description: "Nome del segreto"
+      example: "password_allarme"
+
+append_number:
+  description: "Aggiunge un numero a un input_text"
+  fields:
+    entity_id:
+      description: "Entity input_text da aggiornare"
+      example: "input_text.alarm_code"
+    number:
+      description: "Numero da aggiungere"
+      example: "1"
