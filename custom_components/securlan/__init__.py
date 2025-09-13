@@ -127,18 +127,41 @@ async def async_setup(hass: HomeAssistant, config: dict):
         secrets_path = hass.config.path("secrets.yaml")
         value = None
         if os.path.exists(secrets_path):
-            with open(secrets_path, "r") as f:
+            with open(secrets_path, "r", encoding="utf-8") as f:
                 try:
+                    import yaml
                     secrets = yaml.safe_load(f) or {}
                     value = secrets.get(key)
-                except Exception:
-                    _LOGGER.warning("Errore lettura secrets.yaml")
-        message = f"🔑 Password trovata per {key}: {value}" if value else f"❌ Nessuna password trovata per {key}"
+                except Exception as e:
+                    _LOGGER.warning("Errore lettura secrets.yaml: %s", e)
+
+        # 🔹 Aggiorna input_text.password_allarme_value
+        try:
+            await hass.services.async_call(
+                "input_text",
+                "set_value",
+                {
+                    "entity_id": "input_text.password_allarme_value",
+                    "value": value if value else "",
+                },
+                blocking=True,
+            )
+        except Exception as e:
+            _LOGGER.error("Errore aggiornamento input_text.password_allarme_value: %s", e)
+
+        # 🔹 Crea notifica persistente
+        message = (
+            f"🔑 Password trovata per {key}: {value}"
+            if value
+            else f"❌ Nessuna password trovata per {key}"
+        )
         await hass.services.async_call(
             "persistent_notification",
             "create",
             {"title": "Securlan", "message": message},
         )
+
+        _LOGGER.info("Get password eseguito: chiave=%s, valore=%s", key, value)
 
     # -------------------------------
     # 6. Append number a input_text
