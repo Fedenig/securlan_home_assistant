@@ -98,8 +98,8 @@ securlan:
 Definire Indirizzo IP e porta che fanno capo alla scheda SmartHome della centrale Securlan.  
 Questi dati sono fondamentali per il corretto invio di stati e comandi da Home Assistsnt alla centrale SecurLan.  
 Inserire dopo **rest_command_url:** l'indirizzo IP senza http:// e la stringa fino ad action=  prelevabili dalla SmartHome,come da esempio sotto:  
-strutura, 'INDIRIZZO IP:PORTA/httpr.php?key=TOKEN&action='  
-esempio, **192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=**   
+- struttura,   INDIRIZZO IP:PORTA/httpr.php?key=TOKEN&action=  
+- esempio,     **192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=**   
 
 Definire la password di convalida comandi aree verso la centrale, da digitare sulla tastiera.  
 Solo ammessi solo numeri con massimo di 6 cifre a vostra discrezione - default 1234  
