@@ -148,9 +148,11 @@ Da questo momento lo stato delle 8 aree, 64 zone filo, 64 zone radio e la diagno
 
 #### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD E SU ZONE ED USCITE.  
 
-Al link **http://www.evoforce.it/homeassistant/plancia_securlan.rar**  
-si può scaricare un file .zip che contiene in formato .txt i codici .yaml per generare gli oggetti grafici di controllo Area ( on/off ) tramite password in tastiera, zone filo, radio, uscite e diagnostica di base.  
-Il file .zip contiene anche la plancia Antifurto ( codice .yaml ) con pre-programmati gli elementi di controllo delle Aree, Zone, Uscite, Diagnostica ed i Popup della tastiera grafica per il controllo del sistema di allarme SecurLan.  
+Al link **http://www.evoforce.it/homeassistant/plancia_securlan.rar** si può scaricare un file .zip che contiene in formato .txt tutto il contenuto grafico della plancia Securlan (.yaml ).   
+La plancia SecurLan ( codice .yaml da caricare in manuale nella plancia dopo averla creata) contiene tutti gli elementi di controllo delle Aree, Zone, Uscite, Diagnostica, i Popup della tastiera grafica per il controllo del sistema di allarme SecurLan. La plancia Securlan contiene inoltre il modulo per la generazione, modifica e visualizzazione della password antifurto per tastiera.  
+La password antifurto a default vuota e deve essere creata (da 1 a 6 cifre numeriche).  
+La plancia propone anche delle soluzione grafiche alternative di controllo della Aree senza utilizzo di password.  
+Rimuovere dalla grafica quanto a voi non necessario. L'uffico Tecnico di Evoforce srl può essere di supporto per la gestione grafica.  
 
 <br> 
 
