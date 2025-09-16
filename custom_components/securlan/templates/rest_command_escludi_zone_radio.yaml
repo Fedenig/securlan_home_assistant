@@ -1,0 +1,194 @@
+rest_command:
+#Comando escludi zona radio
+  zona_r1_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-1
+    method: POST
+  zona_r2_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-2
+    method: POST
+  zona_r3_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-3
+    method: POST
+  zona_r4_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-4
+    method: POST
+  zona_r5_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-5
+    method: POST
+  zona_r6_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-6
+    method: POST
+  zona_r7_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-7
+    method: POST
+  zona_r8_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-8
+    method: POST
+  zona_r9_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-9
+    method: POST
+  zona_r10_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-10
+    method: POST
+  zona_r11_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-11
+    method: POST
+  zona_r12_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-12
+    method: POST
+  zona_r13_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-13
+    method: POST
+  zona_r14_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-14
+    method: POST
+  zona_r15_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-15
+    method: POST
+  zona_r16_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-16
+    method: POST
+  zona_r17_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-17
+    method: POST
+  zona_r18_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-18
+    method: POST
+  zona_r19_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-19
+    method: POST
+  zona_r20_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-20
+    method: POST
+  zona_r21_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-21
+    method: POST
+  zona_r22_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-22
+    method: POST
+  zona_r23_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-23
+    method: POST
+  zona_r24_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-24
+    method: POST
+  zona_r25_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-25
+    method: POST
+  zona_r26_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-26
+    method: POST
+  zona_r27_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-27
+    method: POST
+  zona_r28_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-28
+    method: POST
+  zona_r29_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-29
+    method: POST
+  zona_r30_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-30
+    method: POST
+  zona_r31_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-31
+    method: POST
+  zona_r32_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-32
+    method: POST
+  zona_r33_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-33
+    method: POST
+  zona_r34_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-34
+    method: POST
+  zona_r35_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-35
+    method: POST
+  zona_r36_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-36
+    method: POST
+  zona_r37_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-37
+    method: POST
+  zona_r38_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-38
+    method: POST
+  zona_r39_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-39
+    method: POST
+  zona_r40_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-40
+    method: POST
+  zona_r41_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-41
+    method: POST
+  zona_r42_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-42
+    method: POST
+  zona_r43_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-43
+    method: POST
+  zona_r44_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-44
+    method: POST
+  zona_r45_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-45
+    method: POST
+  zona_r46_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-46
+    method: POST
+  zona_r47_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-47
+    method: POST
+  zona_r48_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-48
+    method: POST
+  zona_r49_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-49
+    method: POST
+  zona_r50_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-50
+    method: POST
+  zona_r51_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-51
+    method: POST
+  zona_r52_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-52
+    method: POST
+  zona_r53_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-53
+    method: POST
+  zona_r54_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-54
+    method: POST
+  zona_r55_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-55
+    method: POST
+  zona_r56_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-56
+    method: POST
+  zona_r57_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-57
+    method: POST
+  zona_r58_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-58
+    method: POST
+  zona_r59_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-59
+    method: POST
+  zona_r60_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-60
+    method: POST
+  zona_r61_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-61
+    method: POST
+  zona_r62_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-62
+    method: POST
+  zona_r63_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-63
+    method: POST
+  zona_r64_escludi:
+    url: http://{{ states('sensor.rest_url') }}ESCLUDI-R-64
+    method: POST
