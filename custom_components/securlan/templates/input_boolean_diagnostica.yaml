@@ -1,0 +1,14 @@
+input_boolean:
+# Diagnostica
+  rete_220v:
+    name: "Rete 220V"
+    icon: mdi:current-ac
+  batteria_centrale:
+    name: "Batteria di Centrale"
+    icon: mdi:battery-40
+  tamper_centrale:
+    name: "Manomissione Centrale"
+    icon: mdi:alarm-panel
+  tamper_sirena:
+    name: "Manomissione Sirena"
+    icon: mdi:volume-off
