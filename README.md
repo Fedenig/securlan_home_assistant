@@ -41,7 +41,7 @@ Altri stati di diagnostica possono essere aggiunti manualmente.
 
 - Bubble Card<br>
 - Button Card<br> 
-- Browser Mod ( installaziopne ed registrazione browser)<br>
+- Browser Mod ( installazione e registrazione del browser)<br>
 - Custom-ui<br>
 - Lovelace Card-mod<br>
 - Lovelace Mushroom<br>
