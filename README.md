@@ -119,15 +119,19 @@ Salvare ed a seguire portarsi su Strumenti per sviluppatori.
 Effettuare una Verifica Configurazione.  
 Effettuare una ricarica di tutta la configurazione YAML.  
 Effettuare un Riavvio di Home Assistant.  
-Al riavvio troverete dispobili tutti gli elementi di Area, Zona Filo, Zona Radio ed Uscite ( sezione Dispositivi e Servizi / Aiutanti ).  
-In sezione Automazione e Scenari saranno presenti le Automazioni e gli Script dedicati al controllo delle azioni da e verso la centrale di Allarme.  
-Si suggerisce di creare una Plancia ANTIFURTO dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
-I dati di controllo dell'antifurto SecurLan sono stati inseriti in diversi files .yaml presenti in una nuova cartella chiamata packages.  
+Al riavvio portarsi in Strumenti per sviluppatori e poi in Azioni.  
+Dalla lista delle azioni cercare **reload_package (securlan.reload_packege)** ed a seguire premere su **Esegui Azione**.  
+L'azione avvierà tutti i files, installati dalla custom component securlan, presenti in cartella **packages**.  
+I dati di controllo dell'antifurto SecurLan sono stati inseriti, tramite diversi files.yaml, presenti nella nuova cartella chiamata packages.  
+A seguire troverete dispobili tutti gli elementi di Area, Zona Filo, Zona Radio ed Uscite ( sezione Dispositivi e Servizi / Aiutanti ).  
+In sezione Scenari saranno presenti gli Script dedicati al controllo delle azioni da e verso la centrale di Allarme.  
+Si suggerisce di creare una plancia antifurto con nome **SecurLan** dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
+[VEDI DOWNLOAD FILES ELEMENTI GRAFICI](#personalizzazione-grafica-dei-comandi-sulle-aree-con-tastiera-e-password-e-su-zone-ed-uscite) 
 
 ## NOTA IMPORTANTE: 
 se al riavvio Home Assistant non avesse creato la cartella Packages e caricato al suo interno i files .yaml, portarsi su Strumenti per sviluppatori.  
-Entrare in lista AZIONI. In AZIONI inserire in ricerca il testo securlan.  
-Selezionata l'azione **Create Packages** (securlan.create_packages) e cliccare su **ESEGUI AZIONE**.  
+Entrare Strumenti per sviluppatori e poi in AZIONI. In lista AZIONI inserire in ricerca il testo securlan.  
+Selezionata l'azione **create packages (securlan.create_packages)** e cliccare su **ESEGUI AZIONE**.  
 Ad azione eseguita effettuare una Verifica Configurazione, una ricarica di tutta la configurazione YAML ed un Riavvio di Home Assistant.  
 
 ## PROGRAMMAZIONE PER AUTORIZZARE I COMANDI DA SECURLAN VERSO HOME ASSISTANT
@@ -142,7 +146,7 @@ Procedere con la generazione del Token e la copia dello stesso per poi inserirlo
 In SmartHome, una volta attivato il servizio Home Assistant, programmati Indirizzo Ip, Porta ed il Bearer Token, la centrale Securlan sarà in grado di notificare ad Home Assistant tutte le variazioni di stato relativamente ad Aree, Zone Filo e Radio, Uscite e Diagnostica.  
 Da questo momento lo stato delle 8 aree, 64 zone filo, 64 zone radio e la diagnostica di base di centrale saranno costantemente in real time notificati ad Home Assistant ad ogni variazione.  
 
-#### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD, SULLE ZONE E SULLE USCITE.  
+#### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD E SU ZONE ED USCITE.  
 
 Al link **http://www.evoforce.it/homeassistant/plancia_securlan.rar**  
 si può scaricare un file .zip che contiene in formato .txt i codici .yaml per generare gli oggetti grafici di controllo Area ( on/off ) tramite password in tastiera, zone filo, radio, uscite e diagnostica di base.  
