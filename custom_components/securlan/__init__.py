@@ -1,13 +1,11 @@
 import os
 import shutil
 import logging
-import yaml
 from homeassistant.core import HomeAssistant, ServiceCall
 
 _LOGGER = logging.getLogger(__name__)
 DOMAIN = "securlan"
 
-# Domini candidati al reload (solo se disponibili nei servizi di HA)
 CANDIDATE_RELOAD_SERVICES = [
     ("automation", "reload"),
     ("script", "reload"),
@@ -21,10 +19,10 @@ CANDIDATE_RELOAD_SERVICES = [
 
 async def async_setup(hass: HomeAssistant, config: dict):
     """Setup del componente Securlan."""
-    
+
     packages_path = hass.config.path("packages")
     templates_path = hass.config.path("custom_components", DOMAIN, "templates")
-    
+
     # -------------------------------
     # 1. Crea cartella packages
     # -------------------------------
@@ -69,10 +67,9 @@ async def async_setup(hass: HomeAssistant, config: dict):
                     _LOGGER.error("Errore reload %s.%s: %s", domain, service, e)
 
     # -------------------------------
-    # 4. Set password
+    # 4. Set password (solo su input_text)
     # -------------------------------
-    async def async_set_password_service(call):
-        """Servizio per scrivere una password in secrets.yaml."""
+    async def async_set_password_service(call: ServiceCall):
         key = call.data.get("key")
         value = call.data.get("value")
 
@@ -80,88 +77,43 @@ async def async_setup(hass: HomeAssistant, config: dict):
             _LOGGER.error("Chiave o valore mancanti per set_password")
             return
 
-        try:
-            secrets_path = hass.config.path("secrets.yaml")
-
-            def _write_secret():
-                import yaml
-                if os.path.exists(secrets_path):
-                    with open(secrets_path, "r", encoding="utf-8") as f:
-                        secrets = yaml.safe_load(f) or {}
-                else:
-                    secrets = {}
-
-                secrets[key] = value
-
-                with open(secrets_path, "w", encoding="utf-8") as f:
-                    yaml.dump(secrets, f, default_flow_style=False, allow_unicode=True)
-
-            await hass.async_add_executor_job(_write_secret)
-
-            # ✅ Notifica generica
-            hass.async_create_task(
-                hass.services.async_call(
-                    "persistent_notification",
-                    "create",
-                    {
-                        "title": "securlan",
-                        "message": f"Segreto '{key}' aggiornato correttamente",
-                        "notification_id": f"securlan_{key}",
-                    },
-                )
-            )
-
-            _LOGGER.info("Password aggiornata con chiave: %s", key)
-
-        except Exception as e:
-            _LOGGER.error("Errore durante scrittura secrets.yaml: %s", e, exc_info=True)
-
-    # -------------------------------
-    # 5. Get password
-    # -------------------------------
-    async def async_get_password_service(call: ServiceCall):
-        key = call.data.get("key")
-        if not key:
-            return
-
-        secrets_path = hass.config.path("secrets.yaml")
-        value = None
-        if os.path.exists(secrets_path):
-            with open(secrets_path, "r", encoding="utf-8") as f:
-                try:
-                    import yaml
-                    secrets = yaml.safe_load(f) or {}
-                    value = secrets.get(key)
-                except Exception as e:
-                    _LOGGER.warning("Errore lettura secrets.yaml: %s", e)
-
-        # 🔹 Aggiorna input_text.password_allarme_value
+        # Aggiorna direttamente input_text.password_allarme
         try:
             await hass.services.async_call(
                 "input_text",
                 "set_value",
                 {
-                    "entity_id": "input_text.password_allarme_value",
-                    "value": value if value else "",
+                    "entity_id": "input_text.password_allarme",
+                    "value": value,
                 },
                 blocking=True,
             )
-        except Exception as e:
-            _LOGGER.error("Errore aggiornamento input_text.password_allarme_value: %s", e)
+            _LOGGER.info("Password aggiornata (key=%s, value=%s)", key, value)
 
-        # 🔹 Crea notifica persistente
+        except Exception as e:
+            _LOGGER.error("Errore aggiornamento input_text.password_allarme: %s", e)
+
+    # -------------------------------
+    # 5. Get password (da input_text)
+    # -------------------------------
+    async def async_get_password_service(call: ServiceCall):
+        state = hass.states.get("input_text.password_allarme")
+        value = state.state if state else ""
+
         message = (
-            f"🔑 Password trovata per {key}: {value}"
+            f"🔑 Password attuale: {value}"
             if value
-            else f"❌ Nessuna password trovata per {key}"
+            else "❌ Nessuna password impostata"
         )
+
+        # Mostra notifica
         await hass.services.async_call(
             "persistent_notification",
             "create",
             {"title": "Securlan", "message": message},
         )
 
-        _LOGGER.info("Get password eseguito: chiave=%s, valore=%s", key, value)
+        _LOGGER.info("Get password eseguito → %s", value)
 
     # -------------------------------
     # 6. Append number a input_text
@@ -179,7 +131,7 @@ async def async_setup(hass: HomeAssistant, config: dict):
             "input_text",
             "set_value",
             {"entity_id": entity_id, "value": new_value},
-            blocking=True
+            blocking=True,
         )
         _LOGGER.info("Aggiornato %s → %s", entity_id, new_value)
 
@@ -193,5 +145,5 @@ async def async_setup(hass: HomeAssistant, config: dict):
     hass.services.async_register(DOMAIN, "get_password", async_get_password_service)
     hass.services.async_register(DOMAIN, "append_number", async_append_number_service)
 
-    _LOGGER.info("✅ Integrazione Securlan avviata con 6 servizi registrati")
+    _LOGGER.info("✅ Integrazione Securlan avviata (password gestita solo via input_text)")
     return True
