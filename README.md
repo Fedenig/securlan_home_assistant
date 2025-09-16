@@ -13,7 +13,7 @@ I nomi di Area, Zona Filo e Radio ed Uscita sono definiti dai file a default ma 
 Viene caricato un file RestCommand che definisce tutti i comandi inviabili da Home Assistant alla centrale.  
 Allo scopo programmare correttamente nel file secrets.yaml il valore definito al seguente punto [DIPENDENZE DI SVILUPPO](#definizione-delle-dipendenze-di-sviluppo)  
 
-### CONTROLLO AREE - Da Home assistant verso la centrale
+### CONTROLLO AREE - Da Home Assistant verso la centrale
 Ogni controllo di singola Area consente da Home Assistant l'inserimento ( ritardato, forzato, immediato o imnmediato/forzato ) ed il disinserimento.  
 L'azione sulla Area è subordinabile al controllo via password con tastiera di controllo dedicata.  
 La password da utilizzare sulla tastiera è definibile per codice numerico da 1 a 6 cifre.  
@@ -22,7 +22,7 @@ A tale scopo vedi sotto programmazione da inserire in file secret.yaml del vostr
 ### CONTROLLO ZONE FILO e RADIO - Da Home assistant verso la centrale
 Ogni controllo di Zona Filo o Radio consente di inviare alla centrale il comando di Esclusione o Inclusione.
 
-### CONTROLLO USCITE - Da Home assistant verso la centrale
+### CONTROLLO USCITE - Da Home Assistant verso la centrale
 Ogni controllo di Uscita consente di inviare alla centrale il comando di Attivazone/Disattivazione della Uscita.
 
 ### COMANDI INVIATI DALLA CENTRALE VERSO HOMEASSISTANT
