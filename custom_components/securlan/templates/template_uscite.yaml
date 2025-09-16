@@ -1,0 +1,321 @@
+template:
+  - sensor:
+      - name: "Stato personalizzato uscita 1"
+        unique_id: "stato_personalizzato_uscita_1"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_1') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_1') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 2"
+        unique_id: "stato_personalizzato_uscita_2"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_2') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_2') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 3"
+        unique_id: "stato_personalizzato_uscita_3"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_3') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_3') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 4"
+        unique_id: "stato_personalizzato_uscita_4"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_4') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_4') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 5"
+        unique_id: "stato_personalizzato_uscita_5"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_5') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_5') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 6"
+        unique_id: "stato_personalizzato_uscita_6"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_6') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_6') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 7"
+        unique_id: "stato_personalizzato_uscita_7"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_7') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_7') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 8"
+        unique_id: "stato_personalizzato_uscita_8"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_8') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_8') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 9"
+        unique_id: "stato_personalizzato_uscita_9"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_9') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_9') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 10"
+        unique_id: "stato_personalizzato_uscita_10"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_10') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_10') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 11"
+        unique_id: "stato_personalizzato_uscita_11"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_11') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_11') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 12"
+        unique_id: "stato_personalizzato_uscita_12"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_12') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_12') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 13"
+        unique_id: "stato_personalizzato_uscita_13"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_13') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_13') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 14"
+        unique_id: "stato_personalizzato_uscita_14"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_14') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_14') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 15"
+        unique_id: "stato_personalizzato_uscita_15"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_15') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_15') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 16"
+        unique_id: "stato_personalizzato_uscita_16"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_16') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_16') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 17"
+        unique_id: "stato_personalizzato_uscita_17"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_17') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_17') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 18"
+        unique_id: "stato_personalizzato_uscita_18"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_18') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_18') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 19"
+        unique_id: "stato_personalizzato_uscita_19"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_19') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_19') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 20"
+        unique_id: "stato_personalizzato_uscita_20"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_20') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_20') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 21"
+        unique_id: "stato_personalizzato_uscita_21"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_21') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_21') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 22"
+        unique_id: "stato_personalizzato_uscita_22"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_22') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_22') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 23"
+        unique_id: "stato_personalizzato_uscita_23"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_23') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_23') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 24"
+        unique_id: "stato_personalizzato_uscita_24"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_24') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_24') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 25"
+        unique_id: "stato_personalizzato_uscita_25"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_25') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_25') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 26"
+        unique_id: "stato_personalizzato_uscita_26"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_26') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_26') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 27"
+        unique_id: "stato_personalizzato_uscita_27"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_27') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_27') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 28"
+        unique_id: "stato_personalizzato_uscita_28"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_28') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_28') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 29"
+        unique_id: "stato_personalizzato_uscita_29"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_29') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_29') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 30"
+        unique_id: "stato_personalizzato_uscita_30"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_30') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_30') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 31"
+        unique_id: "stato_personalizzato_uscita_31"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_31') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_31') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 32"
+        unique_id: "stato_personalizzato_uscita_32"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_32') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_32') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 33"
+        unique_id: "stato_personalizzato_uscita_33"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_33') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_33') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 34"
+        unique_id: "stato_personalizzato_uscita_34"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_34') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_34') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 35"
+        unique_id: "stato_personalizzato_uscita_35"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_35') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_35') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 36"
+        unique_id: "stato_personalizzato_uscita_36"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_36') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_36') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 37"
+        unique_id: "stato_personalizzato_uscita_37"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_37') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_37') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 38"
+        unique_id: "stato_personalizzato_uscita_38"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_38') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_38') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 39"
+        unique_id: "stato_personalizzato_uscita_39"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_39') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_39') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 40"
+        unique_id: "stato_personalizzato_uscita_40"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_40') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_40') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 41"
+        unique_id: "stato_personalizzato_uscita_41"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_41') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_41') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 42"
+        unique_id: "stato_personalizzato_uscita_42"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_42') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_42') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 43"
+        unique_id: "stato_personalizzato_uscita_43"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_43') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_43') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 44"
+        unique_id: "stato_personalizzato_uscita_44"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_44') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_44') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 45"
+        unique_id: "stato_personalizzato_uscita_45"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_45') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_45') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 46"
+        unique_id: "stato_personalizzato_uscita_46"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_46') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_46') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 47"
+        unique_id: "stato_personalizzato_uscita_47"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_47') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_47') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 48"
+        unique_id: "stato_personalizzato_uscita_48"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_48') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_48') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 49"
+        unique_id: "stato_personalizzato_uscita_49"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_49') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_49') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 50"
+        unique_id: "stato_personalizzato_uscita_50"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_50') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_50') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 51"
+        unique_id: "stato_personalizzato_uscita_51"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_51') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_51') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 52"
+        unique_id: "stato_personalizzato_uscita_52"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_52') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_52') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 53"
+        unique_id: "stato_personalizzato_uscita_53"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_53') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_53') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 54"
+        unique_id: "stato_personalizzato_uscita_54"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_54') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_54') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 55"
+        unique_id: "stato_personalizzato_uscita_55"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_55') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_55') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 56"
+        unique_id: "stato_personalizzato_uscita_56"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_56') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_56') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 57"
+        unique_id: "stato_personalizzato_uscita_57"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_57') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_57') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 58"
+        unique_id: "stato_personalizzato_uscita_58"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_58') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_58') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 59"
+        unique_id: "stato_personalizzato_uscita_59"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_59') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_59') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 60"
+        unique_id: "stato_personalizzato_uscita_60"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_60') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_60') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 61"
+        unique_id: "stato_personalizzato_uscita_61"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_61') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_61') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 62"
+        unique_id: "stato_personalizzato_uscita_62"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_62') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_62') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 63"
+        unique_id: "stato_personalizzato_uscita_63"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_63') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_63') == 'on' else 'mdi:lightbulb-off' }}"
+
+      - name: "Stato personalizzato uscita 64"
+        unique_id: "stato_personalizzato_uscita_64"
+        state: "{{ 'Attivata' if states('input_boolean.uscita_64') == 'on' else 'Disattivata' }}"
+        icon: "{{ 'mdi:lightbulb-on' if states('input_boolean.uscita_64') == 'on' else 'mdi:lightbulb-off' }}"
