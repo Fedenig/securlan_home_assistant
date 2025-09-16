@@ -1,0 +1,196 @@
+rest_command:
+#Comando per ON e OFF area
+  area_1_on:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-1-X-X-X-X-X-X-X
+    method: POST
+
+  area_1_off:
+    url: http://{{ states('sensor.rest_url') }}OFF-AREA-1-X-X-X-X-X-X-X
+    method: POST
+
+  area_2_on:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-2-X-X-X-X-X-X
+    method: POST
+
+  area_2_off:
+    url: http://{{ states('sensor.rest_url') }}OFF-AREA-X-2-X-X-X-X-X-X
+    method: POST
+
+  area_3_on:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-3-X-X-X-X-X
+    method: POST
+
+  area_3_off:
+    url: http://{{ states('sensor.rest_url') }}OFF-AREA-X-X-3-X-X-X-X-X
+    method: POST
+
+  area_4_on:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-4-X-X-X-X
+    method: POST
+
+  area_4_off:
+    url: http://{{ states('sensor.rest_url') }}OFF-AREA-X-X-X-4-X-X-X-X
+    method: POST
+
+  area_5_on:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-5-X-X-X
+    method: POST
+
+  area_5_off:
+    url: http://{{ states('sensor.rest_url') }}OFF-AREA-X-X-X-X-5-X-X-X
+    method: POST
+
+  area_6_on:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-X-6-X-X
+    method: POST
+
+  area_6_off:
+    url: http://{{ states('sensor.rest_url') }}OFF-AREA-X-X-X-X-X-6-X-X
+    method: POST
+
+  area_7_on:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-X-X-7-X
+    method: POST
+
+  area_7_off:
+    url: http://{{ states('sensor.rest_url') }}OFF-AREA-X-X-X-X-X-X-7-X
+    method: POST
+
+  area_8_on:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-X-X-X-8
+    method: POST
+
+  area_8_off:
+    url: http://{{ states('sensor.rest_url') }}OFF-AREA-X-X-X-X-X-X-X-8
+    method: POST
+    
+#Comando per On area Immediato
+  area_1_on_i:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-1-X-X-X-X-X-X-X-I
+    method: POST
+
+  area_2_on_i:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-2-X-X-X-X-X-X-I
+    method: POST
+
+  area_3_on_i:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-3-X-X-X-X-X-I
+    method: POST
+
+  area_4_on_i:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-4-X-X-X-X-I
+    method: POST
+
+  area_5_on_i:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-5-X-X-X-I
+    method: POST
+
+  area_6_on_i:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-X-6-X-X-I
+    method: POST
+
+  area_7_on_i:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-X-X-7-X-I
+    method: POST
+
+  area_8_on_i:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-X-X-X-8-I
+    method: POST
+
+
+#Comando per ON area Forzato
+  area_1_on_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-1-X-X-X-X-X-X-X-F
+    method: POST
+
+  area_2_on_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-2-X-X-X-X-X-X-F
+    method: POST
+
+  area_3_on_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-3-X-X-X-X-X-F
+    method: POST
+
+  area_4_on_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-4-X-X-X-X-F
+    method: POST
+
+  area_5_on_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-5-X-X-X-F
+    method: POST
+
+  area_6_on_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-X-6-X-X-F
+    method: POST
+
+  area_7_on_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-X-X-7-X-F
+    method: POST
+
+  area_8_on_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-X-X-X-8-F
+    method: POST
+
+#Comando per ON area Immediato e Forzato
+  area_1_on_i_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-1-X-X-X-X-X-X-X-I-F
+    method: POST
+
+  area_2_on_i_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-2-X-X-X-X-X-X-I-F
+    method: POST
+
+  area_3_on_i_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-3-X-X-X-X-X-I-F
+    method: POST
+
+  area_4_on_i_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-4-X-X-X-X-I-F
+    method: POST
+
+  area_5_on_i_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-5-X-X-X-I-F
+    method: POST
+
+  area_6_on_i_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-X-6-X-X-I-F
+    method: POST
+
+  area_7_on_i_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-X-X-7-X-I-F
+    method: POST
+
+  area_8_on_i_f:
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-X-X-X-X-X-X-X-8-I-F
+    method: POST
+
+
+#Comando ON e OFF di tutte le aree
+  area_tutte_on:        
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-1-2-3-4-5-6-7-8
+    method: POST
+
+  area_tutte_off:
+    url: http://{{ states('sensor.rest_url') }}OFF-AREA-1-2-3-4-5-6-7-8
+    method: POST
+
+#Comando ON di tutte le aree Immediato
+  area_tutte_on_i:        
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-1-2-3-4-5-6-7-8-I
+    method: POST
+
+#Comando ON di tutte le aree Forzato
+  area_tutte_on_f:        
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-1-2-3-4-5-6-7-8-F
+    method: POST
+
+#Comando ON di tutte le aree Immediato e Forzato
+  area_tutte_on_i_f:        
+    url: http://{{ states('sensor.rest_url') }}ON-AREA-1-2-3-4-5-6-7-8-I-F
+    method: POST
+
+
+
+
+
+    
