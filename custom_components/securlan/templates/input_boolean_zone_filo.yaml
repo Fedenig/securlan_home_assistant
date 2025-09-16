@@ -1,0 +1,194 @@
+input_boolean:
+# Zona filo inclusa - esclusa
+  zona_f_1:
+    name: "F1-Zona"
+    icon: mdi:motion-sensor
+  zona_f_2:
+    name: "F2-Zona"
+    icon: mdi:motion-sensor
+  zona_f_3:
+    name: "F3-Zona"
+    icon: mdi:motion-sensor
+  zona_f_4:
+    name: "F4-Zona"
+    icon: mdi:motion-sensor
+  zona_f_5:
+    name: "F5-Zona"
+    icon: mdi:motion-sensor
+  zona_f_6:
+    name: "F6-Zona"
+    icon: mdi:motion-sensor
+  zona_f_7:
+    name: "F7-Zona"
+    icon: mdi:motion-sensor
+  zona_f_8:
+    name: "F8-Zona"
+    icon: mdi:motion-sensor
+  zona_f_9:
+    name: "F9-Zona"
+    icon: mdi:motion-sensor
+  zona_f_10:
+    name: "F10-Zona"
+    icon: mdi:motion-sensor
+  zona_f_11:
+    name: "F11-Zona"
+    icon: mdi:motion-sensor
+  zona_f_12:
+    name: "F12-Zona"
+    icon: mdi:motion-sensor
+  zona_f_13:
+    name: "F13-Zona"
+    icon: mdi:motion-sensor
+  zona_f_14:
+    name: "F14-Zona"
+    icon: mdi:motion-sensor
+  zona_f_15:
+    name: "F15-Zona"
+    icon: mdi:motion-sensor
+  zona_f_16:
+    name: "F16-Zona"
+    icon: mdi:motion-sensor
+  zona_f_17:
+    name: "F17-Zona"
+    icon: mdi:motion-sensor
+  zona_f_18:
+    name: "F18-Zona"
+    icon: mdi:motion-sensor
+  zona_f_19:
+    name: "F19-Zona"
+    icon: mdi:motion-sensor
+  zona_f_20:
+    name: "F20-Zona"
+    icon: mdi:motion-sensor
+  zona_f_21:
+    name: "F21-Zona"
+    icon: mdi:motion-sensor
+  zona_f_22:
+    name: "F22-Zona"
+    icon: mdi:motion-sensor
+  zona_f_23:
+    name: "F23-Zona"
+    icon: mdi:motion-sensor
+  zona_f_24:
+    name: "F24-Zona"
+    icon: mdi:motion-sensor
+  zona_f_25:
+    name: "F25-Zona"
+    icon: mdi:motion-sensor
+  zona_f_26:
+    name: "F26-Zona"
+    icon: mdi:motion-sensor
+  zona_f_27:
+    name: "F27-Zona"
+    icon: mdi:motion-sensor
+  zona_f_28:
+    name: "F28-Zona"
+    icon: mdi:motion-sensor
+  zona_f_29:
+    name: "F29-Zona"
+    icon: mdi:motion-sensor
+  zona_f_30:
+    name: "F30-Zona"
+    icon: mdi:motion-sensor
+  zona_f_31:
+    name: "F31-Zona"
+    icon: mdi:motion-sensor
+  zona_f_32:
+    name: "F32-Zona"
+    icon: mdi:motion-sensor
+  zona_f_33:
+    name: "F33-Zona"
+    icon: mdi:motion-sensor
+  zona_f_34:
+    name: "F34-Zona"
+    icon: mdi:motion-sensor
+  zona_f_35:
+    name: "F35-Zona"
+    icon: mdi:motion-sensor
+  zona_f_36:
+    name: "F36-Zona"
+    icon: mdi:motion-sensor
+  zona_f_37:
+    name: "F37-Zona"
+    icon: mdi:motion-sensor
+  zona_f_38:
+    name: "F38-Zona"
+    icon: mdi:motion-sensor
+  zona_f_39:
+    name: "F39-Zona"
+    icon: mdi:motion-sensor
+  zona_f_40:
+    name: "F40-Zona"
+    icon: mdi:motion-sensor
+  zona_f_41:
+    name: "F41-Zona"
+    icon: mdi:motion-sensor
+  zona_f_42:
+    name: "F42-Zona"
+    icon: mdi:motion-sensor
+  zona_f_43:
+    name: "F43-Zona"
+    icon: mdi:motion-sensor
+  zona_f_44:
+    name: "F44-Zona"
+    icon: mdi:motion-sensor
+  zona_f_45:
+    name: "F45-Zona"
+    icon: mdi:motion-sensor
+  zona_f_46:
+    name: "F46-Zona"
+    icon: mdi:motion-sensor
+  zona_f_47:
+    name: "F47-Zona"
+    icon: mdi:motion-sensor
+  zona_f_48:
+    name: "F48-Zona"
+    icon: mdi:motion-sensor
+  zona_f_49:
+    name: "F49-Zona"
+    icon: mdi:motion-sensor
+  zona_f_50:
+    name: "F50-Zona"
+    icon: mdi:motion-sensor
+  zona_f_51:
+    name: "F51-Zona"
+    icon: mdi:motion-sensor
+  zona_f_52:
+    name: "F52-Zona"
+    icon: mdi:motion-sensor
+  zona_f_53:
+    name: "F53-Zona"
+    icon: mdi:motion-sensor
+  zona_f_54:
+    name: "F54-Zona"
+    icon: mdi:motion-sensor
+  zona_f_55:
+    name: "F55-Zona"
+    icon: mdi:motion-sensor
+  zona_f_56:
+    name: "F56-Zona"
+    icon: mdi:motion-sensor
+  zona_f_57:
+    name: "F57-Zona"
+    icon: mdi:motion-sensor
+  zona_f_58:
+    name: "F58-Zona"
+    icon: mdi:motion-sensor
+  zona_f_59:
+    name: "F59-Zona"
+    icon: mdi:motion-sensor
+  zona_f_60:
+    name: "F60-Zona"
+    icon: mdi:motion-sensor
+  zona_f_61:
+    name: "F61-Zona"
+    icon: mdi:motion-sensor
+  zona_f_62:
+    name: "F62-Zona"
+    icon: mdi:motion-sensor
+  zona_f_63:
+    name: "F63-Zona"
+    icon: mdi:motion-sensor
+  zona_f_64:
+    name: "F64-Zona"
+    icon: mdi:motion-sensor
