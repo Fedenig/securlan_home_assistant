@@ -77,7 +77,6 @@ async def async_setup(hass: HomeAssistant, config: dict):
             _LOGGER.error("Chiave o valore mancanti per set_password")
             return
 
-        # Aggiorna direttamente input_text.password_allarme
         try:
             await hass.services.async_call(
                 "input_text",
@@ -106,7 +105,6 @@ async def async_setup(hass: HomeAssistant, config: dict):
             else "❌ Nessuna password impostata"
         )
 
-        # Mostra notifica
         await hass.services.async_call(
             "persistent_notification",
             "create",
@@ -144,6 +142,12 @@ async def async_setup(hass: HomeAssistant, config: dict):
     hass.services.async_register(DOMAIN, "set_password", async_set_password_service)
     hass.services.async_register(DOMAIN, "get_password", async_get_password_service)
     hass.services.async_register(DOMAIN, "append_number", async_append_number_service)
+
+    # -------------------------------
+    # Copia automatica all’avvio
+    # -------------------------------
+    await async_copy_file_service(ServiceCall(DOMAIN, "copy_file", {}))
+    _LOGGER.info("📦 Template copiati automaticamente in packages all’avvio")
 
     _LOGGER.info("✅ Integrazione Securlan avviata (password gestita solo via input_text)")
     return True
