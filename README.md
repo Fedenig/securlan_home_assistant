@@ -48,7 +48,7 @@ Altri stati di diagnostica possono essere aggiunti manualmente.
 
 <br>
 
-Dopo il download dei moduli sopra descritti aprire con il File Editor il file configuratio.yaml ed inserire i riferimenti extra_module_url: come da indicazioni sotto esposte. 
+Dopo il download dei moduli sopra descritti aprire con il File Editor il file configuration.yaml ed inserire i riferimenti extra_module_url: come da indicazioni sotto esposte. 
 
 ```js
 # Load frontend themes from the themes folder
