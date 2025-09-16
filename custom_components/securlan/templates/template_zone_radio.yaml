@@ -949,3 +949,13 @@ template:
         unique_id: "stato_personalizzato_zona_radio_64_esclusa"
         state: "{{ 'Esclusa' if states('input_boolean.zona_r_64') == 'on' else 'Inclusa' }}"
         icon: "{{ 'mdi:motion-sensor-off' if states('input_boolean.zona_r_64') == 'on' else 'mdi:motion-sensor' }}"
+
+      - name: "Stato personalizzato zona radio 64 non pronta"
+        unique_id: "stato_personalizzato_zona_radio_64_non_pronta"
+        state: "{{ 'Non Pronta' if states('input_boolean.zona_r_64_stato_aperta_chiusa') == 'on' else 'Pronta' }}"
+        icon: "{{ 'mdi:electric-switch' if states('input_boolean.zona_r_64_stato_aperta_chiusa') == 'on' else 'mdi:electric-switch-closed' }}"
+
+      - name: "Stato personalizzato zona radio 64 allarme"
+        unique_id: "stato_personalizzato_zona_radio_64_allarme"
+        state: "{{ 'Allarme' if states('input_boolean.zona_r_64_stato_allarme') == 'on' else 'Normale' }}"
+        icon: "{{ 'mdi:alarm-light-outline' if states('input_boolean.zona_r_64_stato_allarme') == 'on' else 'mdi:alarm-light-off-outline' }}"
