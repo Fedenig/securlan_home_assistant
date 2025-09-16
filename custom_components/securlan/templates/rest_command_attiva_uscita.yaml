@@ -1,0 +1,194 @@
+rest_command:
+#Comando attiva uscita
+  uscita_1_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-1
+    method: POST
+  uscita_2_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-2
+    method: POST
+  uscita_3_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-3
+    method: POST
+  uscita_4_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-4
+    method: POST
+  uscita_5_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-5
+    method: POST
+  uscita_6_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-6
+    method: POST
+  uscita_7_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-7
+    method: POST
+  uscita_8_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-8
+    method: POST
+  uscita_9_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-9
+    method: POST
+  uscita_10_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-10
+    method: POST
+  uscita_11_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-11
+    method: POST
+  uscita_12_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-12
+    method: POST
+  uscita_13_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-13
+    method: POST
+  uscita_14_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-14
+    method: POST
+  uscita_15_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-15
+    method: POST
+  uscita_16_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-16
+    method: POST
+  uscita_17_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-17
+    method: POST
+  uscita_18_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-18
+    method: POST
+  uscita_19_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-19
+    method: POST
+  uscita_20_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-20
+    method: POST
+  uscita_21_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-21
+    method: POST
+  uscita_22_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-22
+    method: POST
+  uscita_23_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-23
+    method: POST
+  uscita_24_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-24
+    method: POST
+  uscita_25_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-25
+    method: POST
+  uscita_26_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-26
+    method: POST
+  uscita_27_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-27
+    method: POST
+  uscita_28_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-28
+    method: POST
+  uscita_29_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-29
+    method: POST
+  uscita_30_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-30
+    method: POST
+  uscita_31_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-31
+    method: POST
+  uscita_32_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-32
+    method: POST
+  uscita_33_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-33
+    method: POST
+  uscita_34_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-34
+    method: POST
+  uscita_35_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-35
+    method: POST
+  uscita_36_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-36
+    method: POST
+  uscita_37_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-37
+    method: POST
+  uscita_38_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-38
+    method: POST
+  uscita_39_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-39
+    method: POST
+  uscita_40_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-40
+    method: POST
+  uscita_41_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-41
+    method: POST
+  uscita_42_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-42
+    method: POST
+  uscita_43_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-43
+    method: POST
+  uscita_44_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-44
+    method: POST
+  uscita_45_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-45
+    method: POST
+  uscita_46_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-46
+    method: POST
+  uscita_47_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-47
+    method: POST
+  uscita_48_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-48
+    method: POST
+  uscita_49_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-49
+    method: POST
+  uscita_50_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-50
+    method: POST
+  uscita_51_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-51
+    method: POST
+  uscita_52_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-52
+    method: POST
+  uscita_53_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-53
+    method: POST
+  uscita_54_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-54
+    method: POST
+  uscita_55_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-55
+    method: POST
+  uscita_56_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-56
+    method: POST
+  uscita_57_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-57
+    method: POST
+  uscita_58_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-58
+    method: POST
+  uscita_59_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-59
+    method: POST
+  uscita_60_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-60
+    method: POST
+  uscita_61_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-61
+    method: POST
+  uscita_62_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-62
+    method: POST
+  uscita_63_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-63
+    method: POST
+  uscita_64_attiva:
+    url: http://{{ states('sensor.rest_url') }}ATTIVA-64
+    method: POST
