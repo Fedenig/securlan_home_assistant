@@ -1,1 +1,105 @@
+input_boolean:
+# Area on-off
+  area_1:
+    name: "1-Area"
+    icon: mdi:home
+  area_2:
+    name: "2-Area"
+    icon: mdi:home
+  area_3:
+    name: "3-Area"
+    icon: mdi:home
+  area_4:
+    name: "4-Area"
+    icon: mdi:home
+  area_5:
+    name: "5-Area"
+    icon: mdi:home
+  area_6:
+    name: "6-Area"
+    icon: mdi:home
+  area_7:
+    name: "7-Area"
+    icon: mdi:home
+  area_8:
+    name: "8-Area"
+    icon: mdi:home
+
+  # Area non pronta
+  area_1_non_pronta:
+    name: "1-Area"
+    icon: mdi:list-status
+  area_2_non_pronta:
+    name: "2-Area"
+    icon: mdi:list-status
+  area_3_non_pronta:
+    name: "3-Area"
+    icon: mdi:list-status
+  area_4_non_pronta:
+    name: "4-Area"
+    icon: mdi:list-status
+  area_5_non_pronta:
+    name: "5-Area"
+    icon: mdi:list-status
+  area_6_non_pronta:
+    name: "6-Area"
+    icon: mdi:list-status
+  area_7_non_pronta:
+    name: "7-Area"
+    icon: mdi:list-status
+  area_8_non_pronta:
+    name: "8-Area"
+    icon: mdi:list-status
+
+  # Area allarme    
+  area_1_allarme:
+    name: "1-Area"
+    icon: mdi:alarm-light
+  area_2_allarme:
+    name: "2-Area"
+    icon: mdi:alarm-light
+  area_3_allarme:
+    name: "3-Area"
+    icon: mdi:alarm-light
+  area_4_allarme:
+    name: "4-Area"
+    icon: mdi:alarm-light
+  area_5_allarme:
+    name: "5-Area"
+    icon: mdi:alarm-light
+  area_6_allarme:
+    name: "6-Area"
+    icon: mdi:alarm-light
+  area_7_allarme:
+    name: "7-Area"
+    icon: mdi:alarm-light
+  area_8_allarme:
+    name: "8-Area"
+    icon: mdi:alarm-light
+
+  # Area stato on o off
+  area_1_stato_on_off:
+    name: "1-Area"
+    icon: mdi:alarm-panel
+  area_2_stato_on_off:
+    name: "2-Area"
+    icon: mdi:alarm-panel
+  area_3_stato_on_off:
+    name: "3-Area"
+    icon: mdi:alarm-panel
+  area_4_stato_on_off:
+    name: "4-Area"
+    icon: mdi:alarm-panel
+  area_5_stato_on_off:
+    name: "5-Area"
+    icon: mdi:alarm-panel
+  area_6_stato_on_off:
+    name: "6-Area"
+    icon: mdi:alarm-panel
+  area_7_stato_on_off:
+    name: "7-Area"
+    icon: mdi:alarm-panel
+  area_8_stato_on_off:
+    name: "8-Area"
+    icon: mdi:alarm-panel
 
