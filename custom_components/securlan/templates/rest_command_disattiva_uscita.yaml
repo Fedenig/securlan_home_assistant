@@ -1,0 +1,194 @@
+rest_command:
+#Comando disattiva uscita
+  uscita_1_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-1
+    method: POST
+  uscita_2_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-2
+    method: POST
+  uscita_3_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-3
+    method: POST
+  uscita_4_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-4
+    method: POST
+  uscita_5_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-5
+    method: POST
+  uscita_6_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-6
+    method: POST
+  uscita_7_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-7
+    method: POST
+  uscita_8_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-8
+    method: POST
+  uscita_9_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-9
+    method: POST
+  uscita_10_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-10
+    method: POST
+  uscita_11_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-11
+    method: POST
+  uscita_12_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-12
+    method: POST
+  uscita_13_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-13
+    method: POST
+  uscita_14_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-14
+    method: POST
+  uscita_15_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-15
+    method: POST
+  uscita_16_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-16
+    method: POST
+  uscita_17_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-17
+    method: POST
+  uscita_18_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-18
+    method: POST
+  uscita_19_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-19
+    method: POST
+  uscita_20_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-20
+    method: POST
+  uscita_21_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-21
+    method: POST
+  uscita_22_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-22
+    method: POST
+  uscita_23_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-23
+    method: POST
+  uscita_24_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-24
+    method: POST
+  uscita_25_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-25
+    method: POST
+  uscita_26_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-26
+    method: POST
+  uscita_27_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-27
+    method: POST
+  uscita_28_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-28
+    method: POST
+  uscita_29_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-29
+    method: POST
+  uscita_30_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-30
+    method: POST
+  uscita_31_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-31
+    method: POST
+  uscita_32_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-32
+    method: POST
+  uscita_33_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-33
+    method: POST
+  uscita_34_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-34
+    method: POST
+  uscita_35_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-35
+    method: POST
+  uscita_36_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-36
+    method: POST
+  uscita_37_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-37
+    method: POST
+  uscita_38_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-38
+    method: POST
+  uscita_39_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-39
+    method: POST
+  uscita_40_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-40
+    method: POST
+  uscita_41_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-41
+    method: POST
+  uscita_42_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-42
+    method: POST
+  uscita_43_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-43
+    method: POST
+  uscita_44_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-44
+    method: POST
+  uscita_45_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-45
+    method: POST
+  uscita_46_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-46
+    method: POST
+  uscita_47_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-47
+    method: POST
+  uscita_48_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-48
+    method: POST
+  uscita_49_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-49
+    method: POST
+  uscita_50_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-50
+    method: POST
+  uscita_51_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-51
+    method: POST
+  uscita_52_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-52
+    method: POST
+  uscita_53_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-53
+    method: POST
+  uscita_54_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-54
+    method: POST
+  uscita_55_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-55
+    method: POST
+  uscita_56_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-56
+    method: POST
+  uscita_57_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-57
+    method: POST
+  uscita_58_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-58
+    method: POST
+  uscita_59_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-59
+    method: POST
+  uscita_60_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-60
+    method: POST
+  uscita_61_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-61
+    method: POST
+  uscita_62_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-62
+    method: POST
+  uscita_63_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-63
+    method: POST
+  uscita_64_disattiva:
+    url: http://{{ states('sensor.rest_url') }}DISATTIVA-64
+    method: POST
