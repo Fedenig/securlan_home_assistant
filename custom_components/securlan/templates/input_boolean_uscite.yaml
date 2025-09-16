@@ -1,0 +1,193 @@
+input_boolean:
+  uscita_1:
+    name: "U1-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_2:
+    name: "U2-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_3:
+    name: "U3-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_4:
+    name: "U4-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_5:
+    name: "U5-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_6:
+    name: "U6-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_7:
+    name: "U7-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_8:
+    name: "U8-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_9:
+    name: "U9-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_10:
+    name: "U10-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_11:
+    name: "U11-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_12:
+    name: "U12-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_13:
+    name: "U13-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_14:
+    name: "U14-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_15:
+    name: "U15-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_16:
+    name: "U16-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_17:
+    name: "U17-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_18:
+    name: "U18-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_19:
+    name: "U19-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_20:
+    name: "U20-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_21:
+    name: "U21-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_22:
+    name: "U22-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_23:
+    name: "U23-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_24:
+    name: "U24-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_25:
+    name: "U25-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_26:
+    name: "U26-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_27:
+    name: "U27-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_28:
+    name: "U28-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_29:
+    name: "U29-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_30:
+    name: "U30-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_31:
+    name: "U31-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_32:
+    name: "U32-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_33:
+    name: "U33-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_34:
+    name: "U34-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_35:
+    name: "U35-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_36:
+    name: "U36-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_37:
+    name: "U37-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_38:
+    name: "U38-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_39:
+    name: "U39-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_40:
+    name: "U40-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_41:
+    name: "U41-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_42:
+    name: "U42-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_43:
+    name: "U43-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_44:
+    name: "U44-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_45:
+    name: "U45-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_46:
+    name: "U46-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_47:
+    name: "U47-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_48:
+    name: "U48-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_49:
+    name: "U49-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_50:
+    name: "U50-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_51:
+    name: "U51-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_52:
+    name: "U52-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_53:
+    name: "U53-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_54:
+    name: "U54-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_55:
+    name: "U55-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_56:
+    name: "U56-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_57:
+    name: "U57-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_58:
+    name: "U58-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_59:
+    name: "U59-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_60:
+    name: "U60-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_61:
+    name: "U61-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_62:
+    name: "U62-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_63:
+    name: "U63-Uscita"
+    icon: mdi:lightbulb-on
+  uscita_64:
+    name: "U64-Uscita"
+    icon: mdi:lightbulb-on
