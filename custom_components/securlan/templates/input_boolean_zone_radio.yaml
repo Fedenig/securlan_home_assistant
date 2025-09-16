@@ -1,0 +1,194 @@
+input_boolean:
+# Zona radio inclusa - esclusa
+  zona_r_1:
+    name: "R1-Zona"
+    icon: mdi:motion-sensor
+  zona_r_2:
+    name: "R2-Zona"
+    icon: mdi:motion-sensor
+  zona_r_3:
+    name: "R3-Zona"
+    icon: mdi:motion-sensor
+  zona_r_4:
+    name: "R4-Zona"
+    icon: mdi:motion-sensor
+  zona_r_5:
+    name: "R5-Zona"
+    icon: mdi:motion-sensor
+  zona_r_6:
+    name: "R6-Zona"
+    icon: mdi:motion-sensor
+  zona_r_7:
+    name: "R7-Zona"
+    icon: mdi:motion-sensor
+  zona_r_8:
+    name: "R8-Zona"
+    icon: mdi:motion-sensor
+  zona_r_9:
+    name: "R9-Zona"
+    icon: mdi:motion-sensor
+  zona_r_10:
+    name: "R10-Zona"
+    icon: mdi:motion-sensor
+  zona_r_11:
+    name: "R11-Zona"
+    icon: mdi:motion-sensor
+  zona_r_12:
+    name: "R12-Zona"
+    icon: mdi:motion-sensor
+  zona_r_13:
+    name: "R13-Zona"
+    icon: mdi:motion-sensor
+  zona_r_14:
+    name: "R14-Zona"
+    icon: mdi:motion-sensor
+  zona_r_15:
+    name: "R15-Zona"
+    icon: mdi:motion-sensor
+  zona_r_16:
+    name: "R16-Zona"
+    icon: mdi:motion-sensor
+  zona_r_17:
+    name: "R17-Zona"
+    icon: mdi:motion-sensor
+  zona_r_18:
+    name: "R18-Zona"
+    icon: mdi:motion-sensor
+  zona_r_19:
+    name: "R19-Zona"
+    icon: mdi:motion-sensor
+  zona_r_20:
+    name: "R20-Zona"
+    icon: mdi:motion-sensor
+  zona_r_21:
+    name: "R21-Zona"
+    icon: mdi:motion-sensor
+  zona_r_22:
+    name: "R22-Zona"
+    icon: mdi:motion-sensor
+  zona_r_23:
+    name: "R23-Zona"
+    icon: mdi:motion-sensor
+  zona_r_24:
+    name: "R24-Zona"
+    icon: mdi:motion-sensor
+  zona_r_25:
+    name: "R25-Zona"
+    icon: mdi:motion-sensor
+  zona_r_26:
+    name: "R26-Zona"
+    icon: mdi:motion-sensor
+  zona_r_27:
+    name: "R27-Zona"
+    icon: mdi:motion-sensor
+  zona_r_28:
+    name: "R28-Zona"
+    icon: mdi:motion-sensor
+  zona_r_29:
+    name: "R29-Zona"
+    icon: mdi:motion-sensor
+  zona_r_30:
+    name: "R30-Zona"
+    icon: mdi:motion-sensor
+  zona_r_31:
+    name: "R31-Zona"
+    icon: mdi:motion-sensor
+  zona_r_32:
+    name: "R32-Zona"
+    icon: mdi:motion-sensor
+  zona_r_33:
+    name: "R33-Zona"
+    icon: mdi:motion-sensor
+  zona_r_34:
+    name: "R34-Zona"
+    icon: mdi:motion-sensor
+  zona_r_35:
+    name: "R35-Zona"
+    icon: mdi:motion-sensor
+  zona_r_36:
+    name: "R36-Zona"
+    icon: mdi:motion-sensor
+  zona_r_37:
+    name: "R37-Zona"
+    icon: mdi:motion-sensor
+  zona_r_38:
+    name: "R38-Zona"
+    icon: mdi:motion-sensor
+  zona_r_39:
+    name: "R39-Zona"
+    icon: mdi:motion-sensor
+  zona_r_40:
+    name: "R40-Zona"
+    icon: mdi:motion-sensor
+  zona_r_41:
+    name: "R41-Zona"
+    icon: mdi:motion-sensor
+  zona_r_42:
+    name: "R42-Zona"
+    icon: mdi:motion-sensor
+  zona_r_43:
+    name: "R43-Zona"
+    icon: mdi:motion-sensor
+  zona_r_44:
+    name: "R44-Zona"
+    icon: mdi:motion-sensor
+  zona_r_45:
+    name: "R45-Zona"
+    icon: mdi:motion-sensor
+  zona_r_46:
+    name: "R46-Zona"
+    icon: mdi:motion-sensor
+  zona_r_47:
+    name: "R47-Zona"
+    icon: mdi:motion-sensor
+  zona_r_48:
+    name: "R48-Zona"
+    icon: mdi:motion-sensor
+  zona_r_49:
+    name: "R49-Zona"
+    icon: mdi:motion-sensor
+  zona_r_50:
+    name: "R50-Zona"
+    icon: mdi:motion-sensor
+  zona_r_51:
+    name: "R51-Zona"
+    icon: mdi:motion-sensor
+  zona_r_52:
+    name: "R52-Zona"
+    icon: mdi:motion-sensor
+  zona_r_53:
+    name: "R53-Zona"
+    icon: mdi:motion-sensor
+  zona_r_54:
+    name: "R54-Zona"
+    icon: mdi:motion-sensor
+  zona_r_55:
+    name: "R55-Zona"
+    icon: mdi:motion-sensor
+  zona_r_56:
+    name: "R56-Zona"
+    icon: mdi:motion-sensor
+  zona_r_57:
+    name: "R57-Zona"
+    icon: mdi:motion-sensor
+  zona_r_58:
+    name: "R58-Zona"
+    icon: mdi:motion-sensor
+  zona_r_59:
+    name: "R59-Zona"
+    icon: mdi:motion-sensor
+  zona_r_60:
+    name: "R60-Zona"
+    icon: mdi:motion-sensor
+  zona_r_61:
+    name: "R61-Zona"
+    icon: mdi:motion-sensor
+  zona_r_62:
+    name: "R62-Zona"
+    icon: mdi:motion-sensor
+  zona_r_63:
+    name: "R63-Zona"
+    icon: mdi:motion-sensor
+  zona_r_64:
+    name: "R64-Zona"
+    icon: mdi:motion-sensor
