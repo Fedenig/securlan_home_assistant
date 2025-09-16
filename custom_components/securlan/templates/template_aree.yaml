@@ -1,0 +1,121 @@
+template:
+  - sensor:
+      - name: "Stato personalizzato area 1 non pronta"
+        unique_id: "stato_personalizzato_area_1_non_pronta"
+        state: "{{ 'Non Pronta' if states('input_boolean.area_1_non_pronta') == 'on' else 'Pronta' }}"
+        icon: "{{ 'mdi:home-off' if states('input_boolean.area_1_non_pronta') == 'on' else 'mdi:home-account' }}"
+
+      - name: "Stato personalizzato area 1 in allarme"
+        unique_id: "stato_personalizzato_area_1_in_allarme"
+        state: "{{ 'In allarme' if states('input_boolean.area_1_allarme') == 'on' else 'Normale' }}"
+        icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_1_allarme') == 'on' else 'mdi:alarm-light' }}"
+
+      - name: "Stato personalizzato area 1 on-off"
+        unique_id: "stato_personalizzato_area_1_on_off"
+        state: "{{ 'Inserita' if states('input_boolean.area_1') == 'on' else 'Disinserita' }}"
+        icon: "{{ 'mdi:home-lock' if states('input_boolean.area_1') == 'on' else 'mdi:home' }}"
+
+      - name: "Stato personalizzato area 2 non pronta"
+        unique_id: "stato_personalizzato_area_2_non_pronta"
+        state: "{{ 'Non Pronta' if states('input_boolean.area_2_non_pronta') == 'on' else 'Pronta' }}"
+        icon: "{{ 'mdi:home-off' if states('input_boolean.area_2_non_pronta') == 'on' else 'mdi:home-account' }}"
+
+      - name: "Stato personalizzato area 2 in allarme"
+        unique_id: "stato_personalizzato_area_2_in_allarme"
+        state: "{{ 'In allarme' if states('input_boolean.area_2_allarme') == 'on' else 'Normale' }}"
+        icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_2_allarme') == 'on' else 'mdi:alarm-light' }}"
+
+      - name: "Stato personalizzato area 2 on-off"
+        unique_id: "stato_personalizzato_area_2_on_off"
+        state: "{{ 'Inserita' if states('input_boolean.area_2') == 'on' else 'Disinserita' }}"
+        icon: "{{ 'mdi:home-lock' if states('input_boolean.area_2') == 'on' else 'mdi:home' }}"
+
+      - name: "Stato personalizzato area 3 non pronta"
+        unique_id: "stato_personalizzato_area_3_non_pronta"
+        state: "{{ 'Non Pronta' if states('input_boolean.area_3_non_pronta') == 'on' else 'Pronta' }}"
+        icon: "{{ 'mdi:home-off' if states('input_boolean.area_3_non_pronta') == 'on' else 'mdi:home-account' }}"
+
+      - name: "Stato personalizzato area 3 in allarme"
+        unique_id: "stato_personalizzato_area_3_in_allarme"
+        state: "{{ 'In allarme' if states('input_boolean.area_3_allarme') == 'on' else 'Normale' }}"
+        icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_3_allarme') == 'on' else 'mdi:alarm-light' }}"
+
+      - name: "Stato personalizzato area 3 on-off"
+        unique_id: "stato_personalizzato_area_3_on_off"
+        state: "{{ 'Inserita' if states('input_boolean.area_3') == 'on' else 'Disinserita' }}"
+        icon: "{{ 'mdi:home-lock' if states('input_boolean.area_3') == 'on' else 'mdi:home' }}"
+
+      - name: "Stato personalizzato area 4 non pronta"
+        unique_id: "stato_personalizzato_area_4_non_pronta"
+        state: "{{ 'Non Pronta' if states('input_boolean.area_4_non_pronta') == 'on' else 'Pronta' }}"
+        icon: "{{ 'mdi:home-off' if states('input_boolean.area_4_non_pronta') == 'on' else 'mdi:home-account' }}"
+
+      - name: "Stato personalizzato area 4 in allarme"
+        unique_id: "stato_personalizzato_area_4_in_allarme"
+        state: "{{ 'In allarme' if states('input_boolean.area_4_allarme') == 'on' else 'Normale' }}"
+        icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_4_allarme') == 'on' else 'mdi:alarm-light' }}"
+
+      - name: "Stato personalizzato area 4 on-off"
+        unique_id: "stato_personalizzato_area_4_on_off"
+        state: "{{ 'Inserita' if states('input_boolean.area_4') == 'on' else 'Disinserita' }}"
+        icon: "{{ 'mdi:home-lock' if states('input_boolean.area_4') == 'on' else 'mdi:home' }}"
+
+      - name: "Stato personalizzato area 5 non pronta"
+        unique_id: "stato_personalizzato_area_5_non_pronta"
+        state: "{{ 'Non Pronta' if states('input_boolean.area_5_non_pronta') == 'on' else 'Pronta' }}"
+        icon: "{{ 'mdi:home-off' if states('input_boolean.area_5_non_pronta') == 'on' else 'mdi:home-account' }}"
+
+      - name: "Stato personalizzato area 5 in allarme"
+        unique_id: "stato_personalizzato_area_5_in_allarme"
+        state: "{{ 'In allarme' if states('input_boolean.area_5_allarme') == 'on' else 'Normale' }}"
+        icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_5_allarme') == 'on' else 'mdi:alarm-light' }}"
+
+      - name: "Stato personalizzato area 5 on-off"
+        unique_id: "stato_personalizzato_area_5_on_off"
+        state: "{{ 'Inserita' if states('input_boolean.area_5') == 'on' else 'Disinserita' }}"
+        icon: "{{ 'mdi:home-lock' if states('input_boolean.area_5') == 'on' else 'mdi:home' }}"
+
+      - name: "Stato personalizzato area 6 non pronta"
+        unique_id: "stato_personalizzato_area_6_non_pronta"
+        state: "{{ 'Non Pronta' if states('input_boolean.area_6_non_pronta') == 'on' else 'Pronta' }}"
+        icon: "{{ 'mdi:home-off' if states('input_boolean.area_6_non_pronta') == 'on' else 'mdi:home-account' }}"
+
+      - name: "Stato personalizzato area 6 in allarme"
+        unique_id: "stato_personalizzato_area_6_in_allarme"
+        state: "{{ 'In allarme' if states('input_boolean.area_6_allarme') == 'on' else 'Normale' }}"
+        icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_6_allarme') == 'on' else 'mdi:alarm-light' }}"
+
+      - name: "Stato personalizzato area 6 on-off"
+        unique_id: "stato_personalizzato_area_6_on_off"
+        state: "{{ 'Inserita' if states('input_boolean.area_6') == 'on' else 'Disinserita' }}"
+        icon: "{{ 'mdi:home-lock' if states('input_boolean.area_6') == 'on' else 'mdi:home' }}"
+
+      - name: "Stato personalizzato area 7 non pronta"
+        unique_id: "stato_personalizzato_area_7_non_pronta"
+        state: "{{ 'Non Pronta' if states('input_boolean.area_7_non_pronta') == 'on' else 'Pronta' }}"
+        icon: "{{ 'mdi:home-off' if states('input_boolean.area_7_non_pronta') == 'on' else 'mdi:home-account' }}"
+
+      - name: "Stato personalizzato area 7 in allarme"
+        unique_id: "stato_personalizzato_area_7_in_allarme"
+        state: "{{ 'In allarme' if states('input_boolean.area_7_allarme') == 'on' else 'Normale' }}"
+        icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_7_allarme') == 'on' else 'mdi:alarm-light' }}"
+
+      - name: "Stato personalizzato area 7 on-off"
+        unique_id: "stato_personalizzato_area_7_on_off"
+        state: "{{ 'Inserita' if states('input_boolean.area_7') == 'on' else 'Disinserita' }}"
+        icon: "{{ 'mdi:home-lock' if states('input_boolean.area_7') == 'on' else 'mdi:home' }}"
+
+      - name: "Stato personalizzato area 8 non pronta"
+        unique_id: "stato_personalizzato_area_8_non_pronta"
+        state: "{{ 'Non Pronta' if states('input_boolean.area_8_non_pronta') == 'on' else 'Pronta' }}"
+        icon: "{{ 'mdi:home-off' if states('input_boolean.area_8_non_pronta') == 'on' else 'mdi:home-account' }}"
+
+      - name: "Stato personalizzato area 8 in allarme"
+        unique_id: "stato_personalizzato_area_8_in_allarme"
+        state: "{{ 'In allarme' if states('input_boolean.area_8_allarme') == 'on' else 'Normale' }}"
+        icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_8_allarme') == 'on' else 'mdi:alarm-light' }}"
+
+      - name: "Stato personalizzato area 8 on-off"
+        unique_id: "stato_personalizzato_area_8_on_off"
+        state: "{{ 'Inserita' if states('input_boolean.area_8') == 'on' else 'Disinserita' }}"
+        icon: "{{ 'mdi:home-lock' if states('input_boolean.area_8') == 'on' else 'mdi:home' }}"
