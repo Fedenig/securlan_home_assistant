@@ -53,7 +53,6 @@ Dopo il download dei moduli sopra descritti aprire con il File Editor il file co
 ```js
 # Load frontend themes from the themes folder
 frontend:
-  themes: !include_dir_merge_named themes
   extra_module_url:
     - /homeassistant/www/community/lovelace-card-mod/card-mod.js
     - /homeassistant/www/community/custom-ui/custom-ui.js
