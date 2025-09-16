@@ -1,0 +1,194 @@
+rest_command:
+#Comando includi zona filo
+  zona_f1_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-1
+    method: POST
+  zona_f2_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-2
+    method: POST
+  zona_f3_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-3
+    method: POST
+  zona_f4_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-4
+    method: POST
+  zona_f5_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-5
+    method: POST
+  zona_f6_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-6
+    method: POST
+  zona_f7_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-7
+    method: POST
+  zona_f8_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-8
+    method: POST
+  zona_f9_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-9
+    method: POST
+  zona_f10_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-10
+    method: POST
+  zona_f11_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-11
+    method: POST
+  zona_f12_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-12
+    method: POST
+  zona_f13_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-13
+    method: POST
+  zona_f14_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-14
+    method: POST
+  zona_f15_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-15
+    method: POST
+  zona_f16_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-16
+    method: POST
+  zona_f17_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-17
+    method: POST
+  zona_f18_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-18
+    method: POST
+  zona_f19_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-19
+    method: POST
+  zona_f20_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-20
+    method: POST
+  zona_f21_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-21
+    method: POST
+  zona_f22_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-22
+    method: POST
+  zona_f23_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-23
+    method: POST
+  zona_f24_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-24
+    method: POST
+  zona_f25_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-25
+    method: POST
+  zona_f26_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-26
+    method: POST
+  zona_f27_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-27
+    method: POST
+  zona_f28_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-28
+    method: POST
+  zona_f29_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-29
+    method: POST
+  zona_f30_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-30
+    method: POST
+  zona_f31_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-31
+    method: POST
+  zona_f32_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-32
+    method: POST
+  zona_f33_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-33
+    method: POST
+  zona_f34_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-34
+    method: POST
+  zona_f35_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-35
+    method: POST
+  zona_f36_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-36
+    method: POST
+  zona_f37_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-37
+    method: POST
+  zona_f38_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-38
+    method: POST
+  zona_f39_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-39
+    method: POST
+  zona_f40_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-40
+    method: POST
+  zona_f41_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-41
+    method: POST
+  zona_f42_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-42
+    method: POST
+  zona_f43_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-43
+    method: POST
+  zona_f44_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-44
+    method: POST
+  zona_f45_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-45
+    method: POST
+  zona_f46_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-46
+    method: POST
+  zona_f47_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-47
+    method: POST
+  zona_f48_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-48
+    method: POST
+  zona_f49_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-49
+    method: POST
+  zona_f50_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-50
+    method: POST
+  zona_f51_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-51
+    method: POST
+  zona_f52_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-52
+    method: POST
+  zona_f53_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-53
+    method: POST
+  zona_f54_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-54
+    method: POST
+  zona_f55_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-55
+    method: POST
+  zona_f56_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-56
+    method: POST
+  zona_f57_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-57
+    method: POST
+  zona_f58_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-58
+    method: POST
+  zona_f59_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-59
+    method: POST
+  zona_f60_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-60
+    method: POST
+  zona_f61_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-61
+    method: POST
+  zona_f62_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-62
+    method: POST
+  zona_f63_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-63
+    method: POST
+  zona_f64_includi:
+    url: http://{{ states('sensor.rest_url') }}INCLUDI-F-64
+    method: POST
