@@ -1,31 +1,37 @@
+# ================================
+# File: services.yaml
+# Integrazione custom: securlan
+# Descrizione dei servizi disponibili
+# ================================
+
 create_packages:
-  description: "Crea la cartella packages se non esiste"
+  description: "📦 Crea la cartella packages se non esiste"
 
 copy_file:
-  description: "Copia i file dalla cartella templates alla cartella packages"
+  description: "📂 Copia i file dalla cartella templates alla cartella packages"
 
 reload_packages:
-  description: "Copia i templates e ricarica i domini supportati"
+  description: "🔄 Copia i templates e ricarica i domini supportati (automation, script, input_xxx, ecc.)"
 
 set_password:
-  description: "Imposta una password"
+  description: "🔐 Imposta/aggiorna una password in secrets.yaml"
   fields:
     key:
-      description: "Nome del segreto"
+      description: "Nome del segreto da aggiornare"
       example: "password_allarme"
     value:
       description: "Valore della password"
       example: "1234"
 
 get_password:
-  description: "Recupera una password"
+  description: "🔑 Recupera una password da secrets.yaml"
   fields:
     key:
-      description: "Nome del segreto"
+      description: "Nome del segreto da leggere"
       example: "password_allarme"
 
 append_number:
-  description: "Aggiunge un numero a un input_text"
+  description: "🔢 Aggiunge un numero ad un input_text (utile per tastierino numerico)"
   fields:
     entity_id:
       description: "Entity input_text da aggiornare"
