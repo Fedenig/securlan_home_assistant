@@ -151,7 +151,7 @@ async def async_setup(hass: HomeAssistant, config: dict):
     # Registrazione servizi
     # -------------------------------
     hass.services.async_register(DOMAIN, "create_securlan", async_create_securlan_service)
-    hass.services.async_register(DOMAIN, "copy_file", async_copy_file_service)
+    hass.services.async_register(DOMAIN, "copy_securlan", async_copy_file_service)
     hass.services.async_register(DOMAIN, "reload_securlan", async_reload_securlan_service)
     hass.services.async_register(DOMAIN, "set_password", async_set_password_service)
     hass.services.async_register(DOMAIN, "get_password", async_get_password_service)
