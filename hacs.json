@@ -6,5 +6,6 @@
   "render_readme": true,
   "filename": "manifest.json",
   "hide_default_branch": false,
-  "icon": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/icon.svg"
+  "icon": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/icon.svg",
+  "logo": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/logo.png"
 }
