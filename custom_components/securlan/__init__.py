@@ -47,13 +47,19 @@ async def async_setup(hass: HomeAssistant, config: dict):
         os.makedirs(securlan_path, exist_ok=True)
 
         copied = 0
-        for filename in os.listdir(templates_path):
-            if filename.endswith(".yaml"):
-                src = os.path.join(templates_path, filename)
-                dst = os.path.join(securlan_path, filename)
-                shutil.copy(src, dst)
-                copied += 1
-                _LOGGER.info("📂 Copiato %s → %s", src, dst)
+
+        def _copy_files():
+            nonlocal copied
+            for filename in os.listdir(templates_path):
+                if filename.endswith(".yaml"):
+                    src = os.path.join(templates_path, filename)
+                    dst = os.path.join(securlan_path, filename)
+                    shutil.copy(src, dst)
+                    copied += 1
+                    _LOGGER.info("📂 Copiato %s → %s", src, dst)
+
+        # eseguo la parte bloccante fuori dal loop
+        await hass.async_add_executor_job(_copy_files)
 
         if copied == 0:
             _LOGGER.info("Nessun file .yaml trovato in %s", templates_path)
@@ -64,11 +70,9 @@ async def async_setup(hass: HomeAssistant, config: dict):
     # 3) Reload securlan (copia + reload domini)
     # -------------------------------
     async def async_reload_securlan_service(call: ServiceCall | None = None):
-        # Crea la cartella se manca e copia i template
         await async_create_securlan_service()
         await async_copy_file_service()
 
-        # Ricarico i domini supportati
         _LOGGER.info("Ricarico domini supportati…")
         services = hass.services.async_services()
         for domain, service in CANDIDATE_RELOAD_SERVICES:
@@ -83,8 +87,8 @@ async def async_setup(hass: HomeAssistant, config: dict):
     # 4) Set password (gestita su input_text)
     # -------------------------------
     async def async_set_password_service(call: ServiceCall):
-        key = call.data.get("key")          # es. "password_allarme" (solo informativo)
-        value = call.data.get("value")      # il valore da salvare
+        key = call.data.get("key")     # es. "password_allarme" (solo informativo)
+        value = call.data.get("value")
 
         if not value:
             _LOGGER.error("Valore mancante per set_password")
@@ -142,7 +146,7 @@ async def async_setup(hass: HomeAssistant, config: dict):
         _LOGGER.info("Aggiornato %s → %s", entity_id, new_value)
 
     # -------------------------------
-    # 7) Servizio unico: copy + reload (richiamabile anche a mano)
+    # 7) Servizio unico: copy + reload
     # -------------------------------
     async def async_copy_and_reload_service(call: ServiceCall):
         await async_reload_securlan_service()
@@ -151,7 +155,7 @@ async def async_setup(hass: HomeAssistant, config: dict):
     # Registrazione servizi
     # -------------------------------
     hass.services.async_register(DOMAIN, "create_securlan", async_create_securlan_service)
-    hass.services.async_register(DOMAIN, "copy_securlan", async_copy_file_service)
+    hass.services.async_register(DOMAIN, "copy_file", async_copy_file_service)
     hass.services.async_register(DOMAIN, "reload_securlan", async_reload_securlan_service)
     hass.services.async_register(DOMAIN, "set_password", async_set_password_service)
     hass.services.async_register(DOMAIN, "get_password", async_get_password_service)
@@ -159,7 +163,7 @@ async def async_setup(hass: HomeAssistant, config: dict):
     hass.services.async_register(DOMAIN, "copy_and_reload", async_copy_and_reload_service)
 
     # -------------------------------
-    # 8) Azione automatica all’avvio: copia + reload
+    # 8) Azione automatica all’avvio
     # -------------------------------
     try:
         await async_reload_securlan_service()
