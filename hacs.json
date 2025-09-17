@@ -1,8 +1,14 @@
 {
-  "name": "SecurLan",
+  "name": "Securlan",
   "content_in_root": false,
   "domains": ["securlan"],
+  "iot_class": "local_push",
   "render_readme": true,
   "country": ["IT"],
-  "iot_class": "local_polling"
+  "homeassistant": "2023.0.0",
+  "filename": "manifest.json",
+  "hide_default_branch": false,
+  "render_readme": true,
+  "icon": "https://raw.githubusercontent.com/securlan_home_assistant/master/custom_components/securlan/icon.png",
+  "logo": "https://raw.githubusercontent.com/securlan_home_assistant/master/custom_components/securlan/logo.png"
 }
