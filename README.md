@@ -114,21 +114,25 @@ rest_command_url: 192.168.1.100/httpr.........&action=
 Salvare ed a seguire portarsi su Strumenti per sviluppatori.  
 Effettuare una Verifica Configurazione.  
 Effettuare una ricarica di tutta la configurazione YAML.  
-Effettuare un Riavvio di Home Assistant.  
-Al riavvio portarsi in Strumenti per sviluppatori e poi in Azioni.  
-Dalla lista delle azioni cercare **reload_package (securlan.reload_packege)** ed a seguire premere su **Esegui Azione**.  
-L'azione avvierà tutti i files, installati dalla custom component securlan, presenti in cartella **packages**.  
-I dati di controllo dell'antifurto SecurLan sono stati inseriti, tramite diversi files.yaml, presenti nella nuova cartella chiamata packages.  
-A seguire troverete dispobili tutti gli elementi di Area, Zona Filo, Zona Radio ed Uscite ( sezione Dispositivi e Servizi / Aiutanti ).  
+Effettuare un Riavvio di Home Assistant in **modalità COMPLETA**.  
+## NOTA IMPORTANTE: 
+se al riavvio Home Assistant non avesse creato la cartell securlan portarsi su Strumenti per sviluppatori.  
+Entrare Strumenti per sviluppatori e poi in AZIONI. In lista AZIONI inserire in ricerca il testo securlan.  
+Selezionata l'azione **copy_adn_reload (securlan.copy_adm_reload)** e cliccare su **ESEGUI AZIONE**.  
+L'azione avvierà la creazione della cartella securlan (se non già esistente) e caricherà nell cartella tutti i files della custom component securlan, presenti in cartella **securlan**.  
+Ad azione eseguita effettuare una Verifica Configurazione, una ricarica di tutta la configurazione YAML ed un Riavvio di Home Assistant.  
+
+Al riavvio, a verifica del completo processo, portarsi in Impostazioni e poi in Automazioni e Scenari.  
+Dovete trovare 433 nuovi script generati dalla custom componet securlan.  
+A seguire da Impopstazioni portarsi in Dispositivi e Servizi e poi in Aiutanti.  
+Dovete trovare 730 nuovi aiutanti generati dalla custom componet securlan.  
+
+I dati di controllo dell'antifurto SecurLan sono stati a questo punto inseriti nella vostra installazione di Home Assistant.  
+Troverete dispobili tutti gli elementi per il controllo di 8 Aree, 64 Zona Filo, 64 Zona Radio e 64 Uscite ( sezione Dispositivi e Servizi / Aiutanti ).  
 In sezione Scenari saranno presenti gli Script dedicati al controllo delle azioni da e verso la centrale di Allarme.  
 Si suggerisce di creare una plancia antifurto con nome **SecurLan** dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
-[VEDI DOWNLOAD FILES ELEMENTI GRAFICI](#personalizzazione-grafica-dei-comandi-sulle-aree-con-tastiera-e-password-e-su-zone-ed-uscite) 
+[VEDI DOWNLOAD FILES ELEMENTI GRAFICI](#personalizzazione-grafica-dei-comandi-sulle-aree-con-tastiera-e-password-e-su-zone-ed-uscite)  
 
-## NOTA IMPORTANTE: 
-se al riavvio Home Assistant non avesse creato la cartella Packages e caricato al suo interno i files .yaml, portarsi su Strumenti per sviluppatori.  
-Entrare Strumenti per sviluppatori e poi in AZIONI. In lista AZIONI inserire in ricerca il testo securlan.  
-Selezionata l'azione **create packages (securlan.create_packages)** e cliccare su **ESEGUI AZIONE**.  
-Ad azione eseguita effettuare una Verifica Configurazione, una ricarica di tutta la configurazione YAML ed un Riavvio di Home Assistant.  
 
 ## PROGRAMMAZIONE PER AUTORIZZARE I COMANDI DA SECURLAN VERSO HOME ASSISTANT
 
