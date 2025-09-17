@@ -7,6 +7,6 @@
   "homeassistant": "2023.0.0",
   "filename": "manifest.json",
   "hide_default_branch": false,
-  "icon": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/custom_components/securlan/icon.png",
+  "icon": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/blob/main/assets/icon.png",
   "logo": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/custom_components/securlan/logo.png"
 }
