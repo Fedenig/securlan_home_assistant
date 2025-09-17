@@ -10,7 +10,7 @@ create_securlan:
 copy_file:
   description: "Copia i file dalla cartella templates alla cartella securlan"
 
-reload_packages:
+reload_securlan:
   description: "Copia i templates e ricarica i domini supportati (cartella securlan)"
 
 set_password:
