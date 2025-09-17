@@ -4,7 +4,7 @@
 # Descrizione dei servizi disponibili
 # ================================
 
-create_packages: 
+create_securlan: 
   description: "Crea la cartella securlan se non esiste"
 
 copy_file:
