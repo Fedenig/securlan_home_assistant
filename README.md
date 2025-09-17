@@ -69,7 +69,7 @@ Apparirà il popup del download.
 Inserire nel campo Archvio Digitale il seguente link: https://github.com/Fedenig/securlan_home_assistant.  
 Nel campo Tipo selezionare Integrazione.  
 A seguire premere AGGIUNGI.  
-Il link inserito farò riferimento alla integrazione securlan-homeassistant.  
+Il link inserito farò riferimento alla integrazione securlan_home_assistant.  
 Continuare con AGGIUNGI.  
 Un link con il nome della integrazione custom SecurLan verrà mostrato nella parte superiore del popup.  
 L'icona cestino consente la sua rimozione in futuro. Chiudere il popup.  
@@ -81,11 +81,11 @@ In alternativa cliccare sulla riga della repository SecurLan e dalla pagina dell
 ### DEFINIZIONE DELLE DIPENDENZE DI SVILUPPO   
 
 ### Dopo aver effettuato il download della repository aprire con File Editor il file configuration.yaml ed inserire le seguenti informazioni.
-Nel file secrets.yaml si deve definire Indirizzo IP e porta che fanno capo alla scheda SmartHome.
+Nel file configuratio.yaml aggiunge le seguenti informazioni (richiamo a cartela securlan, richiamo a servizi securlan ed apertura API).  
 
 ```js
 homeassistant:
-  packages: !include_dir_named packages
+  packages: !include_dir_named securlan
 
 # API
 api:
@@ -99,9 +99,6 @@ Questi dati sono fondamentali per il corretto invio di stati e comandi da Home A
 Inserire dopo **rest_command_url:** l'indirizzo IP senza http:// e la stringa fino ad action=  prelevabili dalla SmartHome,come da esempio sotto:  
 - struttura,   INDIRIZZO IP:PORTA/httpr.php?key=TOKEN&action=  
 - esempio,     **192.168.1.222/httpr.php?key=stwT2Gfwl1ftklCFP69QqqXsZmlUI3n1&action=**   
-
-Definire la password di convalida comandi aree verso la centrale, da digitare sulla tastiera.  
-Solo ammessi solo numeri con massimo di 6 cifre a vostra discrezione - default 1234  
 
 ```js
 # Indirizzo IP e porta scheda SmartHome per invio stati e comandi alla centrale  
