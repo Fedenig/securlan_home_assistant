@@ -118,7 +118,7 @@ Effettuare un Riavvio di Home Assistant in **modalità COMPLETA**.
 ## NOTA IMPORTANTE: 
 se al riavvio Home Assistant non avesse creato la cartell securlan portarsi su Strumenti per sviluppatori.  
 Entrare Strumenti per sviluppatori e poi in AZIONI. In lista AZIONI inserire in ricerca il testo securlan.  
-Selezionata l'azione **copy_adn_reload (securlan.copy_adm_reload)** e cliccare su **ESEGUI AZIONE**.  
+Selezionata l'azione **copy_and_reload (securlan.copy_and_reload)** e cliccare su **ESEGUI AZIONE**.  
 L'azione avvierà la creazione della cartella securlan (se non già esistente) e caricherà nell cartella tutti i files della custom component securlan, presenti in cartella **securlan**.  
 Ad azione eseguita effettuare una Verifica Configurazione, una ricarica di tutta la configurazione YAML ed un Riavvio di Home Assistant.  
 
@@ -136,7 +136,7 @@ Si suggerisce di creare una plancia antifurto con nome **SecurLan** dove colloca
 
 ## PROGRAMMAZIONE PER AUTORIZZARE I COMANDI DA SECURLAN VERSO HOME ASSISTANT
 
-Per consentire alla centrale di allarme Securlan di inviare ad Home Assistant gli stati real time delle Aree (on/off, non pronta, allarme),  delle Zone Filo e Radio (esclusa, non pronta, allarme), delle Uscite (attivata/disattivata) e della Diagnostica è necessario programmare nella scheda SmartHome l'attivazione del servizio Home Assistant.  
+Per consentire alla centrale di allarme Securlan di inviare ad Home Assistant gli stati real time delle Aree (on/off, non pronta, allarme),delle Zone Filo e Radio (esclusa, non pronta, allarme), delle Uscite (attivata/disattivata) e della Diagnostica è necessario programmare nella scheda SmartHome l'attivazione del servizio Home Assistant.  
 Dopo l'attivazione è necessario inserire le informazioni relative all'Indirizzo Ip e Porta di Home assistant ed inserire un Bearer Token a lungo termine.  
 Indirizzo IP (default 'homeassistant.local') e Porta (default '8123') sono facilmente reperibili dalla sezione rete in Impostazioni.  
 Per il Bearer Token, se non ancora creato e disponibile per questa integrazione, è necessario crearne uno allo scopo.  
@@ -144,7 +144,7 @@ Portarsi in sezione Generale (cliccare sulla lista di sinistra sul nome del vost
 Sulla parte inferiore del pannello Sicurezza è presente un tasto CREA TOKEN.  
 Procedere con la generazione del Token e la copia dello stesso per poi inserirlo in sezione Home Assistant della SmartHome.  
 In SmartHome, una volta attivato il servizio Home Assistant, programmati Indirizzo Ip, Porta ed il Bearer Token, la centrale Securlan sarà in grado di notificare ad Home Assistant tutte le variazioni di stato relativamente ad Aree, Zone Filo e Radio, Uscite e Diagnostica.  
-Da questo momento lo stato delle 8 aree, 64 zone filo, 64 zone radio e la diagnostica di base di centrale saranno costantemente in real time notificati ad Home Assistant ad ogni variazione.  
+Da questo momento lo stato delle 8 aree, 64 zone filo, 64 zone radio, 64 uscite e la diagnostica di base di centrale saranno costantemente in real time notificati ad Home Assistant ad ogni variazione.  
 
 #### PERSONALIZZAZIONE GRAFICA DEI COMANDI SULLE AREE CON TASTIERA E PASSWORD E SU ZONE ED USCITE.  
 
@@ -152,7 +152,7 @@ Al link **http://www.evoforce.it/homeassistant/plancia_securlan.rar** si può sc
 La plancia SecurLan ( codice .yaml da caricare in manuale nella plancia dopo averla creata) contiene tutti gli elementi di controllo delle Aree, Zone, Uscite, Diagnostica, i Popup della tastiera grafica per il controllo del sistema di allarme SecurLan. La plancia Securlan contiene inoltre il modulo per la generazione, modifica e visualizzazione della password antifurto per tastiera.  
 La password antifurto a default vuota e deve essere creata (da 1 a 6 cifre numeriche).  
 La plancia propone anche delle soluzione grafiche alternative di controllo della Aree senza utilizzo di password.  
-Rimuovere dalla grafica quanto a voi non necessario. L'uffico Tecnico di Evoforce srl può essere di supporto per la gestione grafica.  
+Rimuovere dal modello di oplancia scaricata la parte di grafica a voi non necessaria. L'uffico Tecnico di Evoforce srl può essere di supporto per la gestione grafica.  
 
 <br> 
 
