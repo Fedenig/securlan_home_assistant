@@ -4,5 +4,5 @@
   "domains": ["securlan"],
   "render_readme": true,
   "country": ["IT"],
-  "icon": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/assets/icon.png"
+  "iot_class": "local_polling"
 }
