@@ -128,7 +128,7 @@ A seguire da Impopstazioni portarsi in Dispositivi e Servizi e poi in Aiutanti.
 Dovete trovare 730 nuovi aiutanti generati dalla custom componet securlan.  
 
 I dati di controllo dell'antifurto SecurLan sono stati a questo punto inseriti nella vostra installazione di Home Assistant.  
-Troverete dispobili tutti gli elementi per il controllo di 8 Aree, 64 Zona Filo, 64 Zona Radio e 64 Uscite ( sezione Dispositivi e Servizi / Aiutanti ).  
+Troverete disponibili tutti gli elementi per il controllo di 8 Aree, 64 Zona Filo, 64 Zona Radio e 64 Uscite ( sezione Dispositivi e Servizi / Aiutanti ).  
 In sezione Scenari saranno presenti gli Script dedicati al controllo delle azioni da e verso la centrale di Allarme.  
 Si suggerisce di creare una plancia antifurto con nome **SecurLan** dove collocare i controlli di centrale e mostrare lo stato degli elementi di centrale.  
 [VEDI DOWNLOAD FILES ELEMENTI GRAFICI](#personalizzazione-grafica-dei-comandi-sulle-aree-con-tastiera-e-password-e-su-zone-ed-uscite)  
