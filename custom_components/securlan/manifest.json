@@ -8,6 +8,6 @@
   "dependencies": [],
   "codeowners": ["@Fedenig"],
   "iot_class": "local_push",
-  "icon": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/icon.png",
-  "logo": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/icon.svg"
+  "icon": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/hacs.icon.svg",
+  "logo": "https://raw.githubusercontent.com/Fedenig/securlan_home_assistant/main/logo.png"
 }
