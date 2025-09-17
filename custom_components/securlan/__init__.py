@@ -23,34 +23,34 @@ async def async_setup(hass: HomeAssistant, config: dict):
     """Setup del componente Securlan."""
 
     # -------------------------------
-    # 1) Crea cartella packages
+    # 1) Crea cartella securlan
     # -------------------------------
-    async def async_create_packages_service(call: ServiceCall | None = None):
-        packages_path = hass.config.path("packages")
-        if not os.path.exists(packages_path):
-            os.makedirs(packages_path, exist_ok=True)
-            _LOGGER.info("Creata cartella packages in %s", packages_path)
+    async def async_create_securlan_service(call: ServiceCall | None = None):
+        securlan_path = hass.config.path("securlan")
+        if not os.path.exists(securlan_path):
+            os.makedirs(securlan_path, exist_ok=True)
+            _LOGGER.info("Creata cartella securlan in %s", securlan_path)
         else:
-            _LOGGER.info("Cartella packages già esistente: %s", packages_path)
+            _LOGGER.info("Cartella securlan già esistente: %s", securlan_path)
 
     # -------------------------------
-    # 2) Copia file templates -> packages
+    # 2) Copia file templates -> securlan
     # -------------------------------
     async def async_copy_file_service(call: ServiceCall | None = None):
         templates_path = hass.config.path("custom_components", DOMAIN, "templates")
-        packages_path = hass.config.path("packages")
+        securlan_path = hass.config.path("securlan")
 
         if not os.path.exists(templates_path):
             _LOGGER.warning("Cartella templates non trovata: %s", templates_path)
             return
 
-        os.makedirs(packages_path, exist_ok=True)
+        os.makedirs(securlan_path, exist_ok=True)
 
         copied = 0
         for filename in os.listdir(templates_path):
             if filename.endswith(".yaml"):
                 src = os.path.join(templates_path, filename)
-                dst = os.path.join(packages_path, filename)
+                dst = os.path.join(securlan_path, filename)
                 shutil.copy(src, dst)
                 copied += 1
                 _LOGGER.info("📂 Copiato %s → %s", src, dst)
@@ -61,11 +61,11 @@ async def async_setup(hass: HomeAssistant, config: dict):
             _LOGGER.info("Totale file copiati: %d", copied)
 
     # -------------------------------
-    # 3) Reload packages (copia + reload domini)
+    # 3) Reload securlan (copia + reload domini)
     # -------------------------------
-    async def async_reload_packages_service(call: ServiceCall | None = None):
+    async def async_reload_securlan_service(call: ServiceCall | None = None):
         # Crea la cartella se manca e copia i template
-        await async_create_packages_service()
+        await async_create_securlan_service()
         await async_copy_file_service()
 
         # Ricarico i domini supportati
@@ -145,14 +145,14 @@ async def async_setup(hass: HomeAssistant, config: dict):
     # 7) Servizio unico: copy + reload (richiamabile anche a mano)
     # -------------------------------
     async def async_copy_and_reload_service(call: ServiceCall):
-        await async_reload_packages_service()
+        await async_reload_securlan_service()
 
     # -------------------------------
     # Registrazione servizi
     # -------------------------------
-    hass.services.async_register(DOMAIN, "create_packages", async_create_packages_service)
+    hass.services.async_register(DOMAIN, "create_securlan", async_create_securlan_service)
     hass.services.async_register(DOMAIN, "copy_file", async_copy_file_service)
-    hass.services.async_register(DOMAIN, "reload_packages", async_reload_packages_service)
+    hass.services.async_register(DOMAIN, "reload_securlan", async_reload_securlan_service)
     hass.services.async_register(DOMAIN, "set_password", async_set_password_service)
     hass.services.async_register(DOMAIN, "get_password", async_get_password_service)
     hass.services.async_register(DOMAIN, "append_number", async_append_number_service)
@@ -162,10 +162,10 @@ async def async_setup(hass: HomeAssistant, config: dict):
     # 8) Azione automatica all’avvio: copia + reload
     # -------------------------------
     try:
-        await async_reload_packages_service()
+        await async_reload_securlan_service()
         _LOGGER.info("📦 Template copiati e domini ricaricati automaticamente all’avvio.")
     except Exception as e:
         _LOGGER.error("Errore nella copia/ricarica automatica all’avvio: %s", e)
 
-    _LOGGER.info("✅ Integrazione Securlan avviata (servizi attivi: create/copy/reload, set/get password, append_number)")
+    _LOGGER.info("✅ Integrazione Securlan avviata (cartella securlan, servizi attivi: create/copy/reload, set/get password, append_number)")
     return True
