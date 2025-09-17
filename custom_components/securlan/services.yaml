@@ -7,7 +7,7 @@
 create_securlan: 
   description: "Crea la cartella securlan se non esiste"
 
-copy_file:
+copy_securlan:
   description: "Copia i file dalla cartella templates alla cartella securlan"
 
 reload_securlan:
@@ -25,10 +25,6 @@ set_password:
 
 get_password:
   description: "Recupera una password"
-  fields:
-    key:
-      description: "Nome del segreto"
-      example: "password_allarme"
 
 append_number:
   description: "Aggiunge un numero ad un input_text (utile per tastierino numerico)"
@@ -41,5 +37,5 @@ append_number:
       example: "1"
 
 copy_and_reload:
-  description: "Copia i templates in securlan e ricarica i domini supportati"
+  description: "Esegue copia dei file e ricarica i domini supportati"
 
