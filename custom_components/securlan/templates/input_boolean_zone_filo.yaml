@@ -1,5 +1,5 @@
 input_boolean:
-# Zona filo inclusa - esclusa
+# STATO INCLUSA-ESCLUSA
   zona_f_1:
     name: "F1-Zona"
     icon: mdi:motion-sensor
@@ -193,16 +193,518 @@ input_boolean:
     name: "F64-Zona"
     icon: mdi:motion-sensor
 
-
-
-
+# STATO PRONTO - NON PRONTO
   zona_f_1_stato_aperta_chiusa:
     name: "F1-Zona-PNP"
     icon: mdi:motion-sensor
-  
-  
+    
+  zona_f_2_stato_aperta_chiusa:
+    name: "F2-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_3_stato_aperta_chiusa:
+    name: "F3-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_4_stato_aperta_chiusa:
+    name: "F4-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_5_stato_aperta_chiusa:
+    name: "F5-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_6_stato_aperta_chiusa:
+    name: "F6-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_7_stato_aperta_chiusa:
+    name: "F7-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_8_stato_aperta_chiusa:
+    name: "F8-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_9_stato_aperta_chiusa:
+    name: "F9-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_10_stato_aperta_chiusa:
+    name: "F10-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_11_stato_aperta_chiusa:
+    name: "F11-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_12_stato_aperta_chiusa:
+    name: "F12-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_13_stato_aperta_chiusa:
+    name: "F13-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_14_stato_aperta_chiusa:
+    name: "F14-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_15_stato_aperta_chiusa:
+    name: "F15-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_16_stato_aperta_chiusa:
+    name: "F16-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_17_stato_aperta_chiusa:
+    name: "F17-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_18_stato_aperta_chiusa:
+    name: "F18-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_19_stato_aperta_chiusa:
+    name: "F19-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_20_stato_aperta_chiusa:
+    name: "F20-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_21_stato_aperta_chiusa:
+    name: "F21-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_22_stato_aperta_chiusa:
+    name: "F22-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_23_stato_aperta_chiusa:
+    name: "F23-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_24_stato_aperta_chiusa:
+    name: "F24-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_25_stato_aperta_chiusa:
+    name: "F25-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_26_stato_aperta_chiusa:
+    name: "F26-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_27_stato_aperta_chiusa:
+    name: "F27-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_28_stato_aperta_chiusa:
+    name: "F28-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_29_stato_aperta_chiusa:
+    name: "F29-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_30_stato_aperta_chiusa:
+    name: "F30-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_31_stato_aperta_chiusa:
+    name: "F31-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_32_stato_aperta_chiusa:
+    name: "F32-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_33_stato_aperta_chiusa:
+    name: "F33-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_34_stato_aperta_chiusa:
+    name: "F34-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_35_stato_aperta_chiusa:
+    name: "F35-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_36_stato_aperta_chiusa:
+    name: "F36-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_37_stato_aperta_chiusa:
+    name: "F37-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_38_stato_aperta_chiusa:
+    name: "F38-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_39_stato_aperta_chiusa:
+    name: "F39-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_40_stato_aperta_chiusa:
+    name: "F40-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_41_stato_aperta_chiusa:
+    name: "F41-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_42_stato_aperta_chiusa:
+    name: "F42-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_43_stato_aperta_chiusa:
+    name: "F43-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_44_stato_aperta_chiusa:
+    name: "F44-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_45_stato_aperta_chiusa:
+    name: "F45-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_46_stato_aperta_chiusa:
+    name: "F46-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_47_stato_aperta_chiusa:
+    name: "F47-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_48_stato_aperta_chiusa:
+    name: "F48-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_49_stato_aperta_chiusa:
+    name: "F49-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_50_stato_aperta_chiusa:
+    name: "F50-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_51_stato_aperta_chiusa:
+    name: "F51-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_52_stato_aperta_chiusa:
+    name: "F52-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_53_stato_aperta_chiusa:
+    name: "F53-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_54_stato_aperta_chiusa:
+    name: "F54-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_55_stato_aperta_chiusa:
+    name: "F55-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_56_stato_aperta_chiusa:
+    name: "F56-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_57_stato_aperta_chiusa:
+    name: "F57-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_58_stato_aperta_chiusa:
+    name: "F58-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_59_stato_aperta_chiusa:
+    name: "F59-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_60_stato_aperta_chiusa:
+    name: "F60-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_61_stato_aperta_chiusa:
+    name: "F61-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_62_stato_aperta_chiusa:
+    name: "F62-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_63_stato_aperta_chiusa:
+    name: "F63-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_f_64_stato_aperta_chiusa:
+    name: "F64-Zona-PNP"
+    icon: mdi:motion-sensor
+
+# STATO DI ALLARME E NO ALLARME
   zona_f_1_stato_allarme:
     name: "F1-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_2_stato_allarme:
+    name: "F2-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_3_stato_allarme:
+    name: "F3-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_4_stato_allarme:
+    name: "F4-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_5_stato_allarme:
+    name: "F5-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_6_stato_allarme:
+    name: "F6-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_7_stato_allarme:
+    name: "F7-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_8_stato_allarme:
+    name: "F8-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_9_stato_allarme:
+    name: "F9-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_10_stato_allarme:
+    name: "F10-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_11_stato_allarme:
+    name: "F11-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_12_stato_allarme:
+    name: "F12-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_13_stato_allarme:
+    name: "F13-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_14_stato_allarme:
+    name: "F14-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_15_stato_allarme:
+    name: "F15-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_16_stato_allarme:
+    name: "F16-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_17_stato_allarme:
+    name: "F17-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_18_stato_allarme:
+    name: "F18-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_19_stato_allarme:
+    name: "F19-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_20_stato_allarme:
+    name: "F20-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_21_stato_allarme:
+    name: "F21-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_22_stato_allarme:
+    name: "F22-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_23_stato_allarme:
+    name: "F23-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_24_stato_allarme:
+    name: "F24-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_25_stato_allarme:
+    name: "F25-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_26_stato_allarme:
+    name: "F26-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_27_stato_allarme:
+    name: "F27-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_28_stato_allarme:
+    name: "F28-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_29_stato_allarme:
+    name: "F29-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_30_stato_allarme:
+    name: "F30-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_31_stato_allarme:
+    name: "F31-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_32_stato_allarme:
+    name: "F32-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_33_stato_allarme:
+    name: "F33-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_34_stato_allarme:
+    name: "F34-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_35_stato_allarme:
+    name: "F35-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_36_stato_allarme:
+    name: "F36-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_37_stato_allarme:
+    name: "F37-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_38_stato_allarme:
+    name: "F38-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_39_stato_allarme:
+    name: "F39-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_40_stato_allarme:
+    name: "F40-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_41_stato_allarme:
+    name: "F41-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_42_stato_allarme:
+    name: "F42-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_43_stato_allarme:
+    name: "F43-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_44_stato_allarme:
+    name: "F44-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_45_stato_allarme:
+    name: "F45-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_46_stato_allarme:
+    name: "F46-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_47_stato_allarme:
+    name: "F47-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_48_stato_allarme:
+    name: "F48-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_49_stato_allarme:
+    name: "F49-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_50_stato_allarme:
+    name: "F50-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_51_stato_allarme:
+    name: "F51-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_52_stato_allarme:
+    name: "F52-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_53_stato_allarme:
+    name: "F53-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_54_stato_allarme:
+    name: "F54-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_55_stato_allarme:
+    name: "F55-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_56_stato_allarme:
+    name: "F56-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_57_stato_allarme:
+    name: "F57-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_58_stato_allarme:
+    name: "F58-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_59_stato_allarme:
+    name: "F59-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_60_stato_allarme:
+    name: "F60-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_61_stato_allarme:
+    name: "F61-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_62_stato_allarme:
+    name: "F62-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_63_stato_allarme:
+    name: "F63-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_f_64_stato_allarme:
+    name: "F64-Zona-ALL"
     icon: mdi:motion-sensor
 
 
