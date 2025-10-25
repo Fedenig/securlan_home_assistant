@@ -1,5 +1,5 @@
 input_boolean:
-# Zona radio inclusa - esclusa
+# STATO INCLUSA - ESCLUSA
   zona_r_1:
     name: "R1-Zona"
     icon: mdi:motion-sensor
@@ -192,3 +192,522 @@ input_boolean:
   zona_r_64:
     name: "R64-Zona"
     icon: mdi:motion-sensor
+
+# STATO PRONTA - NON PRONTA
+  zona_r_1_stato_aperta_chiusa:
+    name: "R1-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_2_stato_aperta_chiusa:
+    name: "R2-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_3_stato_aperta_chiusa:
+    name: "R3-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_4_stato_aperta_chiusa:
+    name: "R4-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_5_stato_aperta_chiusa:
+    name: "R5-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_6_stato_aperta_chiusa:
+    name: "R6-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_7_stato_aperta_chiusa:
+    name: "R7-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_8_stato_aperta_chiusa:
+    name: "R8-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_9_stato_aperta_chiusa:
+    name: "R9-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_10_stato_aperta_chiusa:
+    name: "R10-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_11_stato_aperta_chiusa:
+    name: "R11-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_12_stato_aperta_chiusa:
+    name: "R12-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_13_stato_aperta_chiusa:
+    name: "R13-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_14_stato_aperta_chiusa:
+    name: "R14-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_15_stato_aperta_chiusa:
+    name: "R15-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_16_stato_aperta_chiusa:
+    name: "R16-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_17_stato_aperta_chiusa:
+    name: "R17-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_18_stato_aperta_chiusa:
+    name: "R18-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_19_stato_aperta_chiusa:
+    name: "R19-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_20_stato_aperta_chiusa:
+    name: "R20-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_21_stato_aperta_chiusa:
+    name: "R21-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_22_stato_aperta_chiusa:
+    name: "R22-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_23_stato_aperta_chiusa:
+    name: "R23-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_24_stato_aperta_chiusa:
+    name: "R24-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_25_stato_aperta_chiusa:
+    name: "R25-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_26_stato_aperta_chiusa:
+    name: "R26-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_27_stato_aperta_chiusa:
+    name: "R27-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_28_stato_aperta_chiusa:
+    name: "R28-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_29_stato_aperta_chiusa:
+    name: "R29-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_30_stato_aperta_chiusa:
+    name: "R30-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_31_stato_aperta_chiusa:
+    name: "R31-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_32_stato_aperta_chiusa:
+    name: "R32-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_33_stato_aperta_chiusa:
+    name: "R33-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_34_stato_aperta_chiusa:
+    name: "R34-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_35_stato_aperta_chiusa:
+    name: "R35-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_36_stato_aperta_chiusa:
+    name: "R36-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_37_stato_aperta_chiusa:
+    name: "R37-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_38_stato_aperta_chiusa:
+    name: "R38-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_39_stato_aperta_chiusa:
+    name: "R39-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_40_stato_aperta_chiusa:
+    name: "R40-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_41_stato_aperta_chiusa:
+    name: "R41-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_42_stato_aperta_chiusa:
+    name: "R42-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_43_stato_aperta_chiusa:
+    name: "R43-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_44_stato_aperta_chiusa:
+    name: "R44-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_45_stato_aperta_chiusa:
+    name: "R45-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_46_stato_aperta_chiusa:
+    name: "R46-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_47_stato_aperta_chiusa:
+    name: "R47-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_48_stato_aperta_chiusa:
+    name: "R48-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_49_stato_aperta_chiusa:
+    name: "R49-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_50_stato_aperta_chiusa:
+    name: "R50-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_51_stato_aperta_chiusa:
+    name: "R51-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_52_stato_aperta_chiusa:
+    name: "R52-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_53_stato_aperta_chiusa:
+    name: "R53-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_54_stato_aperta_chiusa:
+    name: "R54-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_55_stato_aperta_chiusa:
+    name: "R55-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_56_stato_aperta_chiusa:
+    name: "R56-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_57_stato_aperta_chiusa:
+    name: "R57-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_58_stato_aperta_chiusa:
+    name: "R58-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_59_stato_aperta_chiusa:
+    name: "R59-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_60_stato_aperta_chiusa:
+    name: "R60-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_61_stato_aperta_chiusa:
+    name: "R61-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_62_stato_aperta_chiusa:
+    name: "R62-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_63_stato_aperta_chiusa:
+    name: "R63-Zona-PNP"
+    icon: mdi:motion-sensor
+
+  zona_r_64_stato_aperta_chiusa:
+    name: "R64-Zona-PNP"
+    icon: mdi:motion-sensor
+
+# STATO ALLARME - NO ALLARME
+  zona_r_1_stato_allarme:
+    name: "R1-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_2_stato_allarme:
+    name: "R2-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_3_stato_allarme:
+    name: "R3-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_4_stato_allarme:
+    name: "R4-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_5_stato_allarme:
+    name: "R5-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_6_stato_allarme:
+    name: "R6-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_7_stato_allarme:
+    name: "R7-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_8_stato_allarme:
+    name: "R8-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_9_stato_allarme:
+    name: "R9-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_10_stato_allarme:
+    name: "R10-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_11_stato_allarme:
+    name: "R11-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_12_stato_allarme:
+    name: "R12-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_13_stato_allarme:
+    name: "R13-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_14_stato_allarme:
+    name: "R14-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_15_stato_allarme:
+    name: "R15-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_16_stato_allarme:
+    name: "R16-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_17_stato_allarme:
+    name: "R17-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_18_stato_allarme:
+    name: "R18-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_19_stato_allarme:
+    name: "R19-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_20_stato_allarme:
+    name: "R20-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_21_stato_allarme:
+    name: "R21-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_22_stato_allarme:
+    name: "R22-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_23_stato_allarme:
+    name: "R23-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_24_stato_allarme:
+    name: "R24-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_25_stato_allarme:
+    name: "R25-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_26_stato_allarme:
+    name: "R26-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_27_stato_allarme:
+    name: "R27-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_28_stato_allarme:
+    name: "R28-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_29_stato_allarme:
+    name: "R29-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_30_stato_allarme:
+    name: "R30-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_31_stato_allarme:
+    name: "R31-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_32_stato_allarme:
+    name: "R32-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_33_stato_allarme:
+    name: "R33-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_34_stato_allarme:
+    name: "R34-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_35_stato_allarme:
+    name: "R35-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_36_stato_allarme:
+    name: "R36-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_37_stato_allarme:
+    name: "R37-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_38_stato_allarme:
+    name: "R38-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_39_stato_allarme:
+    name: "R39-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_40_stato_allarme:
+    name: "R40-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_41_stato_allarme:
+    name: "R41-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_42_stato_allarme:
+    name: "R42-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_43_stato_allarme:
+    name: "R43-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_44_stato_allarme:
+    name: "R44-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_45_stato_allarme:
+    name: "R45-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_46_stato_allarme:
+    name: "R46-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_47_stato_allarme:
+    name: "R47-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_48_stato_allarme:
+    name: "R48-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_49_stato_allarme:
+    name: "R49-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_50_stato_allarme:
+    name: "R50-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_51_stato_allarme:
+    name: "R51-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_52_stato_allarme:
+    name: "R52-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_53_stato_allarme:
+    name: "R53-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_54_stato_allarme:
+    name: "R54-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_55_stato_allarme:
+    name: "R55-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_56_stato_allarme:
+    name: "R56-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_57_stato_allarme:
+    name: "R57-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_58_stato_allarme:
+    name: "R58-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_59_stato_allarme:
+    name: "R59-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_60_stato_allarme:
+    name: "R60-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_61_stato_allarme:
+    name: "R61-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_62_stato_allarme:
+    name: "R62-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_63_stato_allarme:
+    name: "R63-Zona-ALL"
+    icon: mdi:motion-sensor
+
+  zona_r_64_stato_allarme:
+    name: "R64-Zona-ALL"
+    icon: mdi:motion-sensor
+    
+
+
+
+
