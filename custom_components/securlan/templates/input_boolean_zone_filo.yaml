@@ -192,3 +192,19 @@ input_boolean:
   zona_f_64:
     name: "F64-Zona"
     icon: mdi:motion-sensor
+
+
+
+
+zona_f_1_stato_aperta_chiusa:
+  name: "F1-Zona-PNP"
+  icon: mdi:motion-sensor
+
+
+zona_f_1_stato_allarme:
+  name: "F1-Zona-ALL"
+  icon: mdi:motion-sensor
+
+
+
+
