@@ -103,3 +103,28 @@ input_boolean:
     name: "8-Area"
     icon: mdi:alarm-panel
 
+  # Area memoria allarme    
+  area_1_mem_all:
+    name: "1-Area"
+    icon: mdi:alarm-light
+  area_2_mem_all:
+    name: "2-Area"
+    icon: mdi:alarm-light
+  area_3_mem_all:
+    name: "3-Area"
+    icon: mdi:alarm-light
+  area_4_mem_all:
+    name: "4-Area"
+    icon: mdi:alarm-light
+  area_5_mem_all:
+    name: "5-Area"
+    icon: mdi:alarm-light
+  area_6_mem_all:
+    name: "6-Area"
+    icon: mdi:alarm-light
+  area_7_mem_all:
+    name: "7-Area"
+    icon: mdi:alarm-light
+  area_8_mem_all:
+    name: "8-Area"
+    icon: mdi:alarm-light
