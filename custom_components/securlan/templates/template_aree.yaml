@@ -15,7 +15,7 @@ template:
         state: "{{ 'Inserita' if states('input_boolean.area_1') == 'on' else 'Disinserita' }}"
         icon: "{{ 'mdi:home-lock' if states('input_boolean.area_1') == 'on' else 'mdi:home' }}"
 
-        - name: "Stato personalizzato area 1 memoria allarme"
+      - name: "Stato personalizzato area 1 memoria allarme"
         unique_id: "stato_personalizzato_area_1_memoria_allarme"
         state: "{{ 'In allarme' if states('input_boolean.area_1_mem_all') == 'on' else 'Normale' }}"
         icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_1_mem_all') == 'on' else 'mdi:alarm-light' }}"
@@ -35,7 +35,7 @@ template:
         state: "{{ 'Inserita' if states('input_boolean.area_2') == 'on' else 'Disinserita' }}"
         icon: "{{ 'mdi:home-lock' if states('input_boolean.area_2') == 'on' else 'mdi:home' }}"
 
-        - name: "Stato personalizzato area 2 memoria allarme"
+      - name: "Stato personalizzato area 2 memoria allarme"
         unique_id: "stato_personalizzato_area_2_memoria_allarme"
         state: "{{ 'In allarme' if states('input_boolean.area_2_mem_all') == 'on' else 'Normale' }}"
         icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_2_mem_all') == 'on' else 'mdi:alarm-light' }}"
@@ -55,7 +55,7 @@ template:
         state: "{{ 'Inserita' if states('input_boolean.area_3') == 'on' else 'Disinserita' }}"
         icon: "{{ 'mdi:home-lock' if states('input_boolean.area_3') == 'on' else 'mdi:home' }}"
 
-        - name: "Stato personalizzato area 3 memoria allarme"
+      - name: "Stato personalizzato area 3 memoria allarme"
         unique_id: "stato_personalizzato_area_3_memoria_allarme"
         state: "{{ 'In allarme' if states('input_boolean.area_3_mem_all') == 'on' else 'Normale' }}"
         icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_3_mem_all') == 'on' else 'mdi:alarm-light' }}"
@@ -75,7 +75,7 @@ template:
         state: "{{ 'Inserita' if states('input_boolean.area_4') == 'on' else 'Disinserita' }}"
         icon: "{{ 'mdi:home-lock' if states('input_boolean.area_4') == 'on' else 'mdi:home' }}"
 
-        - name: "Stato personalizzato area 4 memoria allarme"
+      - name: "Stato personalizzato area 4 memoria allarme"
         unique_id: "stato_personalizzato_area_4_memoria_allarme"
         state: "{{ 'In allarme' if states('input_boolean.area_4_mem_all') == 'on' else 'Normale' }}"
         icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_4_mem_all') == 'on' else 'mdi:alarm-light' }}"
@@ -95,7 +95,7 @@ template:
         state: "{{ 'Inserita' if states('input_boolean.area_5') == 'on' else 'Disinserita' }}"
         icon: "{{ 'mdi:home-lock' if states('input_boolean.area_5') == 'on' else 'mdi:home' }}"
 
-        - name: "Stato personalizzato area 5 memoria allarme"
+      - name: "Stato personalizzato area 5 memoria allarme"
         unique_id: "stato_personalizzato_area_5_memoria_allarme"
         state: "{{ 'In allarme' if states('input_boolean.area_5_mem_all') == 'on' else 'Normale' }}"
         icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_5_mem_all') == 'on' else 'mdi:alarm-light' }}"
@@ -115,7 +115,7 @@ template:
         state: "{{ 'Inserita' if states('input_boolean.area_6') == 'on' else 'Disinserita' }}"
         icon: "{{ 'mdi:home-lock' if states('input_boolean.area_6') == 'on' else 'mdi:home' }}"
 
-        - name: "Stato personalizzato area 6 memoria allarme"
+      - name: "Stato personalizzato area 6 memoria allarme"
         unique_id: "stato_personalizzato_area_6_memoria_allarme"
         state: "{{ 'In allarme' if states('input_boolean.area_6_mem_all') == 'on' else 'Normale' }}"
         icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_6_mem_all') == 'on' else 'mdi:alarm-light' }}"
@@ -135,7 +135,7 @@ template:
         state: "{{ 'Inserita' if states('input_boolean.area_7') == 'on' else 'Disinserita' }}"
         icon: "{{ 'mdi:home-lock' if states('input_boolean.area_7') == 'on' else 'mdi:home' }}"
 
-        - name: "Stato personalizzato area 7 memoria allarme"
+      - name: "Stato personalizzato area 7 memoria allarme"
         unique_id: "stato_personalizzato_area_7_memoria_allarme"
         state: "{{ 'In allarme' if states('input_boolean.area_7_mem_all') == 'on' else 'Normale' }}"
         icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_7_mem_all') == 'on' else 'mdi:alarm-light' }}"
@@ -155,7 +155,7 @@ template:
         state: "{{ 'Inserita' if states('input_boolean.area_8') == 'on' else 'Disinserita' }}"
         icon: "{{ 'mdi:home-lock' if states('input_boolean.area_8') == 'on' else 'mdi:home' }}"
 
-        - name: "Stato personalizzato area 8 memoria allarme"
+      - name: "Stato personalizzato area 8 memoria allarme"
         unique_id: "stato_personalizzato_area_8_memoria_allarme"
         state: "{{ 'In allarme' if states('input_boolean.area_8_mem_all') == 'on' else 'Normale' }}"
         icon: "{{ 'mdi:alarm-light' if states('input_boolean.area_8_mem_all') == 'on' else 'mdi:alarm-light' }}"
