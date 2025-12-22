@@ -1,0 +1,1440 @@
+script:
+    #############################################
+    # SCRIPT COMANDI AREE VIA MQTT
+    # Prefisso mqtt_ per coesistere con REST
+    # FIX: alarm_code | length > 0 per bloccare invio senza password
+    # Generato automaticamente
+    #############################################
+
+    #============================================
+    # AREA 1
+    #============================================
+    mqtt_alarm_arm_check_a1:
+      alias: "MQTT Area 1 - ON"
+      description: "Inserimento Area 1 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/1/cmd"
+                    payload: "ON"
+                    qos: 1
+
+    mqtt_alarm_disarm_check_a1:
+      alias: "MQTT Area 1 - OFF"
+      description: "Disinserimento Area 1 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/1/cmd"
+                    payload: "OFF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a1_i:
+      alias: "MQTT Area 1 - ON Immediato"
+      description: "Inserimento Immediato Area 1 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/1/cmd"
+                    payload: "ONI"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a1_f:
+      alias: "MQTT Area 1 - ON Forzato"
+      description: "Inserimento Forzato Area 1 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/1/cmd"
+                    payload: "ONF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a1_i_f:
+      alias: "MQTT Area 1 - ON Immediato Forzato"
+      description: "Inserimento Immediato Forzato Area 1 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/1/cmd"
+                    payload: "ONIF"
+                    qos: 1
+
+    mqtt_alarm_p1_check_a1:
+      alias: "MQTT Area 1 - Parziale 1"
+      description: "Inserimento Parziale 1 Area 1 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/1/cmd"
+                    payload: "P1"
+                    qos: 1
+
+    mqtt_alarm_p2_check_a1:
+      alias: "MQTT Area 1 - Parziale 2"
+      description: "Inserimento Parziale 2 Area 1 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/1/cmd"
+                    payload: "P2"
+                    qos: 1
+
+    mqtt_alarm_p1p2_check_a1:
+      alias: "MQTT Area 1 - Parziale 1+2"
+      description: "Inserimento Parziale 1+2 Area 1 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/1/cmd"
+                    payload: "P1P2"
+                    qos: 1
+
+    #============================================
+    # AREA 2
+    #============================================
+    mqtt_alarm_arm_check_a2:
+      alias: "MQTT Area 2 - ON"
+      description: "Inserimento Area 2 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/2/cmd"
+                    payload: "ON"
+                    qos: 1
+
+    mqtt_alarm_disarm_check_a2:
+      alias: "MQTT Area 2 - OFF"
+      description: "Disinserimento Area 2 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/2/cmd"
+                    payload: "OFF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a2_i:
+      alias: "MQTT Area 2 - ON Immediato"
+      description: "Inserimento Immediato Area 2 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/2/cmd"
+                    payload: "ONI"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a2_f:
+      alias: "MQTT Area 2 - ON Forzato"
+      description: "Inserimento Forzato Area 2 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/2/cmd"
+                    payload: "ONF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a2_i_f:
+      alias: "MQTT Area 2 - ON Immediato Forzato"
+      description: "Inserimento Immediato Forzato Area 2 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/2/cmd"
+                    payload: "ONIF"
+                    qos: 1
+
+    mqtt_alarm_p1_check_a2:
+      alias: "MQTT Area 2 - Parziale 1"
+      description: "Inserimento Parziale 1 Area 2 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/2/cmd"
+                    payload: "P1"
+                    qos: 1
+
+    mqtt_alarm_p2_check_a2:
+      alias: "MQTT Area 2 - Parziale 2"
+      description: "Inserimento Parziale 2 Area 2 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/2/cmd"
+                    payload: "P2"
+                    qos: 1
+
+    mqtt_alarm_p1p2_check_a2:
+      alias: "MQTT Area 2 - Parziale 1+2"
+      description: "Inserimento Parziale 1+2 Area 2 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/2/cmd"
+                    payload: "P1P2"
+                    qos: 1
+
+    #============================================
+    # AREA 3
+    #============================================
+    mqtt_alarm_arm_check_a3:
+      alias: "MQTT Area 3 - ON"
+      description: "Inserimento Area 3 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/3/cmd"
+                    payload: "ON"
+                    qos: 1
+
+    mqtt_alarm_disarm_check_a3:
+      alias: "MQTT Area 3 - OFF"
+      description: "Disinserimento Area 3 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/3/cmd"
+                    payload: "OFF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a3_i:
+      alias: "MQTT Area 3 - ON Immediato"
+      description: "Inserimento Immediato Area 3 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/3/cmd"
+                    payload: "ONI"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a3_f:
+      alias: "MQTT Area 3 - ON Forzato"
+      description: "Inserimento Forzato Area 3 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/3/cmd"
+                    payload: "ONF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a3_i_f:
+      alias: "MQTT Area 3 - ON Immediato Forzato"
+      description: "Inserimento Immediato Forzato Area 3 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/3/cmd"
+                    payload: "ONIF"
+                    qos: 1
+
+    mqtt_alarm_p1_check_a3:
+      alias: "MQTT Area 3 - Parziale 1"
+      description: "Inserimento Parziale 1 Area 3 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/3/cmd"
+                    payload: "P1"
+                    qos: 1
+
+    mqtt_alarm_p2_check_a3:
+      alias: "MQTT Area 3 - Parziale 2"
+      description: "Inserimento Parziale 2 Area 3 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/3/cmd"
+                    payload: "P2"
+                    qos: 1
+
+    mqtt_alarm_p1p2_check_a3:
+      alias: "MQTT Area 3 - Parziale 1+2"
+      description: "Inserimento Parziale 1+2 Area 3 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/3/cmd"
+                    payload: "P1P2"
+                    qos: 1
+
+    #============================================
+    # AREA 4
+    #============================================
+    mqtt_alarm_arm_check_a4:
+      alias: "MQTT Area 4 - ON"
+      description: "Inserimento Area 4 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/4/cmd"
+                    payload: "ON"
+                    qos: 1
+
+    mqtt_alarm_disarm_check_a4:
+      alias: "MQTT Area 4 - OFF"
+      description: "Disinserimento Area 4 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/4/cmd"
+                    payload: "OFF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a4_i:
+      alias: "MQTT Area 4 - ON Immediato"
+      description: "Inserimento Immediato Area 4 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/4/cmd"
+                    payload: "ONI"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a4_f:
+      alias: "MQTT Area 4 - ON Forzato"
+      description: "Inserimento Forzato Area 4 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/4/cmd"
+                    payload: "ONF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a4_i_f:
+      alias: "MQTT Area 4 - ON Immediato Forzato"
+      description: "Inserimento Immediato Forzato Area 4 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/4/cmd"
+                    payload: "ONIF"
+                    qos: 1
+
+    mqtt_alarm_p1_check_a4:
+      alias: "MQTT Area 4 - Parziale 1"
+      description: "Inserimento Parziale 1 Area 4 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/4/cmd"
+                    payload: "P1"
+                    qos: 1
+
+    mqtt_alarm_p2_check_a4:
+      alias: "MQTT Area 4 - Parziale 2"
+      description: "Inserimento Parziale 2 Area 4 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/4/cmd"
+                    payload: "P2"
+                    qos: 1
+
+    mqtt_alarm_p1p2_check_a4:
+      alias: "MQTT Area 4 - Parziale 1+2"
+      description: "Inserimento Parziale 1+2 Area 4 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/4/cmd"
+                    payload: "P1P2"
+                    qos: 1
+
+    #============================================
+    # AREA 5
+    #============================================
+    mqtt_alarm_arm_check_a5:
+      alias: "MQTT Area 5 - ON"
+      description: "Inserimento Area 5 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/5/cmd"
+                    payload: "ON"
+                    qos: 1
+
+    mqtt_alarm_disarm_check_a5:
+      alias: "MQTT Area 5 - OFF"
+      description: "Disinserimento Area 5 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/5/cmd"
+                    payload: "OFF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a5_i:
+      alias: "MQTT Area 5 - ON Immediato"
+      description: "Inserimento Immediato Area 5 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/5/cmd"
+                    payload: "ONI"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a5_f:
+      alias: "MQTT Area 5 - ON Forzato"
+      description: "Inserimento Forzato Area 5 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/5/cmd"
+                    payload: "ONF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a5_i_f:
+      alias: "MQTT Area 5 - ON Immediato Forzato"
+      description: "Inserimento Immediato Forzato Area 5 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/5/cmd"
+                    payload: "ONIF"
+                    qos: 1
+
+    mqtt_alarm_p1_check_a5:
+      alias: "MQTT Area 5 - Parziale 1"
+      description: "Inserimento Parziale 1 Area 5 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/5/cmd"
+                    payload: "P1"
+                    qos: 1
+
+    mqtt_alarm_p2_check_a5:
+      alias: "MQTT Area 5 - Parziale 2"
+      description: "Inserimento Parziale 2 Area 5 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/5/cmd"
+                    payload: "P2"
+                    qos: 1
+
+    mqtt_alarm_p1p2_check_a5:
+      alias: "MQTT Area 5 - Parziale 1+2"
+      description: "Inserimento Parziale 1+2 Area 5 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/5/cmd"
+                    payload: "P1P2"
+                    qos: 1
+
+    #============================================
+    # AREA 6
+    #============================================
+    mqtt_alarm_arm_check_a6:
+      alias: "MQTT Area 6 - ON"
+      description: "Inserimento Area 6 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/6/cmd"
+                    payload: "ON"
+                    qos: 1
+
+    mqtt_alarm_disarm_check_a6:
+      alias: "MQTT Area 6 - OFF"
+      description: "Disinserimento Area 6 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/6/cmd"
+                    payload: "OFF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a6_i:
+      alias: "MQTT Area 6 - ON Immediato"
+      description: "Inserimento Immediato Area 6 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/6/cmd"
+                    payload: "ONI"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a6_f:
+      alias: "MQTT Area 6 - ON Forzato"
+      description: "Inserimento Forzato Area 6 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/6/cmd"
+                    payload: "ONF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a6_i_f:
+      alias: "MQTT Area 6 - ON Immediato Forzato"
+      description: "Inserimento Immediato Forzato Area 6 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/6/cmd"
+                    payload: "ONIF"
+                    qos: 1
+
+    mqtt_alarm_p1_check_a6:
+      alias: "MQTT Area 6 - Parziale 1"
+      description: "Inserimento Parziale 1 Area 6 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/6/cmd"
+                    payload: "P1"
+                    qos: 1
+
+    mqtt_alarm_p2_check_a6:
+      alias: "MQTT Area 6 - Parziale 2"
+      description: "Inserimento Parziale 2 Area 6 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/6/cmd"
+                    payload: "P2"
+                    qos: 1
+
+    mqtt_alarm_p1p2_check_a6:
+      alias: "MQTT Area 6 - Parziale 1+2"
+      description: "Inserimento Parziale 1+2 Area 6 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/6/cmd"
+                    payload: "P1P2"
+                    qos: 1
+
+    #============================================
+    # AREA 7
+    #============================================
+    mqtt_alarm_arm_check_a7:
+      alias: "MQTT Area 7 - ON"
+      description: "Inserimento Area 7 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/7/cmd"
+                    payload: "ON"
+                    qos: 1
+
+    mqtt_alarm_disarm_check_a7:
+      alias: "MQTT Area 7 - OFF"
+      description: "Disinserimento Area 7 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/7/cmd"
+                    payload: "OFF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a7_i:
+      alias: "MQTT Area 7 - ON Immediato"
+      description: "Inserimento Immediato Area 7 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/7/cmd"
+                    payload: "ONI"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a7_f:
+      alias: "MQTT Area 7 - ON Forzato"
+      description: "Inserimento Forzato Area 7 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/7/cmd"
+                    payload: "ONF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a7_i_f:
+      alias: "MQTT Area 7 - ON Immediato Forzato"
+      description: "Inserimento Immediato Forzato Area 7 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/7/cmd"
+                    payload: "ONIF"
+                    qos: 1
+
+    mqtt_alarm_p1_check_a7:
+      alias: "MQTT Area 7 - Parziale 1"
+      description: "Inserimento Parziale 1 Area 7 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/7/cmd"
+                    payload: "P1"
+                    qos: 1
+
+    mqtt_alarm_p2_check_a7:
+      alias: "MQTT Area 7 - Parziale 2"
+      description: "Inserimento Parziale 2 Area 7 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/7/cmd"
+                    payload: "P2"
+                    qos: 1
+
+    mqtt_alarm_p1p2_check_a7:
+      alias: "MQTT Area 7 - Parziale 1+2"
+      description: "Inserimento Parziale 1+2 Area 7 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/7/cmd"
+                    payload: "P1P2"
+                    qos: 1
+
+    #============================================
+    # AREA 8
+    #============================================
+    mqtt_alarm_arm_check_a8:
+      alias: "MQTT Area 8 - ON"
+      description: "Inserimento Area 8 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/8/cmd"
+                    payload: "ON"
+                    qos: 1
+
+    mqtt_alarm_disarm_check_a8:
+      alias: "MQTT Area 8 - OFF"
+      description: "Disinserimento Area 8 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/8/cmd"
+                    payload: "OFF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a8_i:
+      alias: "MQTT Area 8 - ON Immediato"
+      description: "Inserimento Immediato Area 8 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/8/cmd"
+                    payload: "ONI"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a8_f:
+      alias: "MQTT Area 8 - ON Forzato"
+      description: "Inserimento Forzato Area 8 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/8/cmd"
+                    payload: "ONF"
+                    qos: 1
+
+    mqtt_alarm_arm_check_a8_i_f:
+      alias: "MQTT Area 8 - ON Immediato Forzato"
+      description: "Inserimento Immediato Forzato Area 8 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/8/cmd"
+                    payload: "ONIF"
+                    qos: 1
+
+    mqtt_alarm_p1_check_a8:
+      alias: "MQTT Area 8 - Parziale 1"
+      description: "Inserimento Parziale 1 Area 8 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/8/cmd"
+                    payload: "P1"
+                    qos: 1
+
+    mqtt_alarm_p2_check_a8:
+      alias: "MQTT Area 8 - Parziale 2"
+      description: "Inserimento Parziale 2 Area 8 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/8/cmd"
+                    payload: "P2"
+                    qos: 1
+
+    mqtt_alarm_p1p2_check_a8:
+      alias: "MQTT Area 8 - Parziale 1+2"
+      description: "Inserimento Parziale 1+2 Area 8 via MQTT"
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - action: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - action: mqtt.publish
+                  data:
+                    topic: "area/8/cmd"
+                    payload: "P1P2"
+                    qos: 1
+

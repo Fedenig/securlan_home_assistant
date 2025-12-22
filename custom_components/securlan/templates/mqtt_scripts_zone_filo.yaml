@@ -1,0 +1,1193 @@
+script:
+    #############################################
+    # SCRIPT COMANDI ZONE FILO VIA MQTT
+    # Prefisso mqtt_ per coesistere con REST
+    # Generato automaticamente
+    #############################################
+
+    #============================================
+    # SCRIPT PARAMETRICI
+    #============================================
+    mqtt_zona_filo_escludi:
+      alias: "MQTT Zona Filo - Escludi"
+      description: "Escludi zona filo via MQTT (parametrico)"
+      fields:
+        zona:
+          description: "Numero della zona filo"
+          example: 1
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/{{ zona }}/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_includi:
+      alias: "MQTT Zona Filo - Includi"
+      description: "Includi zona filo via MQTT (parametrico)"
+      fields:
+        zona:
+          description: "Numero della zona filo"
+          example: 1
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/{{ zona }}/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    #============================================
+    # SCRIPT SINGOLI
+    #============================================
+
+    mqtt_zona_filo_1_escludi:
+      alias: "MQTT Zona Filo 1 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/1/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_1_includi:
+      alias: "MQTT Zona Filo 1 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/1/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_2_escludi:
+      alias: "MQTT Zona Filo 2 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/2/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_2_includi:
+      alias: "MQTT Zona Filo 2 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/2/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_3_escludi:
+      alias: "MQTT Zona Filo 3 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/3/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_3_includi:
+      alias: "MQTT Zona Filo 3 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/3/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_4_escludi:
+      alias: "MQTT Zona Filo 4 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/4/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_4_includi:
+      alias: "MQTT Zona Filo 4 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/4/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_5_escludi:
+      alias: "MQTT Zona Filo 5 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/5/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_5_includi:
+      alias: "MQTT Zona Filo 5 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/5/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_6_escludi:
+      alias: "MQTT Zona Filo 6 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/6/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_6_includi:
+      alias: "MQTT Zona Filo 6 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/6/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_7_escludi:
+      alias: "MQTT Zona Filo 7 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/7/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_7_includi:
+      alias: "MQTT Zona Filo 7 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/7/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_8_escludi:
+      alias: "MQTT Zona Filo 8 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/8/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_8_includi:
+      alias: "MQTT Zona Filo 8 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/8/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_9_escludi:
+      alias: "MQTT Zona Filo 9 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/9/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_9_includi:
+      alias: "MQTT Zona Filo 9 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/9/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_10_escludi:
+      alias: "MQTT Zona Filo 10 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/10/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_10_includi:
+      alias: "MQTT Zona Filo 10 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/10/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_11_escludi:
+      alias: "MQTT Zona Filo 11 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/11/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_11_includi:
+      alias: "MQTT Zona Filo 11 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/11/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_12_escludi:
+      alias: "MQTT Zona Filo 12 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/12/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_12_includi:
+      alias: "MQTT Zona Filo 12 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/12/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_13_escludi:
+      alias: "MQTT Zona Filo 13 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/13/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_13_includi:
+      alias: "MQTT Zona Filo 13 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/13/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_14_escludi:
+      alias: "MQTT Zona Filo 14 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/14/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_14_includi:
+      alias: "MQTT Zona Filo 14 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/14/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_15_escludi:
+      alias: "MQTT Zona Filo 15 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/15/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_15_includi:
+      alias: "MQTT Zona Filo 15 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/15/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_16_escludi:
+      alias: "MQTT Zona Filo 16 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/16/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_16_includi:
+      alias: "MQTT Zona Filo 16 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/16/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_17_escludi:
+      alias: "MQTT Zona Filo 17 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/17/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_17_includi:
+      alias: "MQTT Zona Filo 17 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/17/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_18_escludi:
+      alias: "MQTT Zona Filo 18 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/18/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_18_includi:
+      alias: "MQTT Zona Filo 18 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/18/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_19_escludi:
+      alias: "MQTT Zona Filo 19 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/19/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_19_includi:
+      alias: "MQTT Zona Filo 19 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/19/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_20_escludi:
+      alias: "MQTT Zona Filo 20 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/20/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_20_includi:
+      alias: "MQTT Zona Filo 20 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/20/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_21_escludi:
+      alias: "MQTT Zona Filo 21 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/21/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_21_includi:
+      alias: "MQTT Zona Filo 21 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/21/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_22_escludi:
+      alias: "MQTT Zona Filo 22 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/22/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_22_includi:
+      alias: "MQTT Zona Filo 22 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/22/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_23_escludi:
+      alias: "MQTT Zona Filo 23 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/23/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_23_includi:
+      alias: "MQTT Zona Filo 23 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/23/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_24_escludi:
+      alias: "MQTT Zona Filo 24 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/24/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_24_includi:
+      alias: "MQTT Zona Filo 24 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/24/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_25_escludi:
+      alias: "MQTT Zona Filo 25 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/25/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_25_includi:
+      alias: "MQTT Zona Filo 25 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/25/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_26_escludi:
+      alias: "MQTT Zona Filo 26 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/26/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_26_includi:
+      alias: "MQTT Zona Filo 26 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/26/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_27_escludi:
+      alias: "MQTT Zona Filo 27 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/27/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_27_includi:
+      alias: "MQTT Zona Filo 27 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/27/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_28_escludi:
+      alias: "MQTT Zona Filo 28 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/28/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_28_includi:
+      alias: "MQTT Zona Filo 28 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/28/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_29_escludi:
+      alias: "MQTT Zona Filo 29 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/29/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_29_includi:
+      alias: "MQTT Zona Filo 29 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/29/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_30_escludi:
+      alias: "MQTT Zona Filo 30 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/30/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_30_includi:
+      alias: "MQTT Zona Filo 30 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/30/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_31_escludi:
+      alias: "MQTT Zona Filo 31 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/31/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_31_includi:
+      alias: "MQTT Zona Filo 31 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/31/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_32_escludi:
+      alias: "MQTT Zona Filo 32 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/32/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_32_includi:
+      alias: "MQTT Zona Filo 32 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/32/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_33_escludi:
+      alias: "MQTT Zona Filo 33 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/33/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_33_includi:
+      alias: "MQTT Zona Filo 33 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/33/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_34_escludi:
+      alias: "MQTT Zona Filo 34 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/34/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_34_includi:
+      alias: "MQTT Zona Filo 34 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/34/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_35_escludi:
+      alias: "MQTT Zona Filo 35 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/35/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_35_includi:
+      alias: "MQTT Zona Filo 35 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/35/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_36_escludi:
+      alias: "MQTT Zona Filo 36 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/36/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_36_includi:
+      alias: "MQTT Zona Filo 36 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/36/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_37_escludi:
+      alias: "MQTT Zona Filo 37 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/37/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_37_includi:
+      alias: "MQTT Zona Filo 37 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/37/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_38_escludi:
+      alias: "MQTT Zona Filo 38 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/38/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_38_includi:
+      alias: "MQTT Zona Filo 38 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/38/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_39_escludi:
+      alias: "MQTT Zona Filo 39 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/39/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_39_includi:
+      alias: "MQTT Zona Filo 39 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/39/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_40_escludi:
+      alias: "MQTT Zona Filo 40 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/40/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_40_includi:
+      alias: "MQTT Zona Filo 40 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/40/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_41_escludi:
+      alias: "MQTT Zona Filo 41 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/41/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_41_includi:
+      alias: "MQTT Zona Filo 41 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/41/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_42_escludi:
+      alias: "MQTT Zona Filo 42 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/42/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_42_includi:
+      alias: "MQTT Zona Filo 42 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/42/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_43_escludi:
+      alias: "MQTT Zona Filo 43 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/43/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_43_includi:
+      alias: "MQTT Zona Filo 43 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/43/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_44_escludi:
+      alias: "MQTT Zona Filo 44 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/44/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_44_includi:
+      alias: "MQTT Zona Filo 44 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/44/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_45_escludi:
+      alias: "MQTT Zona Filo 45 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/45/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_45_includi:
+      alias: "MQTT Zona Filo 45 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/45/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_46_escludi:
+      alias: "MQTT Zona Filo 46 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/46/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_46_includi:
+      alias: "MQTT Zona Filo 46 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/46/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_47_escludi:
+      alias: "MQTT Zona Filo 47 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/47/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_47_includi:
+      alias: "MQTT Zona Filo 47 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/47/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_48_escludi:
+      alias: "MQTT Zona Filo 48 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/48/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_48_includi:
+      alias: "MQTT Zona Filo 48 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/48/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_49_escludi:
+      alias: "MQTT Zona Filo 49 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/49/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_49_includi:
+      alias: "MQTT Zona Filo 49 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/49/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_50_escludi:
+      alias: "MQTT Zona Filo 50 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/50/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_50_includi:
+      alias: "MQTT Zona Filo 50 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/50/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_51_escludi:
+      alias: "MQTT Zona Filo 51 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/51/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_51_includi:
+      alias: "MQTT Zona Filo 51 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/51/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_52_escludi:
+      alias: "MQTT Zona Filo 52 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/52/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_52_includi:
+      alias: "MQTT Zona Filo 52 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/52/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_53_escludi:
+      alias: "MQTT Zona Filo 53 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/53/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_53_includi:
+      alias: "MQTT Zona Filo 53 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/53/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_54_escludi:
+      alias: "MQTT Zona Filo 54 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/54/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_54_includi:
+      alias: "MQTT Zona Filo 54 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/54/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_55_escludi:
+      alias: "MQTT Zona Filo 55 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/55/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_55_includi:
+      alias: "MQTT Zona Filo 55 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/55/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_56_escludi:
+      alias: "MQTT Zona Filo 56 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/56/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_56_includi:
+      alias: "MQTT Zona Filo 56 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/56/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_57_escludi:
+      alias: "MQTT Zona Filo 57 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/57/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_57_includi:
+      alias: "MQTT Zona Filo 57 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/57/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_58_escludi:
+      alias: "MQTT Zona Filo 58 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/58/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_58_includi:
+      alias: "MQTT Zona Filo 58 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/58/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_59_escludi:
+      alias: "MQTT Zona Filo 59 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/59/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_59_includi:
+      alias: "MQTT Zona Filo 59 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/59/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_60_escludi:
+      alias: "MQTT Zona Filo 60 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/60/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_60_includi:
+      alias: "MQTT Zona Filo 60 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/60/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_61_escludi:
+      alias: "MQTT Zona Filo 61 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/61/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_61_includi:
+      alias: "MQTT Zona Filo 61 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/61/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_62_escludi:
+      alias: "MQTT Zona Filo 62 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/62/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_62_includi:
+      alias: "MQTT Zona Filo 62 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/62/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_63_escludi:
+      alias: "MQTT Zona Filo 63 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/63/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_63_includi:
+      alias: "MQTT Zona Filo 63 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/63/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_64_escludi:
+      alias: "MQTT Zona Filo 64 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/64/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_filo_64_includi:
+      alias: "MQTT Zona Filo 64 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_filo/64/cmd"
+            payload: "INCLUDI"
+            qos: 1

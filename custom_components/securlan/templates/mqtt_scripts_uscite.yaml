@@ -1,0 +1,1193 @@
+script:
+    #############################################
+    # SCRIPT COMANDI USCITE VIA MQTT
+    # Prefisso mqtt_ per coesistere con REST
+    # Generato automaticamente
+    #############################################
+
+    #============================================
+    # SCRIPT PARAMETRICI
+    #============================================
+    mqtt_uscita_attiva:
+      alias: "MQTT Uscita - Attiva"
+      description: "Attiva uscita via MQTT (parametrico)"
+      fields:
+        uscita:
+          description: "Numero dell'uscita"
+          example: 1
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/{{ uscita }}/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_disattiva:
+      alias: "MQTT Uscita - Disattiva"
+      description: "Disattiva uscita via MQTT (parametrico)"
+      fields:
+        uscita:
+          description: "Numero dell'uscita"
+          example: 1
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/{{ uscita }}/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    #============================================
+    # SCRIPT SINGOLI
+    #============================================
+
+    mqtt_uscita_1_attiva:
+      alias: "MQTT Uscita 1 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/1/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_1_disattiva:
+      alias: "MQTT Uscita 1 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/1/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_2_attiva:
+      alias: "MQTT Uscita 2 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/2/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_2_disattiva:
+      alias: "MQTT Uscita 2 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/2/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_3_attiva:
+      alias: "MQTT Uscita 3 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/3/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_3_disattiva:
+      alias: "MQTT Uscita 3 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/3/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_4_attiva:
+      alias: "MQTT Uscita 4 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/4/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_4_disattiva:
+      alias: "MQTT Uscita 4 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/4/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_5_attiva:
+      alias: "MQTT Uscita 5 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/5/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_5_disattiva:
+      alias: "MQTT Uscita 5 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/5/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_6_attiva:
+      alias: "MQTT Uscita 6 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/6/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_6_disattiva:
+      alias: "MQTT Uscita 6 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/6/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_7_attiva:
+      alias: "MQTT Uscita 7 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/7/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_7_disattiva:
+      alias: "MQTT Uscita 7 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/7/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_8_attiva:
+      alias: "MQTT Uscita 8 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/8/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_8_disattiva:
+      alias: "MQTT Uscita 8 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/8/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_9_attiva:
+      alias: "MQTT Uscita 9 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/9/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_9_disattiva:
+      alias: "MQTT Uscita 9 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/9/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_10_attiva:
+      alias: "MQTT Uscita 10 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/10/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_10_disattiva:
+      alias: "MQTT Uscita 10 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/10/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_11_attiva:
+      alias: "MQTT Uscita 11 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/11/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_11_disattiva:
+      alias: "MQTT Uscita 11 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/11/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_12_attiva:
+      alias: "MQTT Uscita 12 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/12/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_12_disattiva:
+      alias: "MQTT Uscita 12 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/12/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_13_attiva:
+      alias: "MQTT Uscita 13 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/13/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_13_disattiva:
+      alias: "MQTT Uscita 13 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/13/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_14_attiva:
+      alias: "MQTT Uscita 14 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/14/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_14_disattiva:
+      alias: "MQTT Uscita 14 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/14/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_15_attiva:
+      alias: "MQTT Uscita 15 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/15/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_15_disattiva:
+      alias: "MQTT Uscita 15 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/15/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_16_attiva:
+      alias: "MQTT Uscita 16 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/16/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_16_disattiva:
+      alias: "MQTT Uscita 16 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/16/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_17_attiva:
+      alias: "MQTT Uscita 17 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/17/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_17_disattiva:
+      alias: "MQTT Uscita 17 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/17/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_18_attiva:
+      alias: "MQTT Uscita 18 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/18/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_18_disattiva:
+      alias: "MQTT Uscita 18 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/18/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_19_attiva:
+      alias: "MQTT Uscita 19 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/19/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_19_disattiva:
+      alias: "MQTT Uscita 19 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/19/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_20_attiva:
+      alias: "MQTT Uscita 20 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/20/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_20_disattiva:
+      alias: "MQTT Uscita 20 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/20/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_21_attiva:
+      alias: "MQTT Uscita 21 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/21/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_21_disattiva:
+      alias: "MQTT Uscita 21 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/21/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_22_attiva:
+      alias: "MQTT Uscita 22 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/22/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_22_disattiva:
+      alias: "MQTT Uscita 22 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/22/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_23_attiva:
+      alias: "MQTT Uscita 23 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/23/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_23_disattiva:
+      alias: "MQTT Uscita 23 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/23/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_24_attiva:
+      alias: "MQTT Uscita 24 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/24/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_24_disattiva:
+      alias: "MQTT Uscita 24 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/24/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_25_attiva:
+      alias: "MQTT Uscita 25 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/25/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_25_disattiva:
+      alias: "MQTT Uscita 25 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/25/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_26_attiva:
+      alias: "MQTT Uscita 26 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/26/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_26_disattiva:
+      alias: "MQTT Uscita 26 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/26/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_27_attiva:
+      alias: "MQTT Uscita 27 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/27/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_27_disattiva:
+      alias: "MQTT Uscita 27 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/27/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_28_attiva:
+      alias: "MQTT Uscita 28 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/28/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_28_disattiva:
+      alias: "MQTT Uscita 28 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/28/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_29_attiva:
+      alias: "MQTT Uscita 29 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/29/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_29_disattiva:
+      alias: "MQTT Uscita 29 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/29/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_30_attiva:
+      alias: "MQTT Uscita 30 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/30/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_30_disattiva:
+      alias: "MQTT Uscita 30 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/30/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_31_attiva:
+      alias: "MQTT Uscita 31 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/31/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_31_disattiva:
+      alias: "MQTT Uscita 31 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/31/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_32_attiva:
+      alias: "MQTT Uscita 32 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/32/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_32_disattiva:
+      alias: "MQTT Uscita 32 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/32/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_33_attiva:
+      alias: "MQTT Uscita 33 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/33/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_33_disattiva:
+      alias: "MQTT Uscita 33 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/33/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_34_attiva:
+      alias: "MQTT Uscita 34 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/34/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_34_disattiva:
+      alias: "MQTT Uscita 34 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/34/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_35_attiva:
+      alias: "MQTT Uscita 35 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/35/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_35_disattiva:
+      alias: "MQTT Uscita 35 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/35/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_36_attiva:
+      alias: "MQTT Uscita 36 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/36/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_36_disattiva:
+      alias: "MQTT Uscita 36 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/36/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_37_attiva:
+      alias: "MQTT Uscita 37 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/37/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_37_disattiva:
+      alias: "MQTT Uscita 37 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/37/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_38_attiva:
+      alias: "MQTT Uscita 38 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/38/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_38_disattiva:
+      alias: "MQTT Uscita 38 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/38/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_39_attiva:
+      alias: "MQTT Uscita 39 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/39/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_39_disattiva:
+      alias: "MQTT Uscita 39 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/39/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_40_attiva:
+      alias: "MQTT Uscita 40 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/40/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_40_disattiva:
+      alias: "MQTT Uscita 40 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/40/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_41_attiva:
+      alias: "MQTT Uscita 41 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/41/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_41_disattiva:
+      alias: "MQTT Uscita 41 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/41/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_42_attiva:
+      alias: "MQTT Uscita 42 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/42/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_42_disattiva:
+      alias: "MQTT Uscita 42 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/42/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_43_attiva:
+      alias: "MQTT Uscita 43 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/43/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_43_disattiva:
+      alias: "MQTT Uscita 43 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/43/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_44_attiva:
+      alias: "MQTT Uscita 44 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/44/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_44_disattiva:
+      alias: "MQTT Uscita 44 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/44/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_45_attiva:
+      alias: "MQTT Uscita 45 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/45/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_45_disattiva:
+      alias: "MQTT Uscita 45 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/45/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_46_attiva:
+      alias: "MQTT Uscita 46 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/46/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_46_disattiva:
+      alias: "MQTT Uscita 46 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/46/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_47_attiva:
+      alias: "MQTT Uscita 47 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/47/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_47_disattiva:
+      alias: "MQTT Uscita 47 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/47/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_48_attiva:
+      alias: "MQTT Uscita 48 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/48/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_48_disattiva:
+      alias: "MQTT Uscita 48 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/48/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_49_attiva:
+      alias: "MQTT Uscita 49 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/49/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_49_disattiva:
+      alias: "MQTT Uscita 49 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/49/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_50_attiva:
+      alias: "MQTT Uscita 50 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/50/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_50_disattiva:
+      alias: "MQTT Uscita 50 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/50/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_51_attiva:
+      alias: "MQTT Uscita 51 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/51/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_51_disattiva:
+      alias: "MQTT Uscita 51 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/51/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_52_attiva:
+      alias: "MQTT Uscita 52 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/52/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_52_disattiva:
+      alias: "MQTT Uscita 52 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/52/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_53_attiva:
+      alias: "MQTT Uscita 53 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/53/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_53_disattiva:
+      alias: "MQTT Uscita 53 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/53/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_54_attiva:
+      alias: "MQTT Uscita 54 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/54/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_54_disattiva:
+      alias: "MQTT Uscita 54 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/54/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_55_attiva:
+      alias: "MQTT Uscita 55 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/55/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_55_disattiva:
+      alias: "MQTT Uscita 55 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/55/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_56_attiva:
+      alias: "MQTT Uscita 56 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/56/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_56_disattiva:
+      alias: "MQTT Uscita 56 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/56/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_57_attiva:
+      alias: "MQTT Uscita 57 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/57/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_57_disattiva:
+      alias: "MQTT Uscita 57 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/57/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_58_attiva:
+      alias: "MQTT Uscita 58 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/58/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_58_disattiva:
+      alias: "MQTT Uscita 58 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/58/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_59_attiva:
+      alias: "MQTT Uscita 59 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/59/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_59_disattiva:
+      alias: "MQTT Uscita 59 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/59/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_60_attiva:
+      alias: "MQTT Uscita 60 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/60/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_60_disattiva:
+      alias: "MQTT Uscita 60 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/60/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_61_attiva:
+      alias: "MQTT Uscita 61 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/61/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_61_disattiva:
+      alias: "MQTT Uscita 61 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/61/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_62_attiva:
+      alias: "MQTT Uscita 62 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/62/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_62_disattiva:
+      alias: "MQTT Uscita 62 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/62/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_63_attiva:
+      alias: "MQTT Uscita 63 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/63/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_63_disattiva:
+      alias: "MQTT Uscita 63 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/63/cmd"
+            payload: "DISATTIVA"
+            qos: 1
+
+    mqtt_uscita_64_attiva:
+      alias: "MQTT Uscita 64 - Attiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/64/cmd"
+            payload: "ATTIVA"
+            qos: 1
+
+    mqtt_uscita_64_disattiva:
+      alias: "MQTT Uscita 64 - Disattiva"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "uscita/64/cmd"
+            payload: "DISATTIVA"
+            qos: 1

@@ -1,0 +1,1193 @@
+script:
+    #############################################
+    # SCRIPT COMANDI ZONE RADIO VIA MQTT
+    # Prefisso mqtt_ per coesistere con REST
+    # Generato automaticamente
+    #############################################
+
+    #============================================
+    # SCRIPT PARAMETRICI
+    #============================================
+    mqtt_zona_radio_escludi:
+      alias: "MQTT Zona Radio - Escludi"
+      description: "Escludi zona radio via MQTT (parametrico)"
+      fields:
+        zona:
+          description: "Numero della zona radio"
+          example: 1
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/{{ zona }}/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_includi:
+      alias: "MQTT Zona Radio - Includi"
+      description: "Includi zona radio via MQTT (parametrico)"
+      fields:
+        zona:
+          description: "Numero della zona radio"
+          example: 1
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/{{ zona }}/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    #============================================
+    # SCRIPT SINGOLI
+    #============================================
+
+    mqtt_zona_radio_1_escludi:
+      alias: "MQTT Zona Radio 1 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/1/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_1_includi:
+      alias: "MQTT Zona Radio 1 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/1/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_2_escludi:
+      alias: "MQTT Zona Radio 2 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/2/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_2_includi:
+      alias: "MQTT Zona Radio 2 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/2/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_3_escludi:
+      alias: "MQTT Zona Radio 3 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/3/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_3_includi:
+      alias: "MQTT Zona Radio 3 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/3/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_4_escludi:
+      alias: "MQTT Zona Radio 4 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/4/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_4_includi:
+      alias: "MQTT Zona Radio 4 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/4/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_5_escludi:
+      alias: "MQTT Zona Radio 5 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/5/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_5_includi:
+      alias: "MQTT Zona Radio 5 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/5/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_6_escludi:
+      alias: "MQTT Zona Radio 6 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/6/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_6_includi:
+      alias: "MQTT Zona Radio 6 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/6/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_7_escludi:
+      alias: "MQTT Zona Radio 7 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/7/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_7_includi:
+      alias: "MQTT Zona Radio 7 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/7/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_8_escludi:
+      alias: "MQTT Zona Radio 8 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/8/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_8_includi:
+      alias: "MQTT Zona Radio 8 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/8/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_9_escludi:
+      alias: "MQTT Zona Radio 9 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/9/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_9_includi:
+      alias: "MQTT Zona Radio 9 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/9/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_10_escludi:
+      alias: "MQTT Zona Radio 10 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/10/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_10_includi:
+      alias: "MQTT Zona Radio 10 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/10/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_11_escludi:
+      alias: "MQTT Zona Radio 11 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/11/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_11_includi:
+      alias: "MQTT Zona Radio 11 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/11/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_12_escludi:
+      alias: "MQTT Zona Radio 12 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/12/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_12_includi:
+      alias: "MQTT Zona Radio 12 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/12/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_13_escludi:
+      alias: "MQTT Zona Radio 13 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/13/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_13_includi:
+      alias: "MQTT Zona Radio 13 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/13/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_14_escludi:
+      alias: "MQTT Zona Radio 14 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/14/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_14_includi:
+      alias: "MQTT Zona Radio 14 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/14/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_15_escludi:
+      alias: "MQTT Zona Radio 15 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/15/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_15_includi:
+      alias: "MQTT Zona Radio 15 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/15/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_16_escludi:
+      alias: "MQTT Zona Radio 16 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/16/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_16_includi:
+      alias: "MQTT Zona Radio 16 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/16/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_17_escludi:
+      alias: "MQTT Zona Radio 17 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/17/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_17_includi:
+      alias: "MQTT Zona Radio 17 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/17/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_18_escludi:
+      alias: "MQTT Zona Radio 18 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/18/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_18_includi:
+      alias: "MQTT Zona Radio 18 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/18/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_19_escludi:
+      alias: "MQTT Zona Radio 19 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/19/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_19_includi:
+      alias: "MQTT Zona Radio 19 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/19/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_20_escludi:
+      alias: "MQTT Zona Radio 20 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/20/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_20_includi:
+      alias: "MQTT Zona Radio 20 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/20/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_21_escludi:
+      alias: "MQTT Zona Radio 21 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/21/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_21_includi:
+      alias: "MQTT Zona Radio 21 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/21/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_22_escludi:
+      alias: "MQTT Zona Radio 22 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/22/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_22_includi:
+      alias: "MQTT Zona Radio 22 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/22/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_23_escludi:
+      alias: "MQTT Zona Radio 23 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/23/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_23_includi:
+      alias: "MQTT Zona Radio 23 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/23/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_24_escludi:
+      alias: "MQTT Zona Radio 24 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/24/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_24_includi:
+      alias: "MQTT Zona Radio 24 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/24/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_25_escludi:
+      alias: "MQTT Zona Radio 25 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/25/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_25_includi:
+      alias: "MQTT Zona Radio 25 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/25/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_26_escludi:
+      alias: "MQTT Zona Radio 26 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/26/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_26_includi:
+      alias: "MQTT Zona Radio 26 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/26/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_27_escludi:
+      alias: "MQTT Zona Radio 27 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/27/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_27_includi:
+      alias: "MQTT Zona Radio 27 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/27/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_28_escludi:
+      alias: "MQTT Zona Radio 28 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/28/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_28_includi:
+      alias: "MQTT Zona Radio 28 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/28/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_29_escludi:
+      alias: "MQTT Zona Radio 29 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/29/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_29_includi:
+      alias: "MQTT Zona Radio 29 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/29/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_30_escludi:
+      alias: "MQTT Zona Radio 30 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/30/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_30_includi:
+      alias: "MQTT Zona Radio 30 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/30/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_31_escludi:
+      alias: "MQTT Zona Radio 31 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/31/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_31_includi:
+      alias: "MQTT Zona Radio 31 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/31/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_32_escludi:
+      alias: "MQTT Zona Radio 32 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/32/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_32_includi:
+      alias: "MQTT Zona Radio 32 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/32/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_33_escludi:
+      alias: "MQTT Zona Radio 33 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/33/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_33_includi:
+      alias: "MQTT Zona Radio 33 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/33/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_34_escludi:
+      alias: "MQTT Zona Radio 34 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/34/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_34_includi:
+      alias: "MQTT Zona Radio 34 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/34/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_35_escludi:
+      alias: "MQTT Zona Radio 35 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/35/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_35_includi:
+      alias: "MQTT Zona Radio 35 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/35/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_36_escludi:
+      alias: "MQTT Zona Radio 36 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/36/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_36_includi:
+      alias: "MQTT Zona Radio 36 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/36/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_37_escludi:
+      alias: "MQTT Zona Radio 37 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/37/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_37_includi:
+      alias: "MQTT Zona Radio 37 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/37/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_38_escludi:
+      alias: "MQTT Zona Radio 38 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/38/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_38_includi:
+      alias: "MQTT Zona Radio 38 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/38/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_39_escludi:
+      alias: "MQTT Zona Radio 39 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/39/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_39_includi:
+      alias: "MQTT Zona Radio 39 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/39/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_40_escludi:
+      alias: "MQTT Zona Radio 40 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/40/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_40_includi:
+      alias: "MQTT Zona Radio 40 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/40/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_41_escludi:
+      alias: "MQTT Zona Radio 41 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/41/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_41_includi:
+      alias: "MQTT Zona Radio 41 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/41/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_42_escludi:
+      alias: "MQTT Zona Radio 42 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/42/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_42_includi:
+      alias: "MQTT Zona Radio 42 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/42/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_43_escludi:
+      alias: "MQTT Zona Radio 43 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/43/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_43_includi:
+      alias: "MQTT Zona Radio 43 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/43/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_44_escludi:
+      alias: "MQTT Zona Radio 44 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/44/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_44_includi:
+      alias: "MQTT Zona Radio 44 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/44/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_45_escludi:
+      alias: "MQTT Zona Radio 45 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/45/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_45_includi:
+      alias: "MQTT Zona Radio 45 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/45/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_46_escludi:
+      alias: "MQTT Zona Radio 46 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/46/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_46_includi:
+      alias: "MQTT Zona Radio 46 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/46/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_47_escludi:
+      alias: "MQTT Zona Radio 47 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/47/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_47_includi:
+      alias: "MQTT Zona Radio 47 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/47/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_48_escludi:
+      alias: "MQTT Zona Radio 48 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/48/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_48_includi:
+      alias: "MQTT Zona Radio 48 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/48/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_49_escludi:
+      alias: "MQTT Zona Radio 49 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/49/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_49_includi:
+      alias: "MQTT Zona Radio 49 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/49/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_50_escludi:
+      alias: "MQTT Zona Radio 50 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/50/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_50_includi:
+      alias: "MQTT Zona Radio 50 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/50/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_51_escludi:
+      alias: "MQTT Zona Radio 51 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/51/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_51_includi:
+      alias: "MQTT Zona Radio 51 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/51/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_52_escludi:
+      alias: "MQTT Zona Radio 52 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/52/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_52_includi:
+      alias: "MQTT Zona Radio 52 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/52/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_53_escludi:
+      alias: "MQTT Zona Radio 53 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/53/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_53_includi:
+      alias: "MQTT Zona Radio 53 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/53/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_54_escludi:
+      alias: "MQTT Zona Radio 54 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/54/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_54_includi:
+      alias: "MQTT Zona Radio 54 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/54/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_55_escludi:
+      alias: "MQTT Zona Radio 55 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/55/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_55_includi:
+      alias: "MQTT Zona Radio 55 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/55/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_56_escludi:
+      alias: "MQTT Zona Radio 56 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/56/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_56_includi:
+      alias: "MQTT Zona Radio 56 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/56/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_57_escludi:
+      alias: "MQTT Zona Radio 57 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/57/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_57_includi:
+      alias: "MQTT Zona Radio 57 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/57/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_58_escludi:
+      alias: "MQTT Zona Radio 58 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/58/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_58_includi:
+      alias: "MQTT Zona Radio 58 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/58/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_59_escludi:
+      alias: "MQTT Zona Radio 59 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/59/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_59_includi:
+      alias: "MQTT Zona Radio 59 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/59/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_60_escludi:
+      alias: "MQTT Zona Radio 60 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/60/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_60_includi:
+      alias: "MQTT Zona Radio 60 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/60/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_61_escludi:
+      alias: "MQTT Zona Radio 61 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/61/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_61_includi:
+      alias: "MQTT Zona Radio 61 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/61/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_62_escludi:
+      alias: "MQTT Zona Radio 62 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/62/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_62_includi:
+      alias: "MQTT Zona Radio 62 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/62/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_63_escludi:
+      alias: "MQTT Zona Radio 63 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/63/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_63_includi:
+      alias: "MQTT Zona Radio 63 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/63/cmd"
+            payload: "INCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_64_escludi:
+      alias: "MQTT Zona Radio 64 - Escludi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/64/cmd"
+            payload: "ESCLUDI"
+            qos: 1
+
+    mqtt_zona_radio_64_includi:
+      alias: "MQTT Zona Radio 64 - Includi"
+      sequence:
+        - action: mqtt.publish
+          data:
+            topic: "zona_radio/64/cmd"
+            payload: "INCLUDI"
+            qos: 1
