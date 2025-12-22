@@ -16,11 +16,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -40,11 +40,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -64,11 +64,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -88,11 +88,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -112,11 +112,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -136,11 +136,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -160,11 +160,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -184,11 +184,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -208,11 +208,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -232,11 +232,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -256,11 +256,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -280,11 +280,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -304,11 +304,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -327,11 +327,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -352,11 +352,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -376,11 +376,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -400,11 +400,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -424,11 +424,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -448,11 +448,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -472,11 +472,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -496,11 +496,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -520,11 +520,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -544,11 +544,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -568,11 +568,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -592,11 +592,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -616,11 +616,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -640,11 +640,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -664,11 +664,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -688,11 +688,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -712,11 +712,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -736,11 +736,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -760,11 +760,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -784,11 +784,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -808,11 +808,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -832,11 +832,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -856,11 +856,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -880,11 +880,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -904,11 +904,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -928,11 +928,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -952,11 +952,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -976,11 +976,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -1000,11 +1000,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -1024,11 +1024,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -1048,11 +1048,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -1072,11 +1072,11 @@ script:
         - conditions:
           - condition: template
             value_template: '{% set alarm_code = states(''input_text.alarm_code'') %}
-    
+
               {% set allowed_codes = states(''input_text.password_allarme'') %}
-    
-              {{ alarm_code in allowed_codes }}
-    
+
+              {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+
               '
           sequence:
           - data:
@@ -1088,5 +1088,4 @@ script:
             data: {}
         enabled: true
       alias: alarm_arm_check_a8_i_f
-      description: '' 
-    
+      description: ''
