@@ -1,0 +1,332 @@
+script:
+    #############################################
+    # SCRIPT COMANDI TUTTE LE AREE VIA MQTT
+    # Sequenzializza le chiamate a tutte le 8 aree
+    # FIX: alarm_code | length > 0
+    # FIX: delay 600ms tra chiamate MQTT
+    #############################################
+
+    ### OFF TOTALE ###
+    mqtt_alarm_disarm_check:
+      alias: "MQTT Tutte Aree - OFF"
+      description: "Disinserimento tutte le aree via MQTT"
+      mode: single
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - service: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - service: mqtt.publish
+                  data:
+                    topic: "area/1/cmd"
+                    payload: "OFF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/2/cmd"
+                    payload: "OFF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/3/cmd"
+                    payload: "OFF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/4/cmd"
+                    payload: "OFF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/5/cmd"
+                    payload: "OFF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/6/cmd"
+                    payload: "OFF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/7/cmd"
+                    payload: "OFF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/8/cmd"
+                    payload: "OFF"
+
+    ### ON TOTALE ###
+    mqtt_alarm_arm_check:
+      alias: "MQTT Tutte Aree - ON"
+      description: "Inserimento tutte le aree via MQTT"
+      mode: single
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - service: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - service: mqtt.publish
+                  data:
+                    topic: "area/1/cmd"
+                    payload: "ON"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/2/cmd"
+                    payload: "ON"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/3/cmd"
+                    payload: "ON"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/4/cmd"
+                    payload: "ON"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/5/cmd"
+                    payload: "ON"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/6/cmd"
+                    payload: "ON"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/7/cmd"
+                    payload: "ON"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/8/cmd"
+                    payload: "ON"
+
+    ### ON IMMEDIATO TOTALE ###
+    mqtt_alarm_arm_check_tutte_i:
+      alias: "MQTT Tutte Aree - ON Immediato"
+      description: "Inserimento immediato tutte le aree via MQTT"
+      mode: single
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - service: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - service: mqtt.publish
+                  data:
+                    topic: "area/1/cmd"
+                    payload: "ONI"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/2/cmd"
+                    payload: "ONI"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/3/cmd"
+                    payload: "ONI"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/4/cmd"
+                    payload: "ONI"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/5/cmd"
+                    payload: "ONI"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/6/cmd"
+                    payload: "ONI"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/7/cmd"
+                    payload: "ONI"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/8/cmd"
+                    payload: "ONI"
+
+    ### ON FORZATO TOTALE ###
+    mqtt_alarm_arm_check_tutte_f:
+      alias: "MQTT Tutte Aree - ON Forzato"
+      description: "Inserimento forzato tutte le aree via MQTT"
+      mode: single
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - service: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - service: mqtt.publish
+                  data:
+                    topic: "area/1/cmd"
+                    payload: "ONF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/2/cmd"
+                    payload: "ONF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/3/cmd"
+                    payload: "ONF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/4/cmd"
+                    payload: "ONF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/5/cmd"
+                    payload: "ONF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/6/cmd"
+                    payload: "ONF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/7/cmd"
+                    payload: "ONF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/8/cmd"
+                    payload: "ONF"
+
+    ### ON IMMEDIATO FORZATO TOTALE ###
+    mqtt_alarm_arm_check_tutte_i_f:
+      alias: "MQTT Tutte Aree - ON Immediato Forzato"
+      description: "Inserimento immediato forzato tutte le aree via MQTT"
+      mode: single
+      sequence:
+        - choose:
+            - conditions:
+                - condition: template
+                  value_template: |
+                    {% set alarm_code = states('input_text.alarm_code') %}
+                    {% set allowed_codes = states('input_text.password_allarme') %}
+                    {{ alarm_code | length > 0 and alarm_code in allowed_codes }}
+              sequence:
+                - service: input_text.set_value
+                  data:
+                    entity_id: input_text.alarm_code
+                    value: ""
+                - service: mqtt.publish
+                  data:
+                    topic: "area/1/cmd"
+                    payload: "ONIF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/2/cmd"
+                    payload: "ONIF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/3/cmd"
+                    payload: "ONIF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/4/cmd"
+                    payload: "ONIF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/5/cmd"
+                    payload: "ONIF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/6/cmd"
+                    payload: "ONIF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/7/cmd"
+                    payload: "ONIF"
+                - delay:
+                    milliseconds: 600
+                - service: mqtt.publish
+                  data:
+                    topic: "area/8/cmd"
+                    payload: "ONIF"
